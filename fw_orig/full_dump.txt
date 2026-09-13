@@ -1,0 +1,457 @@
+=== entry 0: name='BE5S_T1_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x40  ?40                pin= 46 (0x2e)  flags=0x09
+    +0x52  ?52                pin= 40 (0x28)  flags=0x00
+    +0x54  ?54                pin= 43 (0x2b)  flags=0x00
+    +0x5e  ?5e                pin= 45 (0x2d)  flags=0x00
+    +0x4e  ?4e                pin= 42 (0x2a)  flags=0x00
+    +0x50  ?50                pin= 41 (0x29)  flags=0x00
+
+=== entry 1: name='S10T_T1_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 2: name='S10T_T2_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 3: name='B9Q_T2_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x16  ?16                pin= 59 (0x3b)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 4: name='S4S_T3_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 5: name='BY1S_T2_V10'  (partial motor fields) ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x1a  STEP1-A            pin= 10 (0x0a)  flags=0x00
+    +0x1c  STEP1-B            pin= 11 (0x0b)  flags=0x00
+    +0x1e  STEP1-C            pin= 17 (0x11)  flags=0x00
+    +0x20  STEP1-D            pin= 16 (0x10)  flags=0x00
+    +0x22  STEP2-A            pin=  6 (0x06)  flags=0x00
+    +0x24  STEP2-B            pin=  7 (0x07)  flags=0x00
+    +0x26  STEP2-C            pin=  8 (0x08)  flags=0x00
+    +0x28  STEP2-D            pin=  9 (0x09)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x62  ?62                pin= 51 (0x33)  flags=0x02
+    +0x64  ?64                pin= 54 (0x36)  flags=0x02
+
+=== entry 6: name='BY1S_T5_V10'  (partial motor fields) ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x1a  STEP1-A            pin= 10 (0x0a)  flags=0x00
+    +0x1c  STEP1-B            pin= 11 (0x0b)  flags=0x00
+    +0x1e  STEP1-C            pin= 17 (0x11)  flags=0x00
+    +0x20  STEP1-D            pin= 16 (0x10)  flags=0x00
+    +0x22  STEP2-A            pin=  6 (0x06)  flags=0x00
+    +0x24  STEP2-B            pin=  7 (0x07)  flags=0x00
+    +0x26  STEP2-C            pin=  8 (0x08)  flags=0x00
+    +0x28  STEP2-D            pin=  9 (0x09)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x62  ?62                pin= 51 (0x33)  flags=0x02
+    +0x64  ?64                pin= 54 (0x36)  flags=0x02
+
+=== entry 7: name='BY2S_T3_V10'  (partial motor fields) ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x1a  STEP1-A            pin= 10 (0x0a)  flags=0x00
+    +0x1c  STEP1-B            pin= 11 (0x0b)  flags=0x00
+    +0x1e  STEP1-C            pin= 17 (0x11)  flags=0x00
+    +0x20  STEP1-D            pin= 16 (0x10)  flags=0x00
+    +0x22  STEP2-A            pin=  6 (0x06)  flags=0x00
+    +0x24  STEP2-B            pin=  7 (0x07)  flags=0x00
+    +0x26  STEP2-C            pin=  8 (0x08)  flags=0x00
+    +0x28  STEP2-D            pin=  9 (0x09)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x62  ?62                pin= 51 (0x33)  flags=0x02
+    +0x64  ?64                pin= 54 (0x36)  flags=0x02
+
+=== entry 8: name='BY2S_T2_V10'  (partial motor fields) ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x1a  STEP1-A            pin= 10 (0x0a)  flags=0x00
+    +0x1c  STEP1-B            pin= 11 (0x0b)  flags=0x00
+    +0x1e  STEP1-C            pin= 17 (0x11)  flags=0x00
+    +0x20  STEP1-D            pin= 16 (0x10)  flags=0x00
+    +0x22  STEP2-A            pin=  6 (0x06)  flags=0x00
+    +0x24  STEP2-B            pin=  7 (0x07)  flags=0x00
+    +0x26  STEP2-C            pin=  8 (0x08)  flags=0x00
+    +0x28  STEP2-D            pin=  9 (0x09)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x62  ?62                pin= 51 (0x33)  flags=0x02
+    +0x64  ?64                pin= 54 (0x36)  flags=0x02
+
+=== entry 9: name='BE22S_T2_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x40  ?40                pin= 46 (0x2e)  flags=0x09
+    +0x52  ?52                pin= 40 (0x28)  flags=0x00
+    +0x54  ?54                pin= 43 (0x2b)  flags=0x00
+    +0x5e  ?5e                pin= 45 (0x2d)  flags=0x00
+    +0x4e  ?4e                pin= 42 (0x2a)  flags=0x00
+    +0x50  ?50                pin= 41 (0x29)  flags=0x00
+
+=== entry 10: name='BE22S_T3_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x40  ?40                pin= 46 (0x2e)  flags=0x09
+    +0x52  ?52                pin= 40 (0x28)  flags=0x00
+    +0x54  ?54                pin= 43 (0x2b)  flags=0x00
+    +0x5e  ?5e                pin= 45 (0x2d)  flags=0x00
+    +0x4e  ?4e                pin= 42 (0x2a)  flags=0x00
+    +0x50  ?50                pin= 41 (0x29)  flags=0x00
+
+=== entry 11: name='BY3S_T2_V10'  (partial motor fields) ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x1a  STEP1-A            pin= 10 (0x0a)  flags=0x00
+    +0x1c  STEP1-B            pin= 11 (0x0b)  flags=0x00
+    +0x1e  STEP1-C            pin= 17 (0x11)  flags=0x00
+    +0x20  STEP1-D            pin= 16 (0x10)  flags=0x00
+    +0x22  STEP2-A            pin=  6 (0x06)  flags=0x00
+    +0x24  STEP2-B            pin=  7 (0x07)  flags=0x00
+    +0x26  STEP2-C            pin=  8 (0x08)  flags=0x00
+    +0x28  STEP2-D            pin=  9 (0x09)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x62  ?62                pin= 51 (0x33)  flags=0x02
+    +0x64  ?64                pin= 54 (0x36)  flags=0x02
+
+=== entry 12: name='B4S_T2_V10' ===
+    +0x0c  LED0               pin= 58 (0x3a)  flags=0x02
+    +0x0e  LED1               pin= 57 (0x39)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 13: name='F2S_T2_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x48  ?48                pin= 57 (0x39)  flags=0x00
+    +0x4a  ?4a                pin= 58 (0x3a)  flags=0x00
+
+=== entry 14: name='F2S_T3_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x48  ?48                pin= 57 (0x39)  flags=0x00
+    +0x4a  ?4a                pin= 58 (0x3a)  flags=0x00
+
+=== entry 15: name='F8S_T4_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x16  ?16                pin= 59 (0x3b)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x48  ?48                pin= 57 (0x39)  flags=0x00
+    +0x4a  ?4a                pin= 58 (0x3a)  flags=0x00
+
+=== entry 16: name='B10QE_T2_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 10 (0x0a)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x16  ?16                pin= 59 (0x3b)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 17: name='BY3S_T3_V10'  (partial motor fields) ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x1a  STEP1-A            pin= 10 (0x0a)  flags=0x00
+    +0x1c  STEP1-B            pin= 11 (0x0b)  flags=0x00
+    +0x1e  STEP1-C            pin= 17 (0x11)  flags=0x00
+    +0x20  STEP1-D            pin= 16 (0x10)  flags=0x00
+    +0x22  STEP2-A            pin=  6 (0x06)  flags=0x00
+    +0x24  STEP2-B            pin=  7 (0x07)  flags=0x00
+    +0x26  STEP2-C            pin=  8 (0x08)  flags=0x00
+    +0x28  STEP2-D            pin=  9 (0x09)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x62  ?62                pin= 51 (0x33)  flags=0x02
+    +0x64  ?64                pin= 54 (0x36)  flags=0x02
+    +0x66  ?66                pin= 57 (0x39)  flags=0x02
+    +0x68  ?68                pin= 58 (0x3a)  flags=0x02
+
+=== entry 18: name='F1QE_T2_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 10 (0x0a)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x48  ?48                pin= 57 (0x39)  flags=0x00
+    +0x4a  ?4a                pin= 58 (0x3a)  flags=0x00
+
+=== entry 19: name='BB10TE_T3_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 10 (0x0a)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 20: name='BB10TE_T4_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 10 (0x0a)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 21: name='S16T_T4_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x16  ?16                pin= 59 (0x3b)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 22: name='S6Q_T5_V10'  (partial motor fields) ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x1a  STEP1-A            pin= 45 (0x2d)  flags=0x00
+    +0x1c  STEP1-B            pin= 41 (0x29)  flags=0x00
+    +0x1e  STEP1-C            pin= 42 (0x2a)  flags=0x00
+    +0x20  STEP1-D            pin= 43 (0x2b)  flags=0x00
+    +0x2a  ?2a                pin= 46 (0x2e)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 23: name='B10TE_T3_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 10 (0x0a)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 24: name='SB5F_T5_V10' ===
+    +0x0c  LED0               pin= 58 (0x3a)  flags=0x02
+    +0x0e  LED1               pin= 57 (0x39)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x16  ?16                pin= 59 (0x3b)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 25: name='SB5TE_T3_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 10 (0x0a)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x16  ?16                pin= 59 (0x3b)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x66  ?66                pin= 57 (0x39)  flags=0x02
+    +0x68  ?68                pin= 58 (0x3a)  flags=0x02
+
+=== entry 26: name='SB5FE_T5_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 10 (0x0a)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x16  ?16                pin= 59 (0x3b)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x66  ?66                pin= 57 (0x39)  flags=0x02
+    +0x68  ?68                pin= 58 (0x3a)  flags=0x02
+
+=== entry 27: name='SB5S_T10_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 28: name='SB5TG_T4_V10'  (partial motor fields) ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 10 (0x0a)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x16  ?16                pin= 59 (0x3b)  flags=0x00
+    +0x1a  STEP1-A            pin= 14 (0x0e)  flags=0x00
+    +0x1c  STEP1-B            pin= 17 (0x11)  flags=0x00
+    +0x1e  STEP1-C            pin=  8 (0x08)  flags=0x00
+    +0x20  STEP1-D            pin=  9 (0x09)  flags=0x00
+    +0x2a  ?2a                pin= 54 (0x36)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3c  ?3c                pin= 16 (0x10)  flags=0x02
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 29: name='P1T_T3_V10'  <<<< FULL MOTOR SET (2 stepper + DC) >>>> ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x1a  STEP1-A            pin= 45 (0x2d)  flags=0x00
+    +0x1c  STEP1-B            pin= 41 (0x29)  flags=0x00
+    +0x1e  STEP1-C            pin= 42 (0x2a)  flags=0x00
+    +0x20  STEP1-D            pin= 43 (0x2b)  flags=0x00
+    +0x22  STEP2-A            pin= 46 (0x2e)  flags=0x00
+    +0x24  STEP2-B            pin= 40 (0x28)  flags=0x00
+    +0x26  STEP2-C            pin= 10 (0x0a)  flags=0x00
+    +0x28  STEP2-D            pin= 11 (0x0b)  flags=0x00
+    +0x30  DCMOTOR-EN         pin= 57 (0x39)  flags=0x00
+    +0x32  DCMOTOR-SLOW-IRQ   pin= 54 (0x36)  flags=0x00
+    +0x34  DCMOTOR-STOP-IRQ   pin= 51 (0x33)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 30: name='S15T_T4_V10'  (partial motor fields) ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x1a  STEP1-A            pin= 10 (0x0a)  flags=0x00
+    +0x1c  STEP1-B            pin= 11 (0x0b)  flags=0x00
+    +0x1e  STEP1-C            pin= 17 (0x11)  flags=0x00
+    +0x20  STEP1-D            pin= 16 (0x10)  flags=0x00
+    +0x22  STEP2-A            pin=  6 (0x06)  flags=0x00
+    +0x24  STEP2-B            pin=  7 (0x07)  flags=0x00
+    +0x26  STEP2-C            pin=  8 (0x08)  flags=0x00
+    +0x28  STEP2-D            pin=  9 (0x09)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 31: name='BY4S_T5_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x42  ?42                pin= 11 (0x0b)  flags=0x09
+    +0x62  ?62                pin= 10 (0x0a)  flags=0x02
+    +0x64  ?64                pin= 17 (0x11)  flags=0x02
+    +0x66  ?66                pin= 54 (0x36)  flags=0x02
+    +0x68  ?68                pin= 51 (0x33)  flags=0x02
+    +0x6a  BUTTON/POWER-KEY   pin=  8 (0x08)  flags=0x08
+    +0x6c  ?6c-flags2         pin=  9 (0x09)  flags=0x01
+    +0x6e  ?6e                pin= 16 (0x10)  flags=0x08
+    +0x70  ?70                pin=  7 (0x07)  flags=0x08
+
+=== entry 32: name='F4T_T4_V10' ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x16  ?16                pin= 59 (0x3b)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+
+=== entry 33: name='M25S_T10_V10'  (partial motor fields) ===
+    +0x0c  LED0               pin= 49 (0x31)  flags=0x02
+    +0x0e  LED1               pin= 50 (0x32)  flags=0x00
+    +0x10  IR-LED             pin= 60 (0x3c)  flags=0x00
+    +0x12  IRCUT-A            pin= 53 (0x35)  flags=0x00
+    +0x14  IRCUT-B            pin= 52 (0x34)  flags=0x00
+    +0x18  LED-status/aux     pin= 59 (0x3b)  flags=0x00
+    +0x1a  STEP1-A            pin= 10 (0x0a)  flags=0x00
+    +0x1c  STEP1-B            pin= 11 (0x0b)  flags=0x00
+    +0x1e  STEP1-C            pin= 17 (0x11)  flags=0x00
+    +0x20  STEP1-D            pin= 16 (0x10)  flags=0x00
+    +0x22  STEP2-A            pin=  6 (0x06)  flags=0x00
+    +0x24  STEP2-B            pin=  7 (0x07)  flags=0x00
+    +0x26  STEP2-C            pin=  8 (0x08)  flags=0x00
+    +0x28  STEP2-D            pin=  9 (0x09)  flags=0x00
+    +0x3a  ?3a                pin= 63 (0x3f)  flags=0x00
+    +0x3e  ?3e                pin= 62 (0x3e)  flags=0x09
+    +0x44  ?44                pin= 45 (0x2d)  flags=0x09
+    +0x46  ?46                pin= 46 (0x2e)  flags=0x09
+

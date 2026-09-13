@@ -1,0 +1,4885 @@
+Found 257 relocation references to target gpio/irq functions
+
+=== call to gpio_direction_output at .text+0x31b4 (in function ~pps_rgb_light_ctrl) ===
+    0x003184: lhu      $s0, 0x14($a0)
+    0x003188: lw       $s1, 0x10($a0)
+    0x00318c: lui      $v0, 0
+    0x003190: lui      $a0, 0
+    0x003194: move     $a1, $s0
+    0x003198: addiu    $a0, $a0, 0
+    0x00319c: move     $a2, $s1
+    0x0031a0: addiu    $v0, $v0, 0
+    0x0031a4: jalr     $v0
+    0x0031a8: andi     $s0, $s0, 0xff
+    0x0031ac: beqz     $s0, 0x31cc
+    0x0031b0: lui      $v0, 0
+    0x0031b4: lui      $v0, 0  <-- CALL
+    0x0031b8: move     $a0, $s0
+    0x0031bc: addiu    $v0, $v0, 0
+    0x0031c0: jalr     $v0
+    0x0031c4: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x31bc (in function ~pps_rgb_light_ctrl) ===
+    0x00318c: lui      $v0, 0
+    0x003190: lui      $a0, 0
+    0x003194: move     $a1, $s0
+    0x003198: addiu    $a0, $a0, 0
+    0x00319c: move     $a2, $s1
+    0x0031a0: addiu    $v0, $v0, 0
+    0x0031a4: jalr     $v0
+    0x0031a8: andi     $s0, $s0, 0xff
+    0x0031ac: beqz     $s0, 0x31cc
+    0x0031b0: lui      $v0, 0
+    0x0031b4: lui      $v0, 0
+    0x0031b8: move     $a0, $s0
+    0x0031bc: addiu    $v0, $v0, 0  <-- CALL
+    0x0031c0: jalr     $v0
+    0x0031c4: addiu    $a1, $zero, 1
+    0x0031c8: lui      $v0, 0
+    0x0031cc: addiu    $v0, $v0, 0
+
+=== call to gpio_direction_output at .text+0x31e8 (in function ~pps_rgb_light_ctrl) ===
+    0x0031b8: move     $a0, $s0
+    0x0031bc: addiu    $v0, $v0, 0
+    0x0031c0: jalr     $v0
+    0x0031c4: addiu    $a1, $zero, 1
+    0x0031c8: lui      $v0, 0
+    0x0031cc: addiu    $v0, $v0, 0
+    0x0031d0: jalr     $v0
+    0x0031d4: move     $a0, $s1
+    0x0031d8: beqz     $s0, 0x3200
+    0x0031dc: lw       $ra, 0x1c($sp)
+    0x0031e0: lw       $s1, 0x18($sp)
+    0x0031e4: move     $a0, $s0
+    0x0031e8: lui      $t9, 0  <-- CALL
+    0x0031ec: lw       $s0, 0x14($sp)
+    0x0031f0: move     $a1, $zero
+    0x0031f4: addiu    $t9, $t9, 0
+    0x0031f8: jr       $t9
+
+=== call to gpio_direction_output at .text+0x31f4 (in function ~pps_rgb_light_ctrl) ===
+    0x0031c4: addiu    $a1, $zero, 1
+    0x0031c8: lui      $v0, 0
+    0x0031cc: addiu    $v0, $v0, 0
+    0x0031d0: jalr     $v0
+    0x0031d4: move     $a0, $s1
+    0x0031d8: beqz     $s0, 0x3200
+    0x0031dc: lw       $ra, 0x1c($sp)
+    0x0031e0: lw       $s1, 0x18($sp)
+    0x0031e4: move     $a0, $s0
+    0x0031e8: lui      $t9, 0
+    0x0031ec: lw       $s0, 0x14($sp)
+    0x0031f0: move     $a1, $zero
+    0x0031f4: addiu    $t9, $t9, 0  <-- CALL
+    0x0031f8: jr       $t9
+    0x0031fc: addiu    $sp, $sp, 0x20
+    0x003200: lw       $s1, 0x18($sp)
+    0x003204: lw       $s0, 0x14($sp)
+
+=== call to gpio_direction_input at .text+0x33ac (in function ~pps_rgb_light_ctrl) ===
+    0x00337c: move     $a0, $zero
+    0x003380: lw       $ra, 0x2c($sp)
+    0x003384: lw       $s5, 0x28($sp)
+    0x003388: lw       $s4, 0x24($sp)
+    0x00338c: lw       $s3, 0x20($sp)
+    0x003390: lw       $s2, 0x1c($sp)
+    0x003394: lw       $s1, 0x18($sp)
+    0x003398: lw       $s0, 0x14($sp)
+    0x00339c: move     $v0, $zero
+    0x0033a0: jr       $ra
+    0x0033a4: addiu    $sp, $sp, 0x30
+    0x0033a8: addiu    $sp, $sp, -0x18
+    0x0033ac: lui      $v0, 0  <-- CALL
+    0x0033b0: sw       $ra, 0x14($sp)
+    0x0033b4: addiu    $v0, $v0, 0
+    0x0033b8: jalr     $v0
+    0x0033bc: move     $a0, $a1
+
+=== call to gpio_direction_input at .text+0x33b4 (in function ~pps_rgb_light_ctrl) ===
+    0x003384: lw       $s5, 0x28($sp)
+    0x003388: lw       $s4, 0x24($sp)
+    0x00338c: lw       $s3, 0x20($sp)
+    0x003390: lw       $s2, 0x1c($sp)
+    0x003394: lw       $s1, 0x18($sp)
+    0x003398: lw       $s0, 0x14($sp)
+    0x00339c: move     $v0, $zero
+    0x0033a0: jr       $ra
+    0x0033a4: addiu    $sp, $sp, 0x30
+    0x0033a8: addiu    $sp, $sp, -0x18
+    0x0033ac: lui      $v0, 0
+    0x0033b0: sw       $ra, 0x14($sp)
+    0x0033b4: addiu    $v0, $v0, 0  <-- CALL
+    0x0033b8: jalr     $v0
+    0x0033bc: move     $a0, $a1
+    0x0033c0: lw       $ra, 0x14($sp)
+    0x0033c4: move     $v0, $zero
+
+=== call to __gpio_get_value at .text+0x33d0 (in function ~pps_rgb_light_ctrl) ===
+    0x0033a0: jr       $ra
+    0x0033a4: addiu    $sp, $sp, 0x30
+    0x0033a8: addiu    $sp, $sp, -0x18
+    0x0033ac: lui      $v0, 0
+    0x0033b0: sw       $ra, 0x14($sp)
+    0x0033b4: addiu    $v0, $v0, 0
+    0x0033b8: jalr     $v0
+    0x0033bc: move     $a0, $a1
+    0x0033c0: lw       $ra, 0x14($sp)
+    0x0033c4: move     $v0, $zero
+    0x0033c8: jr       $ra
+    0x0033cc: addiu    $sp, $sp, 0x18
+    0x0033d0: lui      $t9, 0  <-- CALL
+    0x0033d4: addiu    $t9, $t9, 0
+    0x0033d8: jr       $t9
+    0x0033dc: move     $a0, $a1
+    0x0033e0: addiu    $sp, $sp, -0x28
+
+=== call to __gpio_get_value at .text+0x33d4 (in function ~pps_rgb_light_ctrl) ===
+    0x0033a4: addiu    $sp, $sp, 0x30
+    0x0033a8: addiu    $sp, $sp, -0x18
+    0x0033ac: lui      $v0, 0
+    0x0033b0: sw       $ra, 0x14($sp)
+    0x0033b4: addiu    $v0, $v0, 0
+    0x0033b8: jalr     $v0
+    0x0033bc: move     $a0, $a1
+    0x0033c0: lw       $ra, 0x14($sp)
+    0x0033c4: move     $v0, $zero
+    0x0033c8: jr       $ra
+    0x0033cc: addiu    $sp, $sp, 0x18
+    0x0033d0: lui      $t9, 0
+    0x0033d4: addiu    $t9, $t9, 0  <-- CALL
+    0x0033d8: jr       $t9
+    0x0033dc: move     $a0, $a1
+    0x0033e0: addiu    $sp, $sp, -0x28
+    0x0033e4: lui      $v0, 0
+
+=== call to gpio_request at .text+0x3418 (in function ~pps_rgb_light_ctrl) ===
+    0x0033e8: sw       $s0, 0x20($sp)
+    0x0033ec: move     $s0, $a1
+    0x0033f0: lui      $a1, 0
+    0x0033f4: sw       $ra, 0x24($sp)
+    0x0033f8: addiu    $a0, $sp, 0x10
+    0x0033fc: move     $a2, $s0
+    0x003400: addiu    $a1, $a1, 0
+    0x003404: addiu    $v0, $v0, 0
+    0x003408: sw       $zero, 0x10($sp)
+    0x00340c: sw       $zero, 0x14($sp)
+    0x003410: jalr     $v0
+    0x003414: sh       $zero, 0x18($sp)
+    0x003418: lui      $v0, 0  <-- CALL
+    0x00341c: move     $a0, $s0
+    0x003420: addiu    $v0, $v0, 0
+    0x003424: jalr     $v0
+    0x003428: addiu    $a1, $sp, 0x10
+
+=== call to gpio_request at .text+0x3420 (in function ~pps_rgb_light_ctrl) ===
+    0x0033f0: lui      $a1, 0
+    0x0033f4: sw       $ra, 0x24($sp)
+    0x0033f8: addiu    $a0, $sp, 0x10
+    0x0033fc: move     $a2, $s0
+    0x003400: addiu    $a1, $a1, 0
+    0x003404: addiu    $v0, $v0, 0
+    0x003408: sw       $zero, 0x10($sp)
+    0x00340c: sw       $zero, 0x14($sp)
+    0x003410: jalr     $v0
+    0x003414: sh       $zero, 0x18($sp)
+    0x003418: lui      $v0, 0
+    0x00341c: move     $a0, $s0
+    0x003420: addiu    $v0, $v0, 0  <-- CALL
+    0x003424: jalr     $v0
+    0x003428: addiu    $a1, $sp, 0x10
+    0x00342c: lw       $ra, 0x24($sp)
+    0x003430: lw       $s0, 0x20($sp)
+
+=== call to gpio_direction_output at .text+0x3510 (in function ~ingenic_board_match) ===
+    0x0034e0: sltiu    $v0, $v0, 1
+    0x0034e4: lw       $ra, 0x24($sp)
+    0x0034e8: lw       $s4, 0x20($sp)
+    0x0034ec: lw       $s3, 0x1c($sp)
+    0x0034f0: lw       $s2, 0x18($sp)
+    0x0034f4: lw       $s1, 0x14($sp)
+    0x0034f8: lw       $s0, 0x10($sp)
+    0x0034fc: jr       $ra
+    0x003500: addiu    $sp, $sp, 0x28
+    0x003504: beqz     $a1, 0x3540
+    0x003508: move     $a0, $a1
+    0x00350c: addiu    $sp, $sp, -0x18
+    0x003510: lui      $v0, 0  <-- CALL
+    0x003514: sw       $ra, 0x14($sp)
+    0x003518: addiu    $v0, $v0, 0
+    0x00351c: beqz     $a2, 0x3528
+    0x003520: move     $a1, $zero
+
+=== call to gpio_direction_output at .text+0x3518 (in function ~ingenic_board_match) ===
+    0x0034e8: lw       $s4, 0x20($sp)
+    0x0034ec: lw       $s3, 0x1c($sp)
+    0x0034f0: lw       $s2, 0x18($sp)
+    0x0034f4: lw       $s1, 0x14($sp)
+    0x0034f8: lw       $s0, 0x10($sp)
+    0x0034fc: jr       $ra
+    0x003500: addiu    $sp, $sp, 0x28
+    0x003504: beqz     $a1, 0x3540
+    0x003508: move     $a0, $a1
+    0x00350c: addiu    $sp, $sp, -0x18
+    0x003510: lui      $v0, 0
+    0x003514: sw       $ra, 0x14($sp)
+    0x003518: addiu    $v0, $v0, 0  <-- CALL
+    0x00351c: beqz     $a2, 0x3528
+    0x003520: move     $a1, $zero
+    0x003524: addiu    $a1, $zero, 1
+    0x003528: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x5a4c (in function ~ingenic_ircut_set_mode) ===
+    0x005a1c: sw       $ra, 0x1c($sp)
+    0x005a20: sw       $s1, 0x14($sp)
+    0x005a24: sw       $s0, 0x10($sp)
+    0x005a28: lbu      $s1, 0x12($a0)
+    0x005a2c: lbu      $s0, 0x14($a0)
+    0x005a30: addiu    $v0, $v0, 0
+    0x005a34: bnez     $a2, 0x5b10
+    0x005a38: lui      $s2, 0
+    0x005a3c: lui      $a0, 0
+    0x005a40: jalr     $v0
+    0x005a44: addiu    $a0, $a0, 0
+    0x005a48: beqz     $s1, 0x5a60
+    0x005a4c: lui      $v0, 0  <-- CALL
+    0x005a50: move     $a0, $s1
+    0x005a54: addiu    $v0, $v0, 0
+    0x005a58: jalr     $v0
+    0x005a5c: move     $a1, $zero
+
+=== call to gpio_direction_output at .text+0x5a54 (in function ~ingenic_ircut_set_mode) ===
+    0x005a24: sw       $s0, 0x10($sp)
+    0x005a28: lbu      $s1, 0x12($a0)
+    0x005a2c: lbu      $s0, 0x14($a0)
+    0x005a30: addiu    $v0, $v0, 0
+    0x005a34: bnez     $a2, 0x5b10
+    0x005a38: lui      $s2, 0
+    0x005a3c: lui      $a0, 0
+    0x005a40: jalr     $v0
+    0x005a44: addiu    $a0, $a0, 0
+    0x005a48: beqz     $s1, 0x5a60
+    0x005a4c: lui      $v0, 0
+    0x005a50: move     $a0, $s1
+    0x005a54: addiu    $v0, $v0, 0  <-- CALL
+    0x005a58: jalr     $v0
+    0x005a5c: move     $a1, $zero
+    0x005a60: beqz     $s0, 0x5a80
+    0x005a64: addiu    $v0, $s2, 0
+
+=== call to gpio_direction_output at .text+0x5a68 (in function ~ingenic_ircut_set_mode) ===
+    0x005a38: lui      $s2, 0
+    0x005a3c: lui      $a0, 0
+    0x005a40: jalr     $v0
+    0x005a44: addiu    $a0, $a0, 0
+    0x005a48: beqz     $s1, 0x5a60
+    0x005a4c: lui      $v0, 0
+    0x005a50: move     $a0, $s1
+    0x005a54: addiu    $v0, $v0, 0
+    0x005a58: jalr     $v0
+    0x005a5c: move     $a1, $zero
+    0x005a60: beqz     $s0, 0x5a80
+    0x005a64: addiu    $v0, $s2, 0
+    0x005a68: lui      $v0, 0  <-- CALL
+    0x005a6c: move     $a0, $s0
+    0x005a70: addiu    $v0, $v0, 0
+    0x005a74: jalr     $v0
+    0x005a78: move     $a1, $zero
+
+=== call to gpio_direction_output at .text+0x5a70 (in function ~ingenic_ircut_set_mode) ===
+    0x005a40: jalr     $v0
+    0x005a44: addiu    $a0, $a0, 0
+    0x005a48: beqz     $s1, 0x5a60
+    0x005a4c: lui      $v0, 0
+    0x005a50: move     $a0, $s1
+    0x005a54: addiu    $v0, $v0, 0
+    0x005a58: jalr     $v0
+    0x005a5c: move     $a1, $zero
+    0x005a60: beqz     $s0, 0x5a80
+    0x005a64: addiu    $v0, $s2, 0
+    0x005a68: lui      $v0, 0
+    0x005a6c: move     $a0, $s0
+    0x005a70: addiu    $v0, $v0, 0  <-- CALL
+    0x005a74: jalr     $v0
+    0x005a78: move     $a1, $zero
+    0x005a7c: addiu    $v0, $s2, 0
+    0x005a80: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x5a90 (in function ~ingenic_ircut_set_mode) ===
+    0x005a60: beqz     $s0, 0x5a80
+    0x005a64: addiu    $v0, $s2, 0
+    0x005a68: lui      $v0, 0
+    0x005a6c: move     $a0, $s0
+    0x005a70: addiu    $v0, $v0, 0
+    0x005a74: jalr     $v0
+    0x005a78: move     $a1, $zero
+    0x005a7c: addiu    $v0, $s2, 0
+    0x005a80: jalr     $v0
+    0x005a84: addiu    $a0, $zero, 5
+    0x005a88: beqz     $s1, 0x5aa8
+    0x005a8c: addiu    $v0, $s2, 0
+    0x005a90: lui      $v0, 0  <-- CALL
+    0x005a94: move     $a0, $s1
+    0x005a98: addiu    $v0, $v0, 0
+    0x005a9c: jalr     $v0
+    0x005aa0: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x5a98 (in function ~ingenic_ircut_set_mode) ===
+    0x005a68: lui      $v0, 0
+    0x005a6c: move     $a0, $s0
+    0x005a70: addiu    $v0, $v0, 0
+    0x005a74: jalr     $v0
+    0x005a78: move     $a1, $zero
+    0x005a7c: addiu    $v0, $s2, 0
+    0x005a80: jalr     $v0
+    0x005a84: addiu    $a0, $zero, 5
+    0x005a88: beqz     $s1, 0x5aa8
+    0x005a8c: addiu    $v0, $s2, 0
+    0x005a90: lui      $v0, 0
+    0x005a94: move     $a0, $s1
+    0x005a98: addiu    $v0, $v0, 0  <-- CALL
+    0x005a9c: jalr     $v0
+    0x005aa0: addiu    $a1, $zero, 1
+    0x005aa4: addiu    $v0, $s2, 0
+    0x005aa8: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x5ab8 (in function ~ingenic_ircut_set_mode) ===
+    0x005a88: beqz     $s1, 0x5aa8
+    0x005a8c: addiu    $v0, $s2, 0
+    0x005a90: lui      $v0, 0
+    0x005a94: move     $a0, $s1
+    0x005a98: addiu    $v0, $v0, 0
+    0x005a9c: jalr     $v0
+    0x005aa0: addiu    $a1, $zero, 1
+    0x005aa4: addiu    $v0, $s2, 0
+    0x005aa8: jalr     $v0
+    0x005aac: addiu    $a0, $zero, 0x64
+    0x005ab0: beqz     $s1, 0x5ad0
+    0x005ab4: addiu    $v0, $s2, 0
+    0x005ab8: lui      $v0, 0  <-- CALL
+    0x005abc: move     $a0, $s1
+    0x005ac0: addiu    $v0, $v0, 0
+    0x005ac4: jalr     $v0
+    0x005ac8: move     $a1, $zero
+
+=== call to gpio_direction_output at .text+0x5ac0 (in function ~ingenic_ircut_set_mode) ===
+    0x005a90: lui      $v0, 0
+    0x005a94: move     $a0, $s1
+    0x005a98: addiu    $v0, $v0, 0
+    0x005a9c: jalr     $v0
+    0x005aa0: addiu    $a1, $zero, 1
+    0x005aa4: addiu    $v0, $s2, 0
+    0x005aa8: jalr     $v0
+    0x005aac: addiu    $a0, $zero, 0x64
+    0x005ab0: beqz     $s1, 0x5ad0
+    0x005ab4: addiu    $v0, $s2, 0
+    0x005ab8: lui      $v0, 0
+    0x005abc: move     $a0, $s1
+    0x005ac0: addiu    $v0, $v0, 0  <-- CALL
+    0x005ac4: jalr     $v0
+    0x005ac8: move     $a1, $zero
+    0x005acc: addiu    $v0, $s2, 0
+    0x005ad0: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x5ae0 (in function ~ingenic_ircut_set_mode) ===
+    0x005ab0: beqz     $s1, 0x5ad0
+    0x005ab4: addiu    $v0, $s2, 0
+    0x005ab8: lui      $v0, 0
+    0x005abc: move     $a0, $s1
+    0x005ac0: addiu    $v0, $v0, 0
+    0x005ac4: jalr     $v0
+    0x005ac8: move     $a1, $zero
+    0x005acc: addiu    $v0, $s2, 0
+    0x005ad0: jalr     $v0
+    0x005ad4: addiu    $a0, $zero, 0x64
+    0x005ad8: beql     $s1, $zero, 0x5af8
+    0x005adc: addiu    $s2, $s2, 0
+    0x005ae0: lui      $v0, 0  <-- CALL
+    0x005ae4: move     $a0, $s1
+    0x005ae8: addiu    $v0, $v0, 0
+    0x005aec: jalr     $v0
+    0x005af0: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x5ae8 (in function ~ingenic_ircut_set_mode) ===
+    0x005ab8: lui      $v0, 0
+    0x005abc: move     $a0, $s1
+    0x005ac0: addiu    $v0, $v0, 0
+    0x005ac4: jalr     $v0
+    0x005ac8: move     $a1, $zero
+    0x005acc: addiu    $v0, $s2, 0
+    0x005ad0: jalr     $v0
+    0x005ad4: addiu    $a0, $zero, 0x64
+    0x005ad8: beql     $s1, $zero, 0x5af8
+    0x005adc: addiu    $s2, $s2, 0
+    0x005ae0: lui      $v0, 0
+    0x005ae4: move     $a0, $s1
+    0x005ae8: addiu    $v0, $v0, 0  <-- CALL
+    0x005aec: jalr     $v0
+    0x005af0: addiu    $a1, $zero, 1
+    0x005af4: addiu    $s2, $s2, 0
+    0x005af8: jalr     $s2
+
+=== call to gpio_direction_output at .text+0x5b20 (in function ~ingenic_ircut_set_mode) ===
+    0x005af0: addiu    $a1, $zero, 1
+    0x005af4: addiu    $s2, $s2, 0
+    0x005af8: jalr     $s2
+    0x005afc: addiu    $a0, $zero, 0x64
+    0x005b00: bnez     $s1, 0x5be0
+    0x005b04: move     $a0, $s1
+    0x005b08: b        0x5bf4
+    0x005b0c: lw       $ra, 0x1c($sp)
+    0x005b10: lui      $a0, 0
+    0x005b14: jalr     $v0
+    0x005b18: addiu    $a0, $a0, 0
+    0x005b1c: beqz     $s1, 0x5b34
+    0x005b20: lui      $v0, 0  <-- CALL
+    0x005b24: move     $a0, $s1
+    0x005b28: addiu    $v0, $v0, 0
+    0x005b2c: jalr     $v0
+    0x005b30: move     $a1, $zero
+
+=== call to gpio_direction_output at .text+0x5b28 (in function ~ingenic_ircut_set_mode) ===
+    0x005af8: jalr     $s2
+    0x005afc: addiu    $a0, $zero, 0x64
+    0x005b00: bnez     $s1, 0x5be0
+    0x005b04: move     $a0, $s1
+    0x005b08: b        0x5bf4
+    0x005b0c: lw       $ra, 0x1c($sp)
+    0x005b10: lui      $a0, 0
+    0x005b14: jalr     $v0
+    0x005b18: addiu    $a0, $a0, 0
+    0x005b1c: beqz     $s1, 0x5b34
+    0x005b20: lui      $v0, 0
+    0x005b24: move     $a0, $s1
+    0x005b28: addiu    $v0, $v0, 0  <-- CALL
+    0x005b2c: jalr     $v0
+    0x005b30: move     $a1, $zero
+    0x005b34: beqz     $s0, 0x5b54
+    0x005b38: addiu    $v0, $s2, 0
+
+=== call to gpio_direction_output at .text+0x5b3c (in function ~ingenic_ircut_set_mode) ===
+    0x005b0c: lw       $ra, 0x1c($sp)
+    0x005b10: lui      $a0, 0
+    0x005b14: jalr     $v0
+    0x005b18: addiu    $a0, $a0, 0
+    0x005b1c: beqz     $s1, 0x5b34
+    0x005b20: lui      $v0, 0
+    0x005b24: move     $a0, $s1
+    0x005b28: addiu    $v0, $v0, 0
+    0x005b2c: jalr     $v0
+    0x005b30: move     $a1, $zero
+    0x005b34: beqz     $s0, 0x5b54
+    0x005b38: addiu    $v0, $s2, 0
+    0x005b3c: lui      $v0, 0  <-- CALL
+    0x005b40: move     $a0, $s0
+    0x005b44: addiu    $v0, $v0, 0
+    0x005b48: jalr     $v0
+    0x005b4c: move     $a1, $zero
+
+=== call to gpio_direction_output at .text+0x5b44 (in function ~ingenic_ircut_set_mode) ===
+    0x005b14: jalr     $v0
+    0x005b18: addiu    $a0, $a0, 0
+    0x005b1c: beqz     $s1, 0x5b34
+    0x005b20: lui      $v0, 0
+    0x005b24: move     $a0, $s1
+    0x005b28: addiu    $v0, $v0, 0
+    0x005b2c: jalr     $v0
+    0x005b30: move     $a1, $zero
+    0x005b34: beqz     $s0, 0x5b54
+    0x005b38: addiu    $v0, $s2, 0
+    0x005b3c: lui      $v0, 0
+    0x005b40: move     $a0, $s0
+    0x005b44: addiu    $v0, $v0, 0  <-- CALL
+    0x005b48: jalr     $v0
+    0x005b4c: move     $a1, $zero
+    0x005b50: addiu    $v0, $s2, 0
+    0x005b54: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x5b64 (in function ~ingenic_ircut_set_mode) ===
+    0x005b34: beqz     $s0, 0x5b54
+    0x005b38: addiu    $v0, $s2, 0
+    0x005b3c: lui      $v0, 0
+    0x005b40: move     $a0, $s0
+    0x005b44: addiu    $v0, $v0, 0
+    0x005b48: jalr     $v0
+    0x005b4c: move     $a1, $zero
+    0x005b50: addiu    $v0, $s2, 0
+    0x005b54: jalr     $v0
+    0x005b58: addiu    $a0, $zero, 5
+    0x005b5c: beqz     $s0, 0x5b7c
+    0x005b60: addiu    $v0, $s2, 0
+    0x005b64: lui      $v0, 0  <-- CALL
+    0x005b68: move     $a0, $s0
+    0x005b6c: addiu    $v0, $v0, 0
+    0x005b70: jalr     $v0
+    0x005b74: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x5b6c (in function ~ingenic_ircut_set_mode) ===
+    0x005b3c: lui      $v0, 0
+    0x005b40: move     $a0, $s0
+    0x005b44: addiu    $v0, $v0, 0
+    0x005b48: jalr     $v0
+    0x005b4c: move     $a1, $zero
+    0x005b50: addiu    $v0, $s2, 0
+    0x005b54: jalr     $v0
+    0x005b58: addiu    $a0, $zero, 5
+    0x005b5c: beqz     $s0, 0x5b7c
+    0x005b60: addiu    $v0, $s2, 0
+    0x005b64: lui      $v0, 0
+    0x005b68: move     $a0, $s0
+    0x005b6c: addiu    $v0, $v0, 0  <-- CALL
+    0x005b70: jalr     $v0
+    0x005b74: addiu    $a1, $zero, 1
+    0x005b78: addiu    $v0, $s2, 0
+    0x005b7c: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x5b8c (in function ~ingenic_ircut_set_mode) ===
+    0x005b5c: beqz     $s0, 0x5b7c
+    0x005b60: addiu    $v0, $s2, 0
+    0x005b64: lui      $v0, 0
+    0x005b68: move     $a0, $s0
+    0x005b6c: addiu    $v0, $v0, 0
+    0x005b70: jalr     $v0
+    0x005b74: addiu    $a1, $zero, 1
+    0x005b78: addiu    $v0, $s2, 0
+    0x005b7c: jalr     $v0
+    0x005b80: addiu    $a0, $zero, 0x64
+    0x005b84: beqz     $s0, 0x5ba4
+    0x005b88: addiu    $v0, $s2, 0
+    0x005b8c: lui      $v0, 0  <-- CALL
+    0x005b90: move     $a0, $s0
+    0x005b94: addiu    $v0, $v0, 0
+    0x005b98: jalr     $v0
+    0x005b9c: move     $a1, $zero
+
+=== call to gpio_direction_output at .text+0x5b94 (in function ~ingenic_ircut_set_mode) ===
+    0x005b64: lui      $v0, 0
+    0x005b68: move     $a0, $s0
+    0x005b6c: addiu    $v0, $v0, 0
+    0x005b70: jalr     $v0
+    0x005b74: addiu    $a1, $zero, 1
+    0x005b78: addiu    $v0, $s2, 0
+    0x005b7c: jalr     $v0
+    0x005b80: addiu    $a0, $zero, 0x64
+    0x005b84: beqz     $s0, 0x5ba4
+    0x005b88: addiu    $v0, $s2, 0
+    0x005b8c: lui      $v0, 0
+    0x005b90: move     $a0, $s0
+    0x005b94: addiu    $v0, $v0, 0  <-- CALL
+    0x005b98: jalr     $v0
+    0x005b9c: move     $a1, $zero
+    0x005ba0: addiu    $v0, $s2, 0
+    0x005ba4: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x5bb4 (in function ~ingenic_ircut_set_mode) ===
+    0x005b84: beqz     $s0, 0x5ba4
+    0x005b88: addiu    $v0, $s2, 0
+    0x005b8c: lui      $v0, 0
+    0x005b90: move     $a0, $s0
+    0x005b94: addiu    $v0, $v0, 0
+    0x005b98: jalr     $v0
+    0x005b9c: move     $a1, $zero
+    0x005ba0: addiu    $v0, $s2, 0
+    0x005ba4: jalr     $v0
+    0x005ba8: addiu    $a0, $zero, 0x64
+    0x005bac: beql     $s0, $zero, 0x5bcc
+    0x005bb0: addiu    $s2, $s2, 0
+    0x005bb4: lui      $v0, 0  <-- CALL
+    0x005bb8: move     $a0, $s0
+    0x005bbc: addiu    $v0, $v0, 0
+    0x005bc0: jalr     $v0
+    0x005bc4: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x5bbc (in function ~ingenic_ircut_set_mode) ===
+    0x005b8c: lui      $v0, 0
+    0x005b90: move     $a0, $s0
+    0x005b94: addiu    $v0, $v0, 0
+    0x005b98: jalr     $v0
+    0x005b9c: move     $a1, $zero
+    0x005ba0: addiu    $v0, $s2, 0
+    0x005ba4: jalr     $v0
+    0x005ba8: addiu    $a0, $zero, 0x64
+    0x005bac: beql     $s0, $zero, 0x5bcc
+    0x005bb0: addiu    $s2, $s2, 0
+    0x005bb4: lui      $v0, 0
+    0x005bb8: move     $a0, $s0
+    0x005bbc: addiu    $v0, $v0, 0  <-- CALL
+    0x005bc0: jalr     $v0
+    0x005bc4: addiu    $a1, $zero, 1
+    0x005bc8: addiu    $s2, $s2, 0
+    0x005bcc: jalr     $s2
+
+=== call to gpio_direction_output at .text+0x5be0 (in function ~ingenic_ircut_set_mode) ===
+    0x005bb0: addiu    $s2, $s2, 0
+    0x005bb4: lui      $v0, 0
+    0x005bb8: move     $a0, $s0
+    0x005bbc: addiu    $v0, $v0, 0
+    0x005bc0: jalr     $v0
+    0x005bc4: addiu    $a1, $zero, 1
+    0x005bc8: addiu    $s2, $s2, 0
+    0x005bcc: jalr     $s2
+    0x005bd0: addiu    $a0, $zero, 0x64
+    0x005bd4: beqz     $s0, 0x5bf4
+    0x005bd8: lw       $ra, 0x1c($sp)
+    0x005bdc: move     $a0, $s0
+    0x005be0: lui      $v0, 0  <-- CALL
+    0x005be4: addiu    $v0, $v0, 0
+    0x005be8: jalr     $v0
+    0x005bec: move     $a1, $zero
+    0x005bf0: lw       $ra, 0x1c($sp)
+
+=== call to gpio_direction_output at .text+0x5be4 (in function ~ingenic_ircut_set_mode) ===
+    0x005bb4: lui      $v0, 0
+    0x005bb8: move     $a0, $s0
+    0x005bbc: addiu    $v0, $v0, 0
+    0x005bc0: jalr     $v0
+    0x005bc4: addiu    $a1, $zero, 1
+    0x005bc8: addiu    $s2, $s2, 0
+    0x005bcc: jalr     $s2
+    0x005bd0: addiu    $a0, $zero, 0x64
+    0x005bd4: beqz     $s0, 0x5bf4
+    0x005bd8: lw       $ra, 0x1c($sp)
+    0x005bdc: move     $a0, $s0
+    0x005be0: lui      $v0, 0
+    0x005be4: addiu    $v0, $v0, 0  <-- CALL
+    0x005be8: jalr     $v0
+    0x005bec: move     $a1, $zero
+    0x005bf0: lw       $ra, 0x1c($sp)
+    0x005bf4: lw       $s2, 0x18($sp)
+
+=== call to gpio_direction_output at .text+0x7e9c (in function ~cmt2300a_send_data) ===
+    0x007e6c: bnel     $v0, $zero, 0x7fbc
+    0x007e70: lw       $v0, 0xccc($s1)
+    0x007e74: lui      $v0, 0
+    0x007e78: addiu    $v0, $v0, 0x7ccc
+    0x007e7c: jalr     $v0
+    0x007e80: nop      
+    0x007e84: lw       $v0, 0xccc($s1)
+    0x007e88: andi     $a0, $s6, 0xff
+    0x007e8c: bnez     $v0, 0x7f28
+    0x007e90: andi     $a0, $a0, 0xffff
+    0x007e94: beql     $a0, $zero, 0x7eb0
+    0x007e98: andi     $a0, $s5, 0xff
+    0x007e9c: lui      $v0, 0  <-- CALL
+    0x007ea0: addiu    $v0, $v0, 0
+    0x007ea4: jalr     $v0
+    0x007ea8: move     $a1, $zero
+    0x007eac: andi     $a0, $s5, 0xff
+
+=== call to gpio_direction_output at .text+0x7ea0 (in function ~cmt2300a_send_data) ===
+    0x007e70: lw       $v0, 0xccc($s1)
+    0x007e74: lui      $v0, 0
+    0x007e78: addiu    $v0, $v0, 0x7ccc
+    0x007e7c: jalr     $v0
+    0x007e80: nop      
+    0x007e84: lw       $v0, 0xccc($s1)
+    0x007e88: andi     $a0, $s6, 0xff
+    0x007e8c: bnez     $v0, 0x7f28
+    0x007e90: andi     $a0, $a0, 0xffff
+    0x007e94: beql     $a0, $zero, 0x7eb0
+    0x007e98: andi     $a0, $s5, 0xff
+    0x007e9c: lui      $v0, 0
+    0x007ea0: addiu    $v0, $v0, 0  <-- CALL
+    0x007ea4: jalr     $v0
+    0x007ea8: move     $a1, $zero
+    0x007eac: andi     $a0, $s5, 0xff
+    0x007eb0: beql     $a0, $zero, 0x7ecc
+
+=== call to gpio_direction_output at .text+0x7eb8 (in function ~cmt2300a_send_data) ===
+    0x007e88: andi     $a0, $s6, 0xff
+    0x007e8c: bnez     $v0, 0x7f28
+    0x007e90: andi     $a0, $a0, 0xffff
+    0x007e94: beql     $a0, $zero, 0x7eb0
+    0x007e98: andi     $a0, $s5, 0xff
+    0x007e9c: lui      $v0, 0
+    0x007ea0: addiu    $v0, $v0, 0
+    0x007ea4: jalr     $v0
+    0x007ea8: move     $a1, $zero
+    0x007eac: andi     $a0, $s5, 0xff
+    0x007eb0: beql     $a0, $zero, 0x7ecc
+    0x007eb4: andi     $a0, $s4, 0xff
+    0x007eb8: lui      $v0, 0  <-- CALL
+    0x007ebc: addiu    $v0, $v0, 0
+    0x007ec0: jalr     $v0
+    0x007ec4: move     $a1, $zero
+    0x007ec8: andi     $a0, $s4, 0xff
+
+=== call to gpio_direction_output at .text+0x7ebc (in function ~cmt2300a_send_data) ===
+    0x007e8c: bnez     $v0, 0x7f28
+    0x007e90: andi     $a0, $a0, 0xffff
+    0x007e94: beql     $a0, $zero, 0x7eb0
+    0x007e98: andi     $a0, $s5, 0xff
+    0x007e9c: lui      $v0, 0
+    0x007ea0: addiu    $v0, $v0, 0
+    0x007ea4: jalr     $v0
+    0x007ea8: move     $a1, $zero
+    0x007eac: andi     $a0, $s5, 0xff
+    0x007eb0: beql     $a0, $zero, 0x7ecc
+    0x007eb4: andi     $a0, $s4, 0xff
+    0x007eb8: lui      $v0, 0
+    0x007ebc: addiu    $v0, $v0, 0  <-- CALL
+    0x007ec0: jalr     $v0
+    0x007ec4: move     $a1, $zero
+    0x007ec8: andi     $a0, $s4, 0xff
+    0x007ecc: beql     $a0, $zero, 0x7ee8
+
+=== call to gpio_direction_output at .text+0x7ed4 (in function ~cmt2300a_send_data) ===
+    0x007ea4: jalr     $v0
+    0x007ea8: move     $a1, $zero
+    0x007eac: andi     $a0, $s5, 0xff
+    0x007eb0: beql     $a0, $zero, 0x7ecc
+    0x007eb4: andi     $a0, $s4, 0xff
+    0x007eb8: lui      $v0, 0
+    0x007ebc: addiu    $v0, $v0, 0
+    0x007ec0: jalr     $v0
+    0x007ec4: move     $a1, $zero
+    0x007ec8: andi     $a0, $s4, 0xff
+    0x007ecc: beql     $a0, $zero, 0x7ee8
+    0x007ed0: andi     $a0, $s3, 0xff
+    0x007ed4: lui      $v0, 0  <-- CALL
+    0x007ed8: addiu    $v0, $v0, 0
+    0x007edc: jalr     $v0
+    0x007ee0: move     $a1, $zero
+    0x007ee4: andi     $a0, $s3, 0xff
+
+=== call to gpio_direction_output at .text+0x7ed8 (in function ~cmt2300a_send_data) ===
+    0x007ea8: move     $a1, $zero
+    0x007eac: andi     $a0, $s5, 0xff
+    0x007eb0: beql     $a0, $zero, 0x7ecc
+    0x007eb4: andi     $a0, $s4, 0xff
+    0x007eb8: lui      $v0, 0
+    0x007ebc: addiu    $v0, $v0, 0
+    0x007ec0: jalr     $v0
+    0x007ec4: move     $a1, $zero
+    0x007ec8: andi     $a0, $s4, 0xff
+    0x007ecc: beql     $a0, $zero, 0x7ee8
+    0x007ed0: andi     $a0, $s3, 0xff
+    0x007ed4: lui      $v0, 0
+    0x007ed8: addiu    $v0, $v0, 0  <-- CALL
+    0x007edc: jalr     $v0
+    0x007ee0: move     $a1, $zero
+    0x007ee4: andi     $a0, $s3, 0xff
+    0x007ee8: beql     $a0, $zero, 0x7f04
+
+=== call to gpio_direction_output at .text+0x7ef0 (in function ~cmt2300a_send_data) ===
+    0x007ec0: jalr     $v0
+    0x007ec4: move     $a1, $zero
+    0x007ec8: andi     $a0, $s4, 0xff
+    0x007ecc: beql     $a0, $zero, 0x7ee8
+    0x007ed0: andi     $a0, $s3, 0xff
+    0x007ed4: lui      $v0, 0
+    0x007ed8: addiu    $v0, $v0, 0
+    0x007edc: jalr     $v0
+    0x007ee0: move     $a1, $zero
+    0x007ee4: andi     $a0, $s3, 0xff
+    0x007ee8: beql     $a0, $zero, 0x7f04
+    0x007eec: andi     $a0, $s7, 0xff
+    0x007ef0: lui      $v0, 0  <-- CALL
+    0x007ef4: addiu    $v0, $v0, 0
+    0x007ef8: jalr     $v0
+    0x007efc: move     $a1, $zero
+    0x007f00: andi     $a0, $s7, 0xff
+
+=== call to gpio_direction_output at .text+0x7ef4 (in function ~cmt2300a_send_data) ===
+    0x007ec4: move     $a1, $zero
+    0x007ec8: andi     $a0, $s4, 0xff
+    0x007ecc: beql     $a0, $zero, 0x7ee8
+    0x007ed0: andi     $a0, $s3, 0xff
+    0x007ed4: lui      $v0, 0
+    0x007ed8: addiu    $v0, $v0, 0
+    0x007edc: jalr     $v0
+    0x007ee0: move     $a1, $zero
+    0x007ee4: andi     $a0, $s3, 0xff
+    0x007ee8: beql     $a0, $zero, 0x7f04
+    0x007eec: andi     $a0, $s7, 0xff
+    0x007ef0: lui      $v0, 0
+    0x007ef4: addiu    $v0, $v0, 0  <-- CALL
+    0x007ef8: jalr     $v0
+    0x007efc: move     $a1, $zero
+    0x007f00: andi     $a0, $s7, 0xff
+    0x007f04: beql     $a0, $zero, 0x7f20
+
+=== call to gpio_direction_output at .text+0x7f0c (in function ~cmt2300a_send_data) ===
+    0x007edc: jalr     $v0
+    0x007ee0: move     $a1, $zero
+    0x007ee4: andi     $a0, $s3, 0xff
+    0x007ee8: beql     $a0, $zero, 0x7f04
+    0x007eec: andi     $a0, $s7, 0xff
+    0x007ef0: lui      $v0, 0
+    0x007ef4: addiu    $v0, $v0, 0
+    0x007ef8: jalr     $v0
+    0x007efc: move     $a1, $zero
+    0x007f00: andi     $a0, $s7, 0xff
+    0x007f04: beql     $a0, $zero, 0x7f20
+    0x007f08: addiu    $s2, $s2, 0
+    0x007f0c: lui      $v0, 0  <-- CALL
+    0x007f10: addiu    $v0, $v0, 0
+    0x007f14: jalr     $v0
+    0x007f18: move     $a1, $zero
+    0x007f1c: addiu    $s2, $s2, 0
+
+=== call to gpio_direction_output at .text+0x7f10 (in function ~cmt2300a_send_data) ===
+    0x007ee0: move     $a1, $zero
+    0x007ee4: andi     $a0, $s3, 0xff
+    0x007ee8: beql     $a0, $zero, 0x7f04
+    0x007eec: andi     $a0, $s7, 0xff
+    0x007ef0: lui      $v0, 0
+    0x007ef4: addiu    $v0, $v0, 0
+    0x007ef8: jalr     $v0
+    0x007efc: move     $a1, $zero
+    0x007f00: andi     $a0, $s7, 0xff
+    0x007f04: beql     $a0, $zero, 0x7f20
+    0x007f08: addiu    $s2, $s2, 0
+    0x007f0c: lui      $v0, 0
+    0x007f10: addiu    $v0, $v0, 0  <-- CALL
+    0x007f14: jalr     $v0
+    0x007f18: move     $a1, $zero
+    0x007f1c: addiu    $s2, $s2, 0
+    0x007f20: b        0x810c
+
+=== call to gpio_direction_output at .text+0x7f30 (in function ~cmt2300a_send_data) ===
+    0x007f00: andi     $a0, $s7, 0xff
+    0x007f04: beql     $a0, $zero, 0x7f20
+    0x007f08: addiu    $s2, $s2, 0
+    0x007f0c: lui      $v0, 0
+    0x007f10: addiu    $v0, $v0, 0
+    0x007f14: jalr     $v0
+    0x007f18: move     $a1, $zero
+    0x007f1c: addiu    $s2, $s2, 0
+    0x007f20: b        0x810c
+    0x007f24: sw       $zero, 0xcc4($s2)
+    0x007f28: beql     $a0, $zero, 0x7f44
+    0x007f2c: andi     $a0, $s5, 0xff
+    0x007f30: lui      $v0, 0  <-- CALL
+    0x007f34: addiu    $v0, $v0, 0
+    0x007f38: jalr     $v0
+    0x007f3c: move     $a1, $zero
+    0x007f40: andi     $a0, $s5, 0xff
+
+=== call to gpio_direction_output at .text+0x7f34 (in function ~cmt2300a_send_data) ===
+    0x007f04: beql     $a0, $zero, 0x7f20
+    0x007f08: addiu    $s2, $s2, 0
+    0x007f0c: lui      $v0, 0
+    0x007f10: addiu    $v0, $v0, 0
+    0x007f14: jalr     $v0
+    0x007f18: move     $a1, $zero
+    0x007f1c: addiu    $s2, $s2, 0
+    0x007f20: b        0x810c
+    0x007f24: sw       $zero, 0xcc4($s2)
+    0x007f28: beql     $a0, $zero, 0x7f44
+    0x007f2c: andi     $a0, $s5, 0xff
+    0x007f30: lui      $v0, 0
+    0x007f34: addiu    $v0, $v0, 0  <-- CALL
+    0x007f38: jalr     $v0
+    0x007f3c: move     $a1, $zero
+    0x007f40: andi     $a0, $s5, 0xff
+    0x007f44: beql     $a0, $zero, 0x7f60
+
+=== call to gpio_direction_output at .text+0x7f4c (in function ~cmt2300a_send_data) ===
+    0x007f1c: addiu    $s2, $s2, 0
+    0x007f20: b        0x810c
+    0x007f24: sw       $zero, 0xcc4($s2)
+    0x007f28: beql     $a0, $zero, 0x7f44
+    0x007f2c: andi     $a0, $s5, 0xff
+    0x007f30: lui      $v0, 0
+    0x007f34: addiu    $v0, $v0, 0
+    0x007f38: jalr     $v0
+    0x007f3c: move     $a1, $zero
+    0x007f40: andi     $a0, $s5, 0xff
+    0x007f44: beql     $a0, $zero, 0x7f60
+    0x007f48: andi     $a0, $s4, 0xff
+    0x007f4c: lui      $v0, 0  <-- CALL
+    0x007f50: addiu    $v0, $v0, 0
+    0x007f54: jalr     $v0
+    0x007f58: move     $a1, $zero
+    0x007f5c: andi     $a0, $s4, 0xff
+
+=== call to gpio_direction_output at .text+0x7f50 (in function ~cmt2300a_send_data) ===
+    0x007f20: b        0x810c
+    0x007f24: sw       $zero, 0xcc4($s2)
+    0x007f28: beql     $a0, $zero, 0x7f44
+    0x007f2c: andi     $a0, $s5, 0xff
+    0x007f30: lui      $v0, 0
+    0x007f34: addiu    $v0, $v0, 0
+    0x007f38: jalr     $v0
+    0x007f3c: move     $a1, $zero
+    0x007f40: andi     $a0, $s5, 0xff
+    0x007f44: beql     $a0, $zero, 0x7f60
+    0x007f48: andi     $a0, $s4, 0xff
+    0x007f4c: lui      $v0, 0
+    0x007f50: addiu    $v0, $v0, 0  <-- CALL
+    0x007f54: jalr     $v0
+    0x007f58: move     $a1, $zero
+    0x007f5c: andi     $a0, $s4, 0xff
+    0x007f60: beql     $a0, $zero, 0x7f7c
+
+=== call to gpio_direction_output at .text+0x7f68 (in function ~cmt2300a_send_data) ===
+    0x007f38: jalr     $v0
+    0x007f3c: move     $a1, $zero
+    0x007f40: andi     $a0, $s5, 0xff
+    0x007f44: beql     $a0, $zero, 0x7f60
+    0x007f48: andi     $a0, $s4, 0xff
+    0x007f4c: lui      $v0, 0
+    0x007f50: addiu    $v0, $v0, 0
+    0x007f54: jalr     $v0
+    0x007f58: move     $a1, $zero
+    0x007f5c: andi     $a0, $s4, 0xff
+    0x007f60: beql     $a0, $zero, 0x7f7c
+    0x007f64: andi     $a0, $s3, 0xff
+    0x007f68: lui      $v0, 0  <-- CALL
+    0x007f6c: addiu    $v0, $v0, 0
+    0x007f70: jalr     $v0
+    0x007f74: move     $a1, $zero
+    0x007f78: andi     $a0, $s3, 0xff
+
+=== call to gpio_direction_output at .text+0x7f6c (in function ~cmt2300a_send_data) ===
+    0x007f3c: move     $a1, $zero
+    0x007f40: andi     $a0, $s5, 0xff
+    0x007f44: beql     $a0, $zero, 0x7f60
+    0x007f48: andi     $a0, $s4, 0xff
+    0x007f4c: lui      $v0, 0
+    0x007f50: addiu    $v0, $v0, 0
+    0x007f54: jalr     $v0
+    0x007f58: move     $a1, $zero
+    0x007f5c: andi     $a0, $s4, 0xff
+    0x007f60: beql     $a0, $zero, 0x7f7c
+    0x007f64: andi     $a0, $s3, 0xff
+    0x007f68: lui      $v0, 0
+    0x007f6c: addiu    $v0, $v0, 0  <-- CALL
+    0x007f70: jalr     $v0
+    0x007f74: move     $a1, $zero
+    0x007f78: andi     $a0, $s3, 0xff
+    0x007f7c: beql     $a0, $zero, 0x7f98
+
+=== call to gpio_direction_output at .text+0x7f84 (in function ~cmt2300a_send_data) ===
+    0x007f54: jalr     $v0
+    0x007f58: move     $a1, $zero
+    0x007f5c: andi     $a0, $s4, 0xff
+    0x007f60: beql     $a0, $zero, 0x7f7c
+    0x007f64: andi     $a0, $s3, 0xff
+    0x007f68: lui      $v0, 0
+    0x007f6c: addiu    $v0, $v0, 0
+    0x007f70: jalr     $v0
+    0x007f74: move     $a1, $zero
+    0x007f78: andi     $a0, $s3, 0xff
+    0x007f7c: beql     $a0, $zero, 0x7f98
+    0x007f80: andi     $a0, $s0, 0xff
+    0x007f84: lui      $v0, 0  <-- CALL
+    0x007f88: addiu    $v0, $v0, 0
+    0x007f8c: jalr     $v0
+    0x007f90: move     $a1, $zero
+    0x007f94: andi     $a0, $s0, 0xff
+
+=== call to gpio_direction_output at .text+0x7f88 (in function ~cmt2300a_send_data) ===
+    0x007f58: move     $a1, $zero
+    0x007f5c: andi     $a0, $s4, 0xff
+    0x007f60: beql     $a0, $zero, 0x7f7c
+    0x007f64: andi     $a0, $s3, 0xff
+    0x007f68: lui      $v0, 0
+    0x007f6c: addiu    $v0, $v0, 0
+    0x007f70: jalr     $v0
+    0x007f74: move     $a1, $zero
+    0x007f78: andi     $a0, $s3, 0xff
+    0x007f7c: beql     $a0, $zero, 0x7f98
+    0x007f80: andi     $a0, $s0, 0xff
+    0x007f84: lui      $v0, 0
+    0x007f88: addiu    $v0, $v0, 0  <-- CALL
+    0x007f8c: jalr     $v0
+    0x007f90: move     $a1, $zero
+    0x007f94: andi     $a0, $s0, 0xff
+    0x007f98: beql     $a0, $zero, 0x7fb4
+
+=== call to gpio_direction_output at .text+0x7fa0 (in function ~cmt2300a_send_data) ===
+    0x007f70: jalr     $v0
+    0x007f74: move     $a1, $zero
+    0x007f78: andi     $a0, $s3, 0xff
+    0x007f7c: beql     $a0, $zero, 0x7f98
+    0x007f80: andi     $a0, $s0, 0xff
+    0x007f84: lui      $v0, 0
+    0x007f88: addiu    $v0, $v0, 0
+    0x007f8c: jalr     $v0
+    0x007f90: move     $a1, $zero
+    0x007f94: andi     $a0, $s0, 0xff
+    0x007f98: beql     $a0, $zero, 0x7fb4
+    0x007f9c: addiu    $s2, $s2, 0
+    0x007fa0: lui      $v0, 0  <-- CALL
+    0x007fa4: addiu    $v0, $v0, 0
+    0x007fa8: jalr     $v0
+    0x007fac: move     $a1, $zero
+    0x007fb0: addiu    $s2, $s2, 0
+
+=== call to gpio_direction_output at .text+0x7fa4 (in function ~cmt2300a_send_data) ===
+    0x007f74: move     $a1, $zero
+    0x007f78: andi     $a0, $s3, 0xff
+    0x007f7c: beql     $a0, $zero, 0x7f98
+    0x007f80: andi     $a0, $s0, 0xff
+    0x007f84: lui      $v0, 0
+    0x007f88: addiu    $v0, $v0, 0
+    0x007f8c: jalr     $v0
+    0x007f90: move     $a1, $zero
+    0x007f94: andi     $a0, $s0, 0xff
+    0x007f98: beql     $a0, $zero, 0x7fb4
+    0x007f9c: addiu    $s2, $s2, 0
+    0x007fa0: lui      $v0, 0
+    0x007fa4: addiu    $v0, $v0, 0  <-- CALL
+    0x007fa8: jalr     $v0
+    0x007fac: move     $a1, $zero
+    0x007fb0: addiu    $s2, $s2, 0
+    0x007fb4: b        0x810c
+
+=== call to gpio_direction_output at .text+0x8048 (in function ~cmt2300a_send_data) ===
+    0x008018: b        0x8028
+    0x00801c: movn     $s0, $v1, $v0
+    0x008020: addiu    $s0, $v0, 1
+    0x008024: andi     $s0, $s0, 7
+    0x008028: addiu    $v0, $s2, 0
+    0x00802c: sw       $s0, 0xcc0($v0)
+    0x008030: andi     $a0, $s6, 0xff
+    0x008034: beql     $a0, $zero, 0x8068
+    0x008038: andi     $a0, $s5, 0xff
+    0x00803c: sll      $v0, $s0, 4
+    0x008040: addu     $v0, $sp, $v0
+    0x008044: lw       $v1, 0x10($v0)
+    0x008048: lui      $v0, 0  <-- CALL
+    0x00804c: addiu    $v0, $v0, 0
+    0x008050: beqz     $v1, 0x805c
+    0x008054: move     $a1, $zero
+    0x008058: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x804c (in function ~cmt2300a_send_data) ===
+    0x00801c: movn     $s0, $v1, $v0
+    0x008020: addiu    $s0, $v0, 1
+    0x008024: andi     $s0, $s0, 7
+    0x008028: addiu    $v0, $s2, 0
+    0x00802c: sw       $s0, 0xcc0($v0)
+    0x008030: andi     $a0, $s6, 0xff
+    0x008034: beql     $a0, $zero, 0x8068
+    0x008038: andi     $a0, $s5, 0xff
+    0x00803c: sll      $v0, $s0, 4
+    0x008040: addu     $v0, $sp, $v0
+    0x008044: lw       $v1, 0x10($v0)
+    0x008048: lui      $v0, 0
+    0x00804c: addiu    $v0, $v0, 0  <-- CALL
+    0x008050: beqz     $v1, 0x805c
+    0x008054: move     $a1, $zero
+    0x008058: addiu    $a1, $zero, 1
+    0x00805c: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x807c (in function ~cmt2300a_send_data) ===
+    0x00804c: addiu    $v0, $v0, 0
+    0x008050: beqz     $v1, 0x805c
+    0x008054: move     $a1, $zero
+    0x008058: addiu    $a1, $zero, 1
+    0x00805c: jalr     $v0
+    0x008060: nop      
+    0x008064: andi     $a0, $s5, 0xff
+    0x008068: beql     $a0, $zero, 0x809c
+    0x00806c: andi     $a0, $s4, 0xff
+    0x008070: sll      $v0, $s0, 4
+    0x008074: addu     $v0, $sp, $v0
+    0x008078: lw       $v1, 0x14($v0)
+    0x00807c: lui      $v0, 0  <-- CALL
+    0x008080: addiu    $v0, $v0, 0
+    0x008084: beqz     $v1, 0x8090
+    0x008088: move     $a1, $zero
+    0x00808c: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x8080 (in function ~cmt2300a_send_data) ===
+    0x008050: beqz     $v1, 0x805c
+    0x008054: move     $a1, $zero
+    0x008058: addiu    $a1, $zero, 1
+    0x00805c: jalr     $v0
+    0x008060: nop      
+    0x008064: andi     $a0, $s5, 0xff
+    0x008068: beql     $a0, $zero, 0x809c
+    0x00806c: andi     $a0, $s4, 0xff
+    0x008070: sll      $v0, $s0, 4
+    0x008074: addu     $v0, $sp, $v0
+    0x008078: lw       $v1, 0x14($v0)
+    0x00807c: lui      $v0, 0
+    0x008080: addiu    $v0, $v0, 0  <-- CALL
+    0x008084: beqz     $v1, 0x8090
+    0x008088: move     $a1, $zero
+    0x00808c: addiu    $a1, $zero, 1
+    0x008090: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x80b0 (in function ~cmt2300a_send_data) ===
+    0x008080: addiu    $v0, $v0, 0
+    0x008084: beqz     $v1, 0x8090
+    0x008088: move     $a1, $zero
+    0x00808c: addiu    $a1, $zero, 1
+    0x008090: jalr     $v0
+    0x008094: nop      
+    0x008098: andi     $a0, $s4, 0xff
+    0x00809c: beql     $a0, $zero, 0x80d0
+    0x0080a0: andi     $a0, $s3, 0xff
+    0x0080a4: sll      $v0, $s0, 4
+    0x0080a8: addu     $v0, $sp, $v0
+    0x0080ac: lw       $v1, 0x18($v0)
+    0x0080b0: lui      $v0, 0  <-- CALL
+    0x0080b4: addiu    $v0, $v0, 0
+    0x0080b8: beqz     $v1, 0x80c4
+    0x0080bc: move     $a1, $zero
+    0x0080c0: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x80b4 (in function ~cmt2300a_send_data) ===
+    0x008084: beqz     $v1, 0x8090
+    0x008088: move     $a1, $zero
+    0x00808c: addiu    $a1, $zero, 1
+    0x008090: jalr     $v0
+    0x008094: nop      
+    0x008098: andi     $a0, $s4, 0xff
+    0x00809c: beql     $a0, $zero, 0x80d0
+    0x0080a0: andi     $a0, $s3, 0xff
+    0x0080a4: sll      $v0, $s0, 4
+    0x0080a8: addu     $v0, $sp, $v0
+    0x0080ac: lw       $v1, 0x18($v0)
+    0x0080b0: lui      $v0, 0
+    0x0080b4: addiu    $v0, $v0, 0  <-- CALL
+    0x0080b8: beqz     $v1, 0x80c4
+    0x0080bc: move     $a1, $zero
+    0x0080c0: addiu    $a1, $zero, 1
+    0x0080c4: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x80e4 (in function ~cmt2300a_send_data) ===
+    0x0080b4: addiu    $v0, $v0, 0
+    0x0080b8: beqz     $v1, 0x80c4
+    0x0080bc: move     $a1, $zero
+    0x0080c0: addiu    $a1, $zero, 1
+    0x0080c4: jalr     $v0
+    0x0080c8: nop      
+    0x0080cc: andi     $a0, $s3, 0xff
+    0x0080d0: beql     $a0, $zero, 0x8100
+    0x0080d4: addiu    $s2, $s2, 0
+    0x0080d8: sll      $s0, $s0, 4
+    0x0080dc: addu     $s0, $sp, $s0
+    0x0080e0: lw       $v1, 0x1c($s0)
+    0x0080e4: lui      $v0, 0  <-- CALL
+    0x0080e8: addiu    $v0, $v0, 0
+    0x0080ec: beqz     $v1, 0x80f8
+    0x0080f0: move     $a1, $zero
+    0x0080f4: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x80e8 (in function ~cmt2300a_send_data) ===
+    0x0080b8: beqz     $v1, 0x80c4
+    0x0080bc: move     $a1, $zero
+    0x0080c0: addiu    $a1, $zero, 1
+    0x0080c4: jalr     $v0
+    0x0080c8: nop      
+    0x0080cc: andi     $a0, $s3, 0xff
+    0x0080d0: beql     $a0, $zero, 0x8100
+    0x0080d4: addiu    $s2, $s2, 0
+    0x0080d8: sll      $s0, $s0, 4
+    0x0080dc: addu     $s0, $sp, $s0
+    0x0080e0: lw       $v1, 0x1c($s0)
+    0x0080e4: lui      $v0, 0
+    0x0080e8: addiu    $v0, $v0, 0  <-- CALL
+    0x0080ec: beqz     $v1, 0x80f8
+    0x0080f0: move     $a1, $zero
+    0x0080f4: addiu    $a1, $zero, 1
+    0x0080f8: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x82c4 (in function ~ingenic_step_motor_run) ===
+    0x008294: addiu    $v1, $s3, 0
+    0x008298: lw       $v0, 0xcac($v1)
+    0x00829c: lhu      $t0, 0x2c($v0)
+    0x0082a0: lhu      $a0, 0x2e($v0)
+    0x0082a4: bnez     $a1, 0x8330
+    0x0082a8: lhu      $s0, 0x2a($v0)
+    0x0082ac: andi     $a0, $t0, 0xff
+    0x0082b0: sw       $a2, 0xcb0($v1)
+    0x0082b4: sw       $a3, 0xcb4($v1)
+    0x0082b8: sw       $zero, 0xcb8($v1)
+    0x0082bc: beqz     $a0, 0x82d4
+    0x0082c0: sw       $zero, 0xccc($v1)
+    0x0082c4: lui      $v0, 0  <-- CALL
+    0x0082c8: addiu    $v0, $v0, 0
+    0x0082cc: jalr     $v0
+    0x0082d0: addiu    $a1, $zero, 1
+    0x0082d4: lw       $v0, 4($s2)
+
+=== call to gpio_direction_output at .text+0x82c8 (in function ~ingenic_step_motor_run) ===
+    0x008298: lw       $v0, 0xcac($v1)
+    0x00829c: lhu      $t0, 0x2c($v0)
+    0x0082a0: lhu      $a0, 0x2e($v0)
+    0x0082a4: bnez     $a1, 0x8330
+    0x0082a8: lhu      $s0, 0x2a($v0)
+    0x0082ac: andi     $a0, $t0, 0xff
+    0x0082b0: sw       $a2, 0xcb0($v1)
+    0x0082b4: sw       $a3, 0xcb4($v1)
+    0x0082b8: sw       $zero, 0xcb8($v1)
+    0x0082bc: beqz     $a0, 0x82d4
+    0x0082c0: sw       $zero, 0xccc($v1)
+    0x0082c4: lui      $v0, 0
+    0x0082c8: addiu    $v0, $v0, 0  <-- CALL
+    0x0082cc: jalr     $v0
+    0x0082d0: addiu    $a1, $zero, 1
+    0x0082d4: lw       $v0, 4($s2)
+    0x0082d8: andi     $v0, $v0, 8
+
+=== call to gpio_direction_output at .text+0x82f0 (in function ~ingenic_step_motor_run) ===
+    0x0082c0: sw       $zero, 0xccc($v1)
+    0x0082c4: lui      $v0, 0
+    0x0082c8: addiu    $v0, $v0, 0
+    0x0082cc: jalr     $v0
+    0x0082d0: addiu    $a1, $zero, 1
+    0x0082d4: lw       $v0, 4($s2)
+    0x0082d8: andi     $v0, $v0, 8
+    0x0082dc: beql     $v0, $zero, 0x8314
+    0x0082e0: lui      $v0, 1
+    0x0082e4: andi     $a0, $s0, 0xff
+    0x0082e8: beqz     $a0, 0x8310
+    0x0082ec: srl      $s0, $s0, 8
+    0x0082f0: lui      $v0, 0  <-- CALL
+    0x0082f4: andi     $s0, $s0, 1
+    0x0082f8: addiu    $v0, $v0, 0
+    0x0082fc: beqz     $s0, 0x8308
+    0x008300: move     $a1, $zero
+
+=== call to gpio_direction_output at .text+0x82f8 (in function ~ingenic_step_motor_run) ===
+    0x0082c8: addiu    $v0, $v0, 0
+    0x0082cc: jalr     $v0
+    0x0082d0: addiu    $a1, $zero, 1
+    0x0082d4: lw       $v0, 4($s2)
+    0x0082d8: andi     $v0, $v0, 8
+    0x0082dc: beql     $v0, $zero, 0x8314
+    0x0082e0: lui      $v0, 1
+    0x0082e4: andi     $a0, $s0, 0xff
+    0x0082e8: beqz     $a0, 0x8310
+    0x0082ec: srl      $s0, $s0, 8
+    0x0082f0: lui      $v0, 0
+    0x0082f4: andi     $s0, $s0, 1
+    0x0082f8: addiu    $v0, $v0, 0  <-- CALL
+    0x0082fc: beqz     $s0, 0x8308
+    0x008300: move     $a1, $zero
+    0x008304: addiu    $a1, $zero, 1
+    0x008308: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x8354 (in function ~ingenic_step_motor_run) ===
+    0x008324: addiu    $v0, $zero, 1
+    0x008328: b        0x83c0
+    0x00832c: sw       $v0, 0xcc4($s3)
+    0x008330: addiu    $t0, $zero, 1
+    0x008334: bne      $a1, $t0, 0x83cc
+    0x008338: move     $v0, $zero
+    0x00833c: andi     $a0, $a0, 0xff
+    0x008340: sw       $a2, 0xcb0($v1)
+    0x008344: sw       $a3, 0xcb4($v1)
+    0x008348: sw       $zero, 0xcb8($v1)
+    0x00834c: beqz     $a0, 0x8364
+    0x008350: sw       $a1, 0xccc($v1)
+    0x008354: lui      $v0, 0  <-- CALL
+    0x008358: addiu    $v0, $v0, 0
+    0x00835c: jalr     $v0
+    0x008360: addiu    $a1, $zero, 1
+    0x008364: lw       $v0, 4($s2)
+
+=== call to gpio_direction_output at .text+0x8358 (in function ~ingenic_step_motor_run) ===
+    0x008328: b        0x83c0
+    0x00832c: sw       $v0, 0xcc4($s3)
+    0x008330: addiu    $t0, $zero, 1
+    0x008334: bne      $a1, $t0, 0x83cc
+    0x008338: move     $v0, $zero
+    0x00833c: andi     $a0, $a0, 0xff
+    0x008340: sw       $a2, 0xcb0($v1)
+    0x008344: sw       $a3, 0xcb4($v1)
+    0x008348: sw       $zero, 0xcb8($v1)
+    0x00834c: beqz     $a0, 0x8364
+    0x008350: sw       $a1, 0xccc($v1)
+    0x008354: lui      $v0, 0
+    0x008358: addiu    $v0, $v0, 0  <-- CALL
+    0x00835c: jalr     $v0
+    0x008360: addiu    $a1, $zero, 1
+    0x008364: lw       $v0, 4($s2)
+    0x008368: andi     $v0, $v0, 8
+
+=== call to gpio_direction_output at .text+0x8384 (in function ~ingenic_step_motor_run) ===
+    0x008354: lui      $v0, 0
+    0x008358: addiu    $v0, $v0, 0
+    0x00835c: jalr     $v0
+    0x008360: addiu    $a1, $zero, 1
+    0x008364: lw       $v0, 4($s2)
+    0x008368: andi     $v0, $v0, 8
+    0x00836c: beqz     $v0, 0x83a8
+    0x008370: lui      $v0, 1
+    0x008374: andi     $a0, $s0, 0xff
+    0x008378: beqz     $a0, 0x83ac
+    0x00837c: addiu    $v0, $v0, -0x7ec4
+    0x008380: srl      $s0, $s0, 8
+    0x008384: lui      $v0, 0  <-- CALL
+    0x008388: andi     $s0, $s0, 1
+    0x00838c: addiu    $v0, $v0, 0
+    0x008390: bnez     $s0, 0x839c
+    0x008394: move     $a1, $zero
+
+=== call to gpio_direction_output at .text+0x838c (in function ~ingenic_step_motor_run) ===
+    0x00835c: jalr     $v0
+    0x008360: addiu    $a1, $zero, 1
+    0x008364: lw       $v0, 4($s2)
+    0x008368: andi     $v0, $v0, 8
+    0x00836c: beqz     $v0, 0x83a8
+    0x008370: lui      $v0, 1
+    0x008374: andi     $a0, $s0, 0xff
+    0x008378: beqz     $a0, 0x83ac
+    0x00837c: addiu    $v0, $v0, -0x7ec4
+    0x008380: srl      $s0, $s0, 8
+    0x008384: lui      $v0, 0
+    0x008388: andi     $s0, $s0, 1
+    0x00838c: addiu    $v0, $v0, 0  <-- CALL
+    0x008390: bnez     $s0, 0x839c
+    0x008394: move     $a1, $zero
+    0x008398: addiu    $a1, $zero, 1
+    0x00839c: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x84ec (in function ~ingenic_step_motor_stop) ===
+    0x0084bc: lhu      $s5, 0x2e($v0)
+    0x0084c0: lui      $v0, 0
+    0x0084c4: addiu    $v0, $v0, 0x7ccc
+    0x0084c8: jalr     $v0
+    0x0084cc: nop      
+    0x0084d0: lui      $v0, 0
+    0x0084d4: addiu    $v0, $v0, 0
+    0x0084d8: jalr     $v0
+    0x0084dc: addiu    $a0, $zero, 0x14
+    0x0084e0: andi     $a0, $s4, 0xff
+    0x0084e4: beql     $a0, $zero, 0x8500
+    0x0084e8: andi     $a0, $s3, 0xff
+    0x0084ec: lui      $v0, 0  <-- CALL
+    0x0084f0: addiu    $v0, $v0, 0
+    0x0084f4: jalr     $v0
+    0x0084f8: move     $a1, $zero
+    0x0084fc: andi     $a0, $s3, 0xff
+
+=== call to gpio_direction_output at .text+0x84f0 (in function ~ingenic_step_motor_stop) ===
+    0x0084c0: lui      $v0, 0
+    0x0084c4: addiu    $v0, $v0, 0x7ccc
+    0x0084c8: jalr     $v0
+    0x0084cc: nop      
+    0x0084d0: lui      $v0, 0
+    0x0084d4: addiu    $v0, $v0, 0
+    0x0084d8: jalr     $v0
+    0x0084dc: addiu    $a0, $zero, 0x14
+    0x0084e0: andi     $a0, $s4, 0xff
+    0x0084e4: beql     $a0, $zero, 0x8500
+    0x0084e8: andi     $a0, $s3, 0xff
+    0x0084ec: lui      $v0, 0
+    0x0084f0: addiu    $v0, $v0, 0  <-- CALL
+    0x0084f4: jalr     $v0
+    0x0084f8: move     $a1, $zero
+    0x0084fc: andi     $a0, $s3, 0xff
+    0x008500: beql     $a0, $zero, 0x851c
+
+=== call to gpio_direction_output at .text+0x8508 (in function ~ingenic_step_motor_stop) ===
+    0x0084d8: jalr     $v0
+    0x0084dc: addiu    $a0, $zero, 0x14
+    0x0084e0: andi     $a0, $s4, 0xff
+    0x0084e4: beql     $a0, $zero, 0x8500
+    0x0084e8: andi     $a0, $s3, 0xff
+    0x0084ec: lui      $v0, 0
+    0x0084f0: addiu    $v0, $v0, 0
+    0x0084f4: jalr     $v0
+    0x0084f8: move     $a1, $zero
+    0x0084fc: andi     $a0, $s3, 0xff
+    0x008500: beql     $a0, $zero, 0x851c
+    0x008504: andi     $a0, $s2, 0xff
+    0x008508: lui      $v0, 0  <-- CALL
+    0x00850c: addiu    $v0, $v0, 0
+    0x008510: jalr     $v0
+    0x008514: move     $a1, $zero
+    0x008518: andi     $a0, $s2, 0xff
+
+=== call to gpio_direction_output at .text+0x850c (in function ~ingenic_step_motor_stop) ===
+    0x0084dc: addiu    $a0, $zero, 0x14
+    0x0084e0: andi     $a0, $s4, 0xff
+    0x0084e4: beql     $a0, $zero, 0x8500
+    0x0084e8: andi     $a0, $s3, 0xff
+    0x0084ec: lui      $v0, 0
+    0x0084f0: addiu    $v0, $v0, 0
+    0x0084f4: jalr     $v0
+    0x0084f8: move     $a1, $zero
+    0x0084fc: andi     $a0, $s3, 0xff
+    0x008500: beql     $a0, $zero, 0x851c
+    0x008504: andi     $a0, $s2, 0xff
+    0x008508: lui      $v0, 0
+    0x00850c: addiu    $v0, $v0, 0  <-- CALL
+    0x008510: jalr     $v0
+    0x008514: move     $a1, $zero
+    0x008518: andi     $a0, $s2, 0xff
+    0x00851c: beql     $a0, $zero, 0x8538
+
+=== call to gpio_direction_output at .text+0x8524 (in function ~ingenic_step_motor_stop) ===
+    0x0084f4: jalr     $v0
+    0x0084f8: move     $a1, $zero
+    0x0084fc: andi     $a0, $s3, 0xff
+    0x008500: beql     $a0, $zero, 0x851c
+    0x008504: andi     $a0, $s2, 0xff
+    0x008508: lui      $v0, 0
+    0x00850c: addiu    $v0, $v0, 0
+    0x008510: jalr     $v0
+    0x008514: move     $a1, $zero
+    0x008518: andi     $a0, $s2, 0xff
+    0x00851c: beql     $a0, $zero, 0x8538
+    0x008520: andi     $a0, $s1, 0xff
+    0x008524: lui      $v0, 0  <-- CALL
+    0x008528: addiu    $v0, $v0, 0
+    0x00852c: jalr     $v0
+    0x008530: move     $a1, $zero
+    0x008534: andi     $a0, $s1, 0xff
+
+=== call to gpio_direction_output at .text+0x8528 (in function ~ingenic_step_motor_stop) ===
+    0x0084f8: move     $a1, $zero
+    0x0084fc: andi     $a0, $s3, 0xff
+    0x008500: beql     $a0, $zero, 0x851c
+    0x008504: andi     $a0, $s2, 0xff
+    0x008508: lui      $v0, 0
+    0x00850c: addiu    $v0, $v0, 0
+    0x008510: jalr     $v0
+    0x008514: move     $a1, $zero
+    0x008518: andi     $a0, $s2, 0xff
+    0x00851c: beql     $a0, $zero, 0x8538
+    0x008520: andi     $a0, $s1, 0xff
+    0x008524: lui      $v0, 0
+    0x008528: addiu    $v0, $v0, 0  <-- CALL
+    0x00852c: jalr     $v0
+    0x008530: move     $a1, $zero
+    0x008534: andi     $a0, $s1, 0xff
+    0x008538: beql     $a0, $zero, 0x8554
+
+=== call to gpio_direction_output at .text+0x8540 (in function ~ingenic_step_motor_stop) ===
+    0x008510: jalr     $v0
+    0x008514: move     $a1, $zero
+    0x008518: andi     $a0, $s2, 0xff
+    0x00851c: beql     $a0, $zero, 0x8538
+    0x008520: andi     $a0, $s1, 0xff
+    0x008524: lui      $v0, 0
+    0x008528: addiu    $v0, $v0, 0
+    0x00852c: jalr     $v0
+    0x008530: move     $a1, $zero
+    0x008534: andi     $a0, $s1, 0xff
+    0x008538: beql     $a0, $zero, 0x8554
+    0x00853c: andi     $a0, $s6, 0xff
+    0x008540: lui      $v0, 0  <-- CALL
+    0x008544: addiu    $v0, $v0, 0
+    0x008548: jalr     $v0
+    0x00854c: move     $a1, $zero
+    0x008550: andi     $a0, $s6, 0xff
+
+=== call to gpio_direction_output at .text+0x8544 (in function ~ingenic_step_motor_stop) ===
+    0x008514: move     $a1, $zero
+    0x008518: andi     $a0, $s2, 0xff
+    0x00851c: beql     $a0, $zero, 0x8538
+    0x008520: andi     $a0, $s1, 0xff
+    0x008524: lui      $v0, 0
+    0x008528: addiu    $v0, $v0, 0
+    0x00852c: jalr     $v0
+    0x008530: move     $a1, $zero
+    0x008534: andi     $a0, $s1, 0xff
+    0x008538: beql     $a0, $zero, 0x8554
+    0x00853c: andi     $a0, $s6, 0xff
+    0x008540: lui      $v0, 0
+    0x008544: addiu    $v0, $v0, 0  <-- CALL
+    0x008548: jalr     $v0
+    0x00854c: move     $a1, $zero
+    0x008550: andi     $a0, $s6, 0xff
+    0x008554: beql     $a0, $zero, 0x8570
+
+=== call to gpio_direction_output at .text+0x855c (in function ~ingenic_step_motor_stop) ===
+    0x00852c: jalr     $v0
+    0x008530: move     $a1, $zero
+    0x008534: andi     $a0, $s1, 0xff
+    0x008538: beql     $a0, $zero, 0x8554
+    0x00853c: andi     $a0, $s6, 0xff
+    0x008540: lui      $v0, 0
+    0x008544: addiu    $v0, $v0, 0
+    0x008548: jalr     $v0
+    0x00854c: move     $a1, $zero
+    0x008550: andi     $a0, $s6, 0xff
+    0x008554: beql     $a0, $zero, 0x8570
+    0x008558: addiu    $v0, $s0, 0
+    0x00855c: lui      $v0, 0  <-- CALL
+    0x008560: addiu    $v0, $v0, 0
+    0x008564: jalr     $v0
+    0x008568: move     $a1, $zero
+    0x00856c: addiu    $v0, $s0, 0
+
+=== call to gpio_direction_output at .text+0x8560 (in function ~ingenic_step_motor_stop) ===
+    0x008530: move     $a1, $zero
+    0x008534: andi     $a0, $s1, 0xff
+    0x008538: beql     $a0, $zero, 0x8554
+    0x00853c: andi     $a0, $s6, 0xff
+    0x008540: lui      $v0, 0
+    0x008544: addiu    $v0, $v0, 0
+    0x008548: jalr     $v0
+    0x00854c: move     $a1, $zero
+    0x008550: andi     $a0, $s6, 0xff
+    0x008554: beql     $a0, $zero, 0x8570
+    0x008558: addiu    $v0, $s0, 0
+    0x00855c: lui      $v0, 0
+    0x008560: addiu    $v0, $v0, 0  <-- CALL
+    0x008564: jalr     $v0
+    0x008568: move     $a1, $zero
+    0x00856c: addiu    $v0, $s0, 0
+    0x008570: b        0x8638
+
+=== call to gpio_direction_output at .text+0x85b0 (in function ~ingenic_step_motor_stop) ===
+    0x008580: addiu    $s0, $s0, 0
+    0x008584: lui      $v0, 0
+    0x008588: addiu    $v0, $v0, 0x7ccc
+    0x00858c: jalr     $v0
+    0x008590: nop      
+    0x008594: lui      $v0, 0
+    0x008598: addiu    $v0, $v0, 0
+    0x00859c: jalr     $v0
+    0x0085a0: addiu    $a0, $zero, 0x14
+    0x0085a4: andi     $a0, $s4, 0xff
+    0x0085a8: beql     $a0, $zero, 0x85c4
+    0x0085ac: andi     $a0, $s3, 0xff
+    0x0085b0: lui      $v0, 0  <-- CALL
+    0x0085b4: addiu    $v0, $v0, 0
+    0x0085b8: jalr     $v0
+    0x0085bc: move     $a1, $zero
+    0x0085c0: andi     $a0, $s3, 0xff
+
+=== call to gpio_direction_output at .text+0x85b4 (in function ~ingenic_step_motor_stop) ===
+    0x008584: lui      $v0, 0
+    0x008588: addiu    $v0, $v0, 0x7ccc
+    0x00858c: jalr     $v0
+    0x008590: nop      
+    0x008594: lui      $v0, 0
+    0x008598: addiu    $v0, $v0, 0
+    0x00859c: jalr     $v0
+    0x0085a0: addiu    $a0, $zero, 0x14
+    0x0085a4: andi     $a0, $s4, 0xff
+    0x0085a8: beql     $a0, $zero, 0x85c4
+    0x0085ac: andi     $a0, $s3, 0xff
+    0x0085b0: lui      $v0, 0
+    0x0085b4: addiu    $v0, $v0, 0  <-- CALL
+    0x0085b8: jalr     $v0
+    0x0085bc: move     $a1, $zero
+    0x0085c0: andi     $a0, $s3, 0xff
+    0x0085c4: beql     $a0, $zero, 0x85e0
+
+=== call to gpio_direction_output at .text+0x85cc (in function ~ingenic_step_motor_stop) ===
+    0x00859c: jalr     $v0
+    0x0085a0: addiu    $a0, $zero, 0x14
+    0x0085a4: andi     $a0, $s4, 0xff
+    0x0085a8: beql     $a0, $zero, 0x85c4
+    0x0085ac: andi     $a0, $s3, 0xff
+    0x0085b0: lui      $v0, 0
+    0x0085b4: addiu    $v0, $v0, 0
+    0x0085b8: jalr     $v0
+    0x0085bc: move     $a1, $zero
+    0x0085c0: andi     $a0, $s3, 0xff
+    0x0085c4: beql     $a0, $zero, 0x85e0
+    0x0085c8: andi     $a0, $s2, 0xff
+    0x0085cc: lui      $v0, 0  <-- CALL
+    0x0085d0: addiu    $v0, $v0, 0
+    0x0085d4: jalr     $v0
+    0x0085d8: move     $a1, $zero
+    0x0085dc: andi     $a0, $s2, 0xff
+
+=== call to gpio_direction_output at .text+0x85d0 (in function ~ingenic_step_motor_stop) ===
+    0x0085a0: addiu    $a0, $zero, 0x14
+    0x0085a4: andi     $a0, $s4, 0xff
+    0x0085a8: beql     $a0, $zero, 0x85c4
+    0x0085ac: andi     $a0, $s3, 0xff
+    0x0085b0: lui      $v0, 0
+    0x0085b4: addiu    $v0, $v0, 0
+    0x0085b8: jalr     $v0
+    0x0085bc: move     $a1, $zero
+    0x0085c0: andi     $a0, $s3, 0xff
+    0x0085c4: beql     $a0, $zero, 0x85e0
+    0x0085c8: andi     $a0, $s2, 0xff
+    0x0085cc: lui      $v0, 0
+    0x0085d0: addiu    $v0, $v0, 0  <-- CALL
+    0x0085d4: jalr     $v0
+    0x0085d8: move     $a1, $zero
+    0x0085dc: andi     $a0, $s2, 0xff
+    0x0085e0: beql     $a0, $zero, 0x85fc
+
+=== call to gpio_direction_output at .text+0x85e8 (in function ~ingenic_step_motor_stop) ===
+    0x0085b8: jalr     $v0
+    0x0085bc: move     $a1, $zero
+    0x0085c0: andi     $a0, $s3, 0xff
+    0x0085c4: beql     $a0, $zero, 0x85e0
+    0x0085c8: andi     $a0, $s2, 0xff
+    0x0085cc: lui      $v0, 0
+    0x0085d0: addiu    $v0, $v0, 0
+    0x0085d4: jalr     $v0
+    0x0085d8: move     $a1, $zero
+    0x0085dc: andi     $a0, $s2, 0xff
+    0x0085e0: beql     $a0, $zero, 0x85fc
+    0x0085e4: andi     $a0, $s1, 0xff
+    0x0085e8: lui      $v0, 0  <-- CALL
+    0x0085ec: addiu    $v0, $v0, 0
+    0x0085f0: jalr     $v0
+    0x0085f4: move     $a1, $zero
+    0x0085f8: andi     $a0, $s1, 0xff
+
+=== call to gpio_direction_output at .text+0x85ec (in function ~ingenic_step_motor_stop) ===
+    0x0085bc: move     $a1, $zero
+    0x0085c0: andi     $a0, $s3, 0xff
+    0x0085c4: beql     $a0, $zero, 0x85e0
+    0x0085c8: andi     $a0, $s2, 0xff
+    0x0085cc: lui      $v0, 0
+    0x0085d0: addiu    $v0, $v0, 0
+    0x0085d4: jalr     $v0
+    0x0085d8: move     $a1, $zero
+    0x0085dc: andi     $a0, $s2, 0xff
+    0x0085e0: beql     $a0, $zero, 0x85fc
+    0x0085e4: andi     $a0, $s1, 0xff
+    0x0085e8: lui      $v0, 0
+    0x0085ec: addiu    $v0, $v0, 0  <-- CALL
+    0x0085f0: jalr     $v0
+    0x0085f4: move     $a1, $zero
+    0x0085f8: andi     $a0, $s1, 0xff
+    0x0085fc: beql     $a0, $zero, 0x8618
+
+=== call to gpio_direction_output at .text+0x8604 (in function ~ingenic_step_motor_stop) ===
+    0x0085d4: jalr     $v0
+    0x0085d8: move     $a1, $zero
+    0x0085dc: andi     $a0, $s2, 0xff
+    0x0085e0: beql     $a0, $zero, 0x85fc
+    0x0085e4: andi     $a0, $s1, 0xff
+    0x0085e8: lui      $v0, 0
+    0x0085ec: addiu    $v0, $v0, 0
+    0x0085f0: jalr     $v0
+    0x0085f4: move     $a1, $zero
+    0x0085f8: andi     $a0, $s1, 0xff
+    0x0085fc: beql     $a0, $zero, 0x8618
+    0x008600: andi     $a0, $s5, 0xff
+    0x008604: lui      $v0, 0  <-- CALL
+    0x008608: addiu    $v0, $v0, 0
+    0x00860c: jalr     $v0
+    0x008610: move     $a1, $zero
+    0x008614: andi     $a0, $s5, 0xff
+
+=== call to gpio_direction_output at .text+0x8608 (in function ~ingenic_step_motor_stop) ===
+    0x0085d8: move     $a1, $zero
+    0x0085dc: andi     $a0, $s2, 0xff
+    0x0085e0: beql     $a0, $zero, 0x85fc
+    0x0085e4: andi     $a0, $s1, 0xff
+    0x0085e8: lui      $v0, 0
+    0x0085ec: addiu    $v0, $v0, 0
+    0x0085f0: jalr     $v0
+    0x0085f4: move     $a1, $zero
+    0x0085f8: andi     $a0, $s1, 0xff
+    0x0085fc: beql     $a0, $zero, 0x8618
+    0x008600: andi     $a0, $s5, 0xff
+    0x008604: lui      $v0, 0
+    0x008608: addiu    $v0, $v0, 0  <-- CALL
+    0x00860c: jalr     $v0
+    0x008610: move     $a1, $zero
+    0x008614: andi     $a0, $s5, 0xff
+    0x008618: beql     $a0, $zero, 0x8634
+
+=== call to gpio_direction_output at .text+0x8620 (in function ~ingenic_step_motor_stop) ===
+    0x0085f0: jalr     $v0
+    0x0085f4: move     $a1, $zero
+    0x0085f8: andi     $a0, $s1, 0xff
+    0x0085fc: beql     $a0, $zero, 0x8618
+    0x008600: andi     $a0, $s5, 0xff
+    0x008604: lui      $v0, 0
+    0x008608: addiu    $v0, $v0, 0
+    0x00860c: jalr     $v0
+    0x008610: move     $a1, $zero
+    0x008614: andi     $a0, $s5, 0xff
+    0x008618: beql     $a0, $zero, 0x8634
+    0x00861c: addiu    $v0, $s0, 0
+    0x008620: lui      $v0, 0  <-- CALL
+    0x008624: addiu    $v0, $v0, 0
+    0x008628: jalr     $v0
+    0x00862c: move     $a1, $zero
+    0x008630: addiu    $v0, $s0, 0
+
+=== call to gpio_direction_output at .text+0x8624 (in function ~ingenic_step_motor_stop) ===
+    0x0085f4: move     $a1, $zero
+    0x0085f8: andi     $a0, $s1, 0xff
+    0x0085fc: beql     $a0, $zero, 0x8618
+    0x008600: andi     $a0, $s5, 0xff
+    0x008604: lui      $v0, 0
+    0x008608: addiu    $v0, $v0, 0
+    0x00860c: jalr     $v0
+    0x008610: move     $a1, $zero
+    0x008614: andi     $a0, $s5, 0xff
+    0x008618: beql     $a0, $zero, 0x8634
+    0x00861c: addiu    $v0, $s0, 0
+    0x008620: lui      $v0, 0
+    0x008624: addiu    $v0, $v0, 0  <-- CALL
+    0x008628: jalr     $v0
+    0x00862c: move     $a1, $zero
+    0x008630: addiu    $v0, $s0, 0
+    0x008634: sw       $zero, 0xcc8($v0)
+
+=== call to gpio_direction_output at .text+0x8ca8 (in function ~ingenic_motor_timer_exit) ===
+    0x008c78: sltu     $v0, $v1, $v0
+    0x008c7c: bnel     $v0, $zero, 0x8d18
+    0x008c80: lw       $v0, 0xccc($s1)
+    0x008c84: lui      $v0, 1
+    0x008c88: addiu    $v0, $v0, -0x74e8
+    0x008c8c: jalr     $v0
+    0x008c90: nop      
+    0x008c94: lw       $v0, 0xccc($s1)
+    0x008c98: bnez     $v0, 0x8e2c
+    0x008c9c: andi     $a0, $s6, 0xff
+    0x008ca0: beql     $a0, $zero, 0x8cbc
+    0x008ca4: andi     $a0, $s5, 0xff
+    0x008ca8: lui      $v0, 0  <-- CALL
+    0x008cac: addiu    $v0, $v0, 0
+    0x008cb0: jalr     $v0
+    0x008cb4: move     $a1, $zero
+    0x008cb8: andi     $a0, $s5, 0xff
+
+=== call to gpio_direction_output at .text+0x8cac (in function ~ingenic_motor_timer_exit) ===
+    0x008c7c: bnel     $v0, $zero, 0x8d18
+    0x008c80: lw       $v0, 0xccc($s1)
+    0x008c84: lui      $v0, 1
+    0x008c88: addiu    $v0, $v0, -0x74e8
+    0x008c8c: jalr     $v0
+    0x008c90: nop      
+    0x008c94: lw       $v0, 0xccc($s1)
+    0x008c98: bnez     $v0, 0x8e2c
+    0x008c9c: andi     $a0, $s6, 0xff
+    0x008ca0: beql     $a0, $zero, 0x8cbc
+    0x008ca4: andi     $a0, $s5, 0xff
+    0x008ca8: lui      $v0, 0
+    0x008cac: addiu    $v0, $v0, 0  <-- CALL
+    0x008cb0: jalr     $v0
+    0x008cb4: move     $a1, $zero
+    0x008cb8: andi     $a0, $s5, 0xff
+    0x008cbc: beql     $a0, $zero, 0x8cd8
+
+=== call to gpio_direction_output at .text+0x8cc4 (in function ~ingenic_motor_timer_exit) ===
+    0x008c94: lw       $v0, 0xccc($s1)
+    0x008c98: bnez     $v0, 0x8e2c
+    0x008c9c: andi     $a0, $s6, 0xff
+    0x008ca0: beql     $a0, $zero, 0x8cbc
+    0x008ca4: andi     $a0, $s5, 0xff
+    0x008ca8: lui      $v0, 0
+    0x008cac: addiu    $v0, $v0, 0
+    0x008cb0: jalr     $v0
+    0x008cb4: move     $a1, $zero
+    0x008cb8: andi     $a0, $s5, 0xff
+    0x008cbc: beql     $a0, $zero, 0x8cd8
+    0x008cc0: andi     $a0, $s4, 0xff
+    0x008cc4: lui      $v0, 0  <-- CALL
+    0x008cc8: addiu    $v0, $v0, 0
+    0x008ccc: jalr     $v0
+    0x008cd0: move     $a1, $zero
+    0x008cd4: andi     $a0, $s4, 0xff
+
+=== call to gpio_direction_output at .text+0x8cc8 (in function ~ingenic_motor_timer_exit) ===
+    0x008c98: bnez     $v0, 0x8e2c
+    0x008c9c: andi     $a0, $s6, 0xff
+    0x008ca0: beql     $a0, $zero, 0x8cbc
+    0x008ca4: andi     $a0, $s5, 0xff
+    0x008ca8: lui      $v0, 0
+    0x008cac: addiu    $v0, $v0, 0
+    0x008cb0: jalr     $v0
+    0x008cb4: move     $a1, $zero
+    0x008cb8: andi     $a0, $s5, 0xff
+    0x008cbc: beql     $a0, $zero, 0x8cd8
+    0x008cc0: andi     $a0, $s4, 0xff
+    0x008cc4: lui      $v0, 0
+    0x008cc8: addiu    $v0, $v0, 0  <-- CALL
+    0x008ccc: jalr     $v0
+    0x008cd0: move     $a1, $zero
+    0x008cd4: andi     $a0, $s4, 0xff
+    0x008cd8: beql     $a0, $zero, 0x8cf4
+
+=== call to gpio_direction_output at .text+0x8ce0 (in function ~ingenic_motor_timer_exit) ===
+    0x008cb0: jalr     $v0
+    0x008cb4: move     $a1, $zero
+    0x008cb8: andi     $a0, $s5, 0xff
+    0x008cbc: beql     $a0, $zero, 0x8cd8
+    0x008cc0: andi     $a0, $s4, 0xff
+    0x008cc4: lui      $v0, 0
+    0x008cc8: addiu    $v0, $v0, 0
+    0x008ccc: jalr     $v0
+    0x008cd0: move     $a1, $zero
+    0x008cd4: andi     $a0, $s4, 0xff
+    0x008cd8: beql     $a0, $zero, 0x8cf4
+    0x008cdc: andi     $a0, $s3, 0xff
+    0x008ce0: lui      $v0, 0  <-- CALL
+    0x008ce4: addiu    $v0, $v0, 0
+    0x008ce8: jalr     $v0
+    0x008cec: move     $a1, $zero
+    0x008cf0: andi     $a0, $s3, 0xff
+
+=== call to gpio_direction_output at .text+0x8ce4 (in function ~ingenic_motor_timer_exit) ===
+    0x008cb4: move     $a1, $zero
+    0x008cb8: andi     $a0, $s5, 0xff
+    0x008cbc: beql     $a0, $zero, 0x8cd8
+    0x008cc0: andi     $a0, $s4, 0xff
+    0x008cc4: lui      $v0, 0
+    0x008cc8: addiu    $v0, $v0, 0
+    0x008ccc: jalr     $v0
+    0x008cd0: move     $a1, $zero
+    0x008cd4: andi     $a0, $s4, 0xff
+    0x008cd8: beql     $a0, $zero, 0x8cf4
+    0x008cdc: andi     $a0, $s3, 0xff
+    0x008ce0: lui      $v0, 0
+    0x008ce4: addiu    $v0, $v0, 0  <-- CALL
+    0x008ce8: jalr     $v0
+    0x008cec: move     $a1, $zero
+    0x008cf0: andi     $a0, $s3, 0xff
+    0x008cf4: beql     $a0, $zero, 0x8d10
+
+=== call to gpio_direction_output at .text+0x8cfc (in function ~ingenic_motor_timer_exit) ===
+    0x008ccc: jalr     $v0
+    0x008cd0: move     $a1, $zero
+    0x008cd4: andi     $a0, $s4, 0xff
+    0x008cd8: beql     $a0, $zero, 0x8cf4
+    0x008cdc: andi     $a0, $s3, 0xff
+    0x008ce0: lui      $v0, 0
+    0x008ce4: addiu    $v0, $v0, 0
+    0x008ce8: jalr     $v0
+    0x008cec: move     $a1, $zero
+    0x008cf0: andi     $a0, $s3, 0xff
+    0x008cf4: beql     $a0, $zero, 0x8d10
+    0x008cf8: addiu    $s2, $s2, 0
+    0x008cfc: lui      $v0, 0  <-- CALL
+    0x008d00: addiu    $v0, $v0, 0
+    0x008d04: jalr     $v0
+    0x008d08: move     $a1, $zero
+    0x008d0c: addiu    $s2, $s2, 0
+
+=== call to gpio_direction_output at .text+0x8d00 (in function ~ingenic_motor_timer_exit) ===
+    0x008cd0: move     $a1, $zero
+    0x008cd4: andi     $a0, $s4, 0xff
+    0x008cd8: beql     $a0, $zero, 0x8cf4
+    0x008cdc: andi     $a0, $s3, 0xff
+    0x008ce0: lui      $v0, 0
+    0x008ce4: addiu    $v0, $v0, 0
+    0x008ce8: jalr     $v0
+    0x008cec: move     $a1, $zero
+    0x008cf0: andi     $a0, $s3, 0xff
+    0x008cf4: beql     $a0, $zero, 0x8d10
+    0x008cf8: addiu    $s2, $s2, 0
+    0x008cfc: lui      $v0, 0
+    0x008d00: addiu    $v0, $v0, 0  <-- CALL
+    0x008d04: jalr     $v0
+    0x008d08: move     $a1, $zero
+    0x008d0c: addiu    $s2, $s2, 0
+    0x008d10: b        0x8e2c
+
+=== call to gpio_direction_output at .text+0x8d68 (in function ~ingenic_motor_timer_exit) ===
+    0x008d38: b        0x8d48
+    0x008d3c: movn     $s0, $v1, $v0
+    0x008d40: addiu    $s0, $v0, 1
+    0x008d44: andi     $s0, $s0, 7
+    0x008d48: addiu    $v0, $s2, 0
+    0x008d4c: sw       $s0, 0xcbc($v0)
+    0x008d50: andi     $a0, $s6, 0xff
+    0x008d54: beql     $a0, $zero, 0x8d88
+    0x008d58: andi     $a0, $s5, 0xff
+    0x008d5c: sll      $v0, $s0, 4
+    0x008d60: addu     $v0, $sp, $v0
+    0x008d64: lw       $v1, 0x10($v0)
+    0x008d68: lui      $v0, 0  <-- CALL
+    0x008d6c: addiu    $v0, $v0, 0
+    0x008d70: beqz     $v1, 0x8d7c
+    0x008d74: move     $a1, $zero
+    0x008d78: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x8d6c (in function ~ingenic_motor_timer_exit) ===
+    0x008d3c: movn     $s0, $v1, $v0
+    0x008d40: addiu    $s0, $v0, 1
+    0x008d44: andi     $s0, $s0, 7
+    0x008d48: addiu    $v0, $s2, 0
+    0x008d4c: sw       $s0, 0xcbc($v0)
+    0x008d50: andi     $a0, $s6, 0xff
+    0x008d54: beql     $a0, $zero, 0x8d88
+    0x008d58: andi     $a0, $s5, 0xff
+    0x008d5c: sll      $v0, $s0, 4
+    0x008d60: addu     $v0, $sp, $v0
+    0x008d64: lw       $v1, 0x10($v0)
+    0x008d68: lui      $v0, 0
+    0x008d6c: addiu    $v0, $v0, 0  <-- CALL
+    0x008d70: beqz     $v1, 0x8d7c
+    0x008d74: move     $a1, $zero
+    0x008d78: addiu    $a1, $zero, 1
+    0x008d7c: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x8d9c (in function ~ingenic_motor_timer_exit) ===
+    0x008d6c: addiu    $v0, $v0, 0
+    0x008d70: beqz     $v1, 0x8d7c
+    0x008d74: move     $a1, $zero
+    0x008d78: addiu    $a1, $zero, 1
+    0x008d7c: jalr     $v0
+    0x008d80: nop      
+    0x008d84: andi     $a0, $s5, 0xff
+    0x008d88: beql     $a0, $zero, 0x8dbc
+    0x008d8c: andi     $a0, $s4, 0xff
+    0x008d90: sll      $v0, $s0, 4
+    0x008d94: addu     $v0, $sp, $v0
+    0x008d98: lw       $v1, 0x14($v0)
+    0x008d9c: lui      $v0, 0  <-- CALL
+    0x008da0: addiu    $v0, $v0, 0
+    0x008da4: beqz     $v1, 0x8db0
+    0x008da8: move     $a1, $zero
+    0x008dac: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x8da0 (in function ~ingenic_motor_timer_exit) ===
+    0x008d70: beqz     $v1, 0x8d7c
+    0x008d74: move     $a1, $zero
+    0x008d78: addiu    $a1, $zero, 1
+    0x008d7c: jalr     $v0
+    0x008d80: nop      
+    0x008d84: andi     $a0, $s5, 0xff
+    0x008d88: beql     $a0, $zero, 0x8dbc
+    0x008d8c: andi     $a0, $s4, 0xff
+    0x008d90: sll      $v0, $s0, 4
+    0x008d94: addu     $v0, $sp, $v0
+    0x008d98: lw       $v1, 0x14($v0)
+    0x008d9c: lui      $v0, 0
+    0x008da0: addiu    $v0, $v0, 0  <-- CALL
+    0x008da4: beqz     $v1, 0x8db0
+    0x008da8: move     $a1, $zero
+    0x008dac: addiu    $a1, $zero, 1
+    0x008db0: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x8dd0 (in function ~ingenic_motor_timer_exit) ===
+    0x008da0: addiu    $v0, $v0, 0
+    0x008da4: beqz     $v1, 0x8db0
+    0x008da8: move     $a1, $zero
+    0x008dac: addiu    $a1, $zero, 1
+    0x008db0: jalr     $v0
+    0x008db4: nop      
+    0x008db8: andi     $a0, $s4, 0xff
+    0x008dbc: beql     $a0, $zero, 0x8df0
+    0x008dc0: andi     $a0, $s3, 0xff
+    0x008dc4: sll      $v0, $s0, 4
+    0x008dc8: addu     $v0, $sp, $v0
+    0x008dcc: lw       $v1, 0x18($v0)
+    0x008dd0: lui      $v0, 0  <-- CALL
+    0x008dd4: addiu    $v0, $v0, 0
+    0x008dd8: beqz     $v1, 0x8de4
+    0x008ddc: move     $a1, $zero
+    0x008de0: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x8dd4 (in function ~ingenic_motor_timer_exit) ===
+    0x008da4: beqz     $v1, 0x8db0
+    0x008da8: move     $a1, $zero
+    0x008dac: addiu    $a1, $zero, 1
+    0x008db0: jalr     $v0
+    0x008db4: nop      
+    0x008db8: andi     $a0, $s4, 0xff
+    0x008dbc: beql     $a0, $zero, 0x8df0
+    0x008dc0: andi     $a0, $s3, 0xff
+    0x008dc4: sll      $v0, $s0, 4
+    0x008dc8: addu     $v0, $sp, $v0
+    0x008dcc: lw       $v1, 0x18($v0)
+    0x008dd0: lui      $v0, 0
+    0x008dd4: addiu    $v0, $v0, 0  <-- CALL
+    0x008dd8: beqz     $v1, 0x8de4
+    0x008ddc: move     $a1, $zero
+    0x008de0: addiu    $a1, $zero, 1
+    0x008de4: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x8e04 (in function ~ingenic_motor_timer_exit) ===
+    0x008dd4: addiu    $v0, $v0, 0
+    0x008dd8: beqz     $v1, 0x8de4
+    0x008ddc: move     $a1, $zero
+    0x008de0: addiu    $a1, $zero, 1
+    0x008de4: jalr     $v0
+    0x008de8: nop      
+    0x008dec: andi     $a0, $s3, 0xff
+    0x008df0: beql     $a0, $zero, 0x8e20
+    0x008df4: addiu    $s2, $s2, 0
+    0x008df8: sll      $s0, $s0, 4
+    0x008dfc: addu     $s0, $sp, $s0
+    0x008e00: lw       $v1, 0x1c($s0)
+    0x008e04: lui      $v0, 0  <-- CALL
+    0x008e08: addiu    $v0, $v0, 0
+    0x008e0c: beqz     $v1, 0x8e18
+    0x008e10: move     $a1, $zero
+    0x008e14: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x8e08 (in function ~ingenic_motor_timer_exit) ===
+    0x008dd8: beqz     $v1, 0x8de4
+    0x008ddc: move     $a1, $zero
+    0x008de0: addiu    $a1, $zero, 1
+    0x008de4: jalr     $v0
+    0x008de8: nop      
+    0x008dec: andi     $a0, $s3, 0xff
+    0x008df0: beql     $a0, $zero, 0x8e20
+    0x008df4: addiu    $s2, $s2, 0
+    0x008df8: sll      $s0, $s0, 4
+    0x008dfc: addu     $s0, $sp, $s0
+    0x008e00: lw       $v1, 0x1c($s0)
+    0x008e04: lui      $v0, 0
+    0x008e08: addiu    $v0, $v0, 0  <-- CALL
+    0x008e0c: beqz     $v1, 0x8e18
+    0x008e10: move     $a1, $zero
+    0x008e14: addiu    $a1, $zero, 1
+    0x008e18: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x8ff0 (in function ~ingenic_motor_timer_exit) ===
+    0x008fc0: lw       $v1, 0xcdc($s1)
+    0x008fc4: lui      $v0, 1
+    0x008fc8: addiu    $v0, $v0, -0x71a8
+    0x008fcc: jalr     $v0
+    0x008fd0: nop      
+    0x008fd4: lw       $v1, 0xcdc($s1)
+    0x008fd8: addiu    $v0, $zero, 1
+    0x008fdc: bne      $v1, $v0, 0x917c
+    0x008fe0: lw       $ra, 0xac($sp)
+    0x008fe4: andi     $a0, $s6, 0xff
+    0x008fe8: beql     $a0, $zero, 0x9004
+    0x008fec: andi     $a0, $s5, 0xff
+    0x008ff0: lui      $v0, 0  <-- CALL
+    0x008ff4: addiu    $v0, $v0, 0
+    0x008ff8: jalr     $v0
+    0x008ffc: move     $a1, $zero
+    0x009000: andi     $a0, $s5, 0xff
+
+=== call to gpio_direction_output at .text+0x8ff4 (in function ~ingenic_motor_timer_exit) ===
+    0x008fc4: lui      $v0, 1
+    0x008fc8: addiu    $v0, $v0, -0x71a8
+    0x008fcc: jalr     $v0
+    0x008fd0: nop      
+    0x008fd4: lw       $v1, 0xcdc($s1)
+    0x008fd8: addiu    $v0, $zero, 1
+    0x008fdc: bne      $v1, $v0, 0x917c
+    0x008fe0: lw       $ra, 0xac($sp)
+    0x008fe4: andi     $a0, $s6, 0xff
+    0x008fe8: beql     $a0, $zero, 0x9004
+    0x008fec: andi     $a0, $s5, 0xff
+    0x008ff0: lui      $v0, 0
+    0x008ff4: addiu    $v0, $v0, 0  <-- CALL
+    0x008ff8: jalr     $v0
+    0x008ffc: move     $a1, $zero
+    0x009000: andi     $a0, $s5, 0xff
+    0x009004: beql     $a0, $zero, 0x9020
+
+=== call to gpio_direction_output at .text+0x900c (in function ~ingenic_motor_timer_exit) ===
+    0x008fdc: bne      $v1, $v0, 0x917c
+    0x008fe0: lw       $ra, 0xac($sp)
+    0x008fe4: andi     $a0, $s6, 0xff
+    0x008fe8: beql     $a0, $zero, 0x9004
+    0x008fec: andi     $a0, $s5, 0xff
+    0x008ff0: lui      $v0, 0
+    0x008ff4: addiu    $v0, $v0, 0
+    0x008ff8: jalr     $v0
+    0x008ffc: move     $a1, $zero
+    0x009000: andi     $a0, $s5, 0xff
+    0x009004: beql     $a0, $zero, 0x9020
+    0x009008: andi     $a0, $s4, 0xff
+    0x00900c: lui      $v0, 0  <-- CALL
+    0x009010: addiu    $v0, $v0, 0
+    0x009014: jalr     $v0
+    0x009018: move     $a1, $zero
+    0x00901c: andi     $a0, $s4, 0xff
+
+=== call to gpio_direction_output at .text+0x9010 (in function ~ingenic_motor_timer_exit) ===
+    0x008fe0: lw       $ra, 0xac($sp)
+    0x008fe4: andi     $a0, $s6, 0xff
+    0x008fe8: beql     $a0, $zero, 0x9004
+    0x008fec: andi     $a0, $s5, 0xff
+    0x008ff0: lui      $v0, 0
+    0x008ff4: addiu    $v0, $v0, 0
+    0x008ff8: jalr     $v0
+    0x008ffc: move     $a1, $zero
+    0x009000: andi     $a0, $s5, 0xff
+    0x009004: beql     $a0, $zero, 0x9020
+    0x009008: andi     $a0, $s4, 0xff
+    0x00900c: lui      $v0, 0
+    0x009010: addiu    $v0, $v0, 0  <-- CALL
+    0x009014: jalr     $v0
+    0x009018: move     $a1, $zero
+    0x00901c: andi     $a0, $s4, 0xff
+    0x009020: beql     $a0, $zero, 0x903c
+
+=== call to gpio_direction_output at .text+0x9028 (in function ~ingenic_motor_timer_exit) ===
+    0x008ff8: jalr     $v0
+    0x008ffc: move     $a1, $zero
+    0x009000: andi     $a0, $s5, 0xff
+    0x009004: beql     $a0, $zero, 0x9020
+    0x009008: andi     $a0, $s4, 0xff
+    0x00900c: lui      $v0, 0
+    0x009010: addiu    $v0, $v0, 0
+    0x009014: jalr     $v0
+    0x009018: move     $a1, $zero
+    0x00901c: andi     $a0, $s4, 0xff
+    0x009020: beql     $a0, $zero, 0x903c
+    0x009024: andi     $a0, $s3, 0xff
+    0x009028: lui      $v0, 0  <-- CALL
+    0x00902c: addiu    $v0, $v0, 0
+    0x009030: jalr     $v0
+    0x009034: move     $a1, $zero
+    0x009038: andi     $a0, $s3, 0xff
+
+=== call to gpio_direction_output at .text+0x902c (in function ~ingenic_motor_timer_exit) ===
+    0x008ffc: move     $a1, $zero
+    0x009000: andi     $a0, $s5, 0xff
+    0x009004: beql     $a0, $zero, 0x9020
+    0x009008: andi     $a0, $s4, 0xff
+    0x00900c: lui      $v0, 0
+    0x009010: addiu    $v0, $v0, 0
+    0x009014: jalr     $v0
+    0x009018: move     $a1, $zero
+    0x00901c: andi     $a0, $s4, 0xff
+    0x009020: beql     $a0, $zero, 0x903c
+    0x009024: andi     $a0, $s3, 0xff
+    0x009028: lui      $v0, 0
+    0x00902c: addiu    $v0, $v0, 0  <-- CALL
+    0x009030: jalr     $v0
+    0x009034: move     $a1, $zero
+    0x009038: andi     $a0, $s3, 0xff
+    0x00903c: beql     $a0, $zero, 0x9058
+
+=== call to gpio_direction_output at .text+0x9044 (in function ~ingenic_motor_timer_exit) ===
+    0x009014: jalr     $v0
+    0x009018: move     $a1, $zero
+    0x00901c: andi     $a0, $s4, 0xff
+    0x009020: beql     $a0, $zero, 0x903c
+    0x009024: andi     $a0, $s3, 0xff
+    0x009028: lui      $v0, 0
+    0x00902c: addiu    $v0, $v0, 0
+    0x009030: jalr     $v0
+    0x009034: move     $a1, $zero
+    0x009038: andi     $a0, $s3, 0xff
+    0x00903c: beql     $a0, $zero, 0x9058
+    0x009040: addiu    $s2, $s2, 0
+    0x009044: lui      $v0, 0  <-- CALL
+    0x009048: addiu    $v0, $v0, 0
+    0x00904c: jalr     $v0
+    0x009050: move     $a1, $zero
+    0x009054: addiu    $s2, $s2, 0
+
+=== call to gpio_direction_output at .text+0x9048 (in function ~ingenic_motor_timer_exit) ===
+    0x009018: move     $a1, $zero
+    0x00901c: andi     $a0, $s4, 0xff
+    0x009020: beql     $a0, $zero, 0x903c
+    0x009024: andi     $a0, $s3, 0xff
+    0x009028: lui      $v0, 0
+    0x00902c: addiu    $v0, $v0, 0
+    0x009030: jalr     $v0
+    0x009034: move     $a1, $zero
+    0x009038: andi     $a0, $s3, 0xff
+    0x00903c: beql     $a0, $zero, 0x9058
+    0x009040: addiu    $s2, $s2, 0
+    0x009044: lui      $v0, 0
+    0x009048: addiu    $v0, $v0, 0  <-- CALL
+    0x00904c: jalr     $v0
+    0x009050: move     $a1, $zero
+    0x009054: addiu    $s2, $s2, 0
+    0x009058: b        0x9178
+
+=== call to gpio_direction_output at .text+0x90b4 (in function ~ingenic_motor_timer_exit) ===
+    0x009084: b        0x9094
+    0x009088: movn     $s0, $v1, $v0
+    0x00908c: addiu    $s0, $v0, 1
+    0x009090: andi     $s0, $s0, 7
+    0x009094: addiu    $v0, $s2, 0
+    0x009098: sw       $s0, 0xcc0($v0)
+    0x00909c: andi     $a0, $s6, 0xff
+    0x0090a0: beql     $a0, $zero, 0x90d4
+    0x0090a4: andi     $a0, $s5, 0xff
+    0x0090a8: sll      $v0, $s0, 4
+    0x0090ac: addu     $v0, $sp, $v0
+    0x0090b0: lw       $v1, 0x10($v0)
+    0x0090b4: lui      $v0, 0  <-- CALL
+    0x0090b8: addiu    $v0, $v0, 0
+    0x0090bc: beqz     $v1, 0x90c8
+    0x0090c0: move     $a1, $zero
+    0x0090c4: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x90b8 (in function ~ingenic_motor_timer_exit) ===
+    0x009088: movn     $s0, $v1, $v0
+    0x00908c: addiu    $s0, $v0, 1
+    0x009090: andi     $s0, $s0, 7
+    0x009094: addiu    $v0, $s2, 0
+    0x009098: sw       $s0, 0xcc0($v0)
+    0x00909c: andi     $a0, $s6, 0xff
+    0x0090a0: beql     $a0, $zero, 0x90d4
+    0x0090a4: andi     $a0, $s5, 0xff
+    0x0090a8: sll      $v0, $s0, 4
+    0x0090ac: addu     $v0, $sp, $v0
+    0x0090b0: lw       $v1, 0x10($v0)
+    0x0090b4: lui      $v0, 0
+    0x0090b8: addiu    $v0, $v0, 0  <-- CALL
+    0x0090bc: beqz     $v1, 0x90c8
+    0x0090c0: move     $a1, $zero
+    0x0090c4: addiu    $a1, $zero, 1
+    0x0090c8: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x90e8 (in function ~ingenic_motor_timer_exit) ===
+    0x0090b8: addiu    $v0, $v0, 0
+    0x0090bc: beqz     $v1, 0x90c8
+    0x0090c0: move     $a1, $zero
+    0x0090c4: addiu    $a1, $zero, 1
+    0x0090c8: jalr     $v0
+    0x0090cc: nop      
+    0x0090d0: andi     $a0, $s5, 0xff
+    0x0090d4: beql     $a0, $zero, 0x9108
+    0x0090d8: andi     $a0, $s4, 0xff
+    0x0090dc: sll      $v0, $s0, 4
+    0x0090e0: addu     $v0, $sp, $v0
+    0x0090e4: lw       $v1, 0x14($v0)
+    0x0090e8: lui      $v0, 0  <-- CALL
+    0x0090ec: addiu    $v0, $v0, 0
+    0x0090f0: beqz     $v1, 0x90fc
+    0x0090f4: move     $a1, $zero
+    0x0090f8: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x90ec (in function ~ingenic_motor_timer_exit) ===
+    0x0090bc: beqz     $v1, 0x90c8
+    0x0090c0: move     $a1, $zero
+    0x0090c4: addiu    $a1, $zero, 1
+    0x0090c8: jalr     $v0
+    0x0090cc: nop      
+    0x0090d0: andi     $a0, $s5, 0xff
+    0x0090d4: beql     $a0, $zero, 0x9108
+    0x0090d8: andi     $a0, $s4, 0xff
+    0x0090dc: sll      $v0, $s0, 4
+    0x0090e0: addu     $v0, $sp, $v0
+    0x0090e4: lw       $v1, 0x14($v0)
+    0x0090e8: lui      $v0, 0
+    0x0090ec: addiu    $v0, $v0, 0  <-- CALL
+    0x0090f0: beqz     $v1, 0x90fc
+    0x0090f4: move     $a1, $zero
+    0x0090f8: addiu    $a1, $zero, 1
+    0x0090fc: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x911c (in function ~ingenic_motor_timer_exit) ===
+    0x0090ec: addiu    $v0, $v0, 0
+    0x0090f0: beqz     $v1, 0x90fc
+    0x0090f4: move     $a1, $zero
+    0x0090f8: addiu    $a1, $zero, 1
+    0x0090fc: jalr     $v0
+    0x009100: nop      
+    0x009104: andi     $a0, $s4, 0xff
+    0x009108: beql     $a0, $zero, 0x913c
+    0x00910c: andi     $a0, $s3, 0xff
+    0x009110: sll      $v0, $s0, 4
+    0x009114: addu     $v0, $sp, $v0
+    0x009118: lw       $v1, 0x18($v0)
+    0x00911c: lui      $v0, 0  <-- CALL
+    0x009120: addiu    $v0, $v0, 0
+    0x009124: beqz     $v1, 0x9130
+    0x009128: move     $a1, $zero
+    0x00912c: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x9120 (in function ~ingenic_motor_timer_exit) ===
+    0x0090f0: beqz     $v1, 0x90fc
+    0x0090f4: move     $a1, $zero
+    0x0090f8: addiu    $a1, $zero, 1
+    0x0090fc: jalr     $v0
+    0x009100: nop      
+    0x009104: andi     $a0, $s4, 0xff
+    0x009108: beql     $a0, $zero, 0x913c
+    0x00910c: andi     $a0, $s3, 0xff
+    0x009110: sll      $v0, $s0, 4
+    0x009114: addu     $v0, $sp, $v0
+    0x009118: lw       $v1, 0x18($v0)
+    0x00911c: lui      $v0, 0
+    0x009120: addiu    $v0, $v0, 0  <-- CALL
+    0x009124: beqz     $v1, 0x9130
+    0x009128: move     $a1, $zero
+    0x00912c: addiu    $a1, $zero, 1
+    0x009130: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x9150 (in function ~ingenic_motor_timer_exit) ===
+    0x009120: addiu    $v0, $v0, 0
+    0x009124: beqz     $v1, 0x9130
+    0x009128: move     $a1, $zero
+    0x00912c: addiu    $a1, $zero, 1
+    0x009130: jalr     $v0
+    0x009134: nop      
+    0x009138: andi     $a0, $s3, 0xff
+    0x00913c: beql     $a0, $zero, 0x916c
+    0x009140: addiu    $s2, $s2, 0
+    0x009144: sll      $s0, $s0, 4
+    0x009148: addu     $s0, $sp, $s0
+    0x00914c: lw       $v1, 0x1c($s0)
+    0x009150: lui      $v0, 0  <-- CALL
+    0x009154: addiu    $v0, $v0, 0
+    0x009158: beqz     $v1, 0x9164
+    0x00915c: move     $a1, $zero
+    0x009160: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0x9154 (in function ~ingenic_motor_timer_exit) ===
+    0x009124: beqz     $v1, 0x9130
+    0x009128: move     $a1, $zero
+    0x00912c: addiu    $a1, $zero, 1
+    0x009130: jalr     $v0
+    0x009134: nop      
+    0x009138: andi     $a0, $s3, 0xff
+    0x00913c: beql     $a0, $zero, 0x916c
+    0x009140: addiu    $s2, $s2, 0
+    0x009144: sll      $s0, $s0, 4
+    0x009148: addu     $s0, $sp, $s0
+    0x00914c: lw       $v1, 0x1c($s0)
+    0x009150: lui      $v0, 0
+    0x009154: addiu    $v0, $v0, 0  <-- CALL
+    0x009158: beqz     $v1, 0x9164
+    0x00915c: move     $a1, $zero
+    0x009160: addiu    $a1, $zero, 1
+    0x009164: jalr     $v0
+
+=== call to gpio_direction_output at .text+0x94c0 (in function ~ingenic_db_step_motor_stop) ===
+    0x009490: lhu      $s0, 0x20($v0)
+    0x009494: lui      $v0, 1
+    0x009498: addiu    $v0, $v0, -0x74e8
+    0x00949c: jalr     $v0
+    0x0094a0: nop      
+    0x0094a4: lui      $v0, 0
+    0x0094a8: addiu    $v0, $v0, 0
+    0x0094ac: jalr     $v0
+    0x0094b0: addiu    $a0, $zero, 0x14
+    0x0094b4: andi     $a0, $s4, 0xff
+    0x0094b8: beql     $a0, $zero, 0x94d4
+    0x0094bc: andi     $a0, $s3, 0xff
+    0x0094c0: lui      $v0, 0  <-- CALL
+    0x0094c4: addiu    $v0, $v0, 0
+    0x0094c8: jalr     $v0
+    0x0094cc: move     $a1, $zero
+    0x0094d0: andi     $a0, $s3, 0xff
+
+=== call to gpio_direction_output at .text+0x94c4 (in function ~ingenic_db_step_motor_stop) ===
+    0x009494: lui      $v0, 1
+    0x009498: addiu    $v0, $v0, -0x74e8
+    0x00949c: jalr     $v0
+    0x0094a0: nop      
+    0x0094a4: lui      $v0, 0
+    0x0094a8: addiu    $v0, $v0, 0
+    0x0094ac: jalr     $v0
+    0x0094b0: addiu    $a0, $zero, 0x14
+    0x0094b4: andi     $a0, $s4, 0xff
+    0x0094b8: beql     $a0, $zero, 0x94d4
+    0x0094bc: andi     $a0, $s3, 0xff
+    0x0094c0: lui      $v0, 0
+    0x0094c4: addiu    $v0, $v0, 0  <-- CALL
+    0x0094c8: jalr     $v0
+    0x0094cc: move     $a1, $zero
+    0x0094d0: andi     $a0, $s3, 0xff
+    0x0094d4: beql     $a0, $zero, 0x94f0
+
+=== call to gpio_direction_output at .text+0x94dc (in function ~ingenic_db_step_motor_stop) ===
+    0x0094ac: jalr     $v0
+    0x0094b0: addiu    $a0, $zero, 0x14
+    0x0094b4: andi     $a0, $s4, 0xff
+    0x0094b8: beql     $a0, $zero, 0x94d4
+    0x0094bc: andi     $a0, $s3, 0xff
+    0x0094c0: lui      $v0, 0
+    0x0094c4: addiu    $v0, $v0, 0
+    0x0094c8: jalr     $v0
+    0x0094cc: move     $a1, $zero
+    0x0094d0: andi     $a0, $s3, 0xff
+    0x0094d4: beql     $a0, $zero, 0x94f0
+    0x0094d8: andi     $a0, $s2, 0xff
+    0x0094dc: lui      $v0, 0  <-- CALL
+    0x0094e0: addiu    $v0, $v0, 0
+    0x0094e4: jalr     $v0
+    0x0094e8: move     $a1, $zero
+    0x0094ec: andi     $a0, $s2, 0xff
+
+=== call to gpio_direction_output at .text+0x94e0 (in function ~ingenic_db_step_motor_stop) ===
+    0x0094b0: addiu    $a0, $zero, 0x14
+    0x0094b4: andi     $a0, $s4, 0xff
+    0x0094b8: beql     $a0, $zero, 0x94d4
+    0x0094bc: andi     $a0, $s3, 0xff
+    0x0094c0: lui      $v0, 0
+    0x0094c4: addiu    $v0, $v0, 0
+    0x0094c8: jalr     $v0
+    0x0094cc: move     $a1, $zero
+    0x0094d0: andi     $a0, $s3, 0xff
+    0x0094d4: beql     $a0, $zero, 0x94f0
+    0x0094d8: andi     $a0, $s2, 0xff
+    0x0094dc: lui      $v0, 0
+    0x0094e0: addiu    $v0, $v0, 0  <-- CALL
+    0x0094e4: jalr     $v0
+    0x0094e8: move     $a1, $zero
+    0x0094ec: andi     $a0, $s2, 0xff
+    0x0094f0: beql     $a0, $zero, 0x950c
+
+=== call to gpio_direction_output at .text+0x94f8 (in function ~ingenic_db_step_motor_stop) ===
+    0x0094c8: jalr     $v0
+    0x0094cc: move     $a1, $zero
+    0x0094d0: andi     $a0, $s3, 0xff
+    0x0094d4: beql     $a0, $zero, 0x94f0
+    0x0094d8: andi     $a0, $s2, 0xff
+    0x0094dc: lui      $v0, 0
+    0x0094e0: addiu    $v0, $v0, 0
+    0x0094e4: jalr     $v0
+    0x0094e8: move     $a1, $zero
+    0x0094ec: andi     $a0, $s2, 0xff
+    0x0094f0: beql     $a0, $zero, 0x950c
+    0x0094f4: andi     $a0, $s0, 0xff
+    0x0094f8: lui      $v0, 0  <-- CALL
+    0x0094fc: addiu    $v0, $v0, 0
+    0x009500: jalr     $v0
+    0x009504: move     $a1, $zero
+    0x009508: andi     $a0, $s0, 0xff
+
+=== call to gpio_direction_output at .text+0x94fc (in function ~ingenic_db_step_motor_stop) ===
+    0x0094cc: move     $a1, $zero
+    0x0094d0: andi     $a0, $s3, 0xff
+    0x0094d4: beql     $a0, $zero, 0x94f0
+    0x0094d8: andi     $a0, $s2, 0xff
+    0x0094dc: lui      $v0, 0
+    0x0094e0: addiu    $v0, $v0, 0
+    0x0094e4: jalr     $v0
+    0x0094e8: move     $a1, $zero
+    0x0094ec: andi     $a0, $s2, 0xff
+    0x0094f0: beql     $a0, $zero, 0x950c
+    0x0094f4: andi     $a0, $s0, 0xff
+    0x0094f8: lui      $v0, 0
+    0x0094fc: addiu    $v0, $v0, 0  <-- CALL
+    0x009500: jalr     $v0
+    0x009504: move     $a1, $zero
+    0x009508: andi     $a0, $s0, 0xff
+    0x00950c: beql     $a0, $zero, 0x9528
+
+=== call to gpio_direction_output at .text+0x9514 (in function ~ingenic_db_step_motor_stop) ===
+    0x0094e4: jalr     $v0
+    0x0094e8: move     $a1, $zero
+    0x0094ec: andi     $a0, $s2, 0xff
+    0x0094f0: beql     $a0, $zero, 0x950c
+    0x0094f4: andi     $a0, $s0, 0xff
+    0x0094f8: lui      $v0, 0
+    0x0094fc: addiu    $v0, $v0, 0
+    0x009500: jalr     $v0
+    0x009504: move     $a1, $zero
+    0x009508: andi     $a0, $s0, 0xff
+    0x00950c: beql     $a0, $zero, 0x9528
+    0x009510: addiu    $v0, $s1, 0
+    0x009514: lui      $v0, 0  <-- CALL
+    0x009518: addiu    $v0, $v0, 0
+    0x00951c: jalr     $v0
+    0x009520: move     $a1, $zero
+    0x009524: addiu    $v0, $s1, 0
+
+=== call to gpio_direction_output at .text+0x9518 (in function ~ingenic_db_step_motor_stop) ===
+    0x0094e8: move     $a1, $zero
+    0x0094ec: andi     $a0, $s2, 0xff
+    0x0094f0: beql     $a0, $zero, 0x950c
+    0x0094f4: andi     $a0, $s0, 0xff
+    0x0094f8: lui      $v0, 0
+    0x0094fc: addiu    $v0, $v0, 0
+    0x009500: jalr     $v0
+    0x009504: move     $a1, $zero
+    0x009508: andi     $a0, $s0, 0xff
+    0x00950c: beql     $a0, $zero, 0x9528
+    0x009510: addiu    $v0, $s1, 0
+    0x009514: lui      $v0, 0
+    0x009518: addiu    $v0, $v0, 0  <-- CALL
+    0x00951c: jalr     $v0
+    0x009520: move     $a1, $zero
+    0x009524: addiu    $v0, $s1, 0
+    0x009528: sw       $zero, 0xcc4($v0)
+
+=== call to gpio_direction_output at .text+0x9574 (in function ~ingenic_db_step_motor_stop) ===
+    0x009544: lhu      $s0, 0x28($v0)
+    0x009548: lui      $v0, 1
+    0x00954c: addiu    $v0, $v0, -0x71a8
+    0x009550: jalr     $v0
+    0x009554: nop      
+    0x009558: lui      $v0, 0
+    0x00955c: addiu    $v0, $v0, 0
+    0x009560: jalr     $v0
+    0x009564: addiu    $a0, $zero, 0x14
+    0x009568: andi     $a0, $s4, 0xff
+    0x00956c: beql     $a0, $zero, 0x9588
+    0x009570: andi     $a0, $s3, 0xff
+    0x009574: lui      $v0, 0  <-- CALL
+    0x009578: addiu    $v0, $v0, 0
+    0x00957c: jalr     $v0
+    0x009580: move     $a1, $zero
+    0x009584: andi     $a0, $s3, 0xff
+
+=== call to gpio_direction_output at .text+0x9578 (in function ~ingenic_db_step_motor_stop) ===
+    0x009548: lui      $v0, 1
+    0x00954c: addiu    $v0, $v0, -0x71a8
+    0x009550: jalr     $v0
+    0x009554: nop      
+    0x009558: lui      $v0, 0
+    0x00955c: addiu    $v0, $v0, 0
+    0x009560: jalr     $v0
+    0x009564: addiu    $a0, $zero, 0x14
+    0x009568: andi     $a0, $s4, 0xff
+    0x00956c: beql     $a0, $zero, 0x9588
+    0x009570: andi     $a0, $s3, 0xff
+    0x009574: lui      $v0, 0
+    0x009578: addiu    $v0, $v0, 0  <-- CALL
+    0x00957c: jalr     $v0
+    0x009580: move     $a1, $zero
+    0x009584: andi     $a0, $s3, 0xff
+    0x009588: beql     $a0, $zero, 0x95a4
+
+=== call to gpio_direction_output at .text+0x9590 (in function ~ingenic_db_step_motor_stop) ===
+    0x009560: jalr     $v0
+    0x009564: addiu    $a0, $zero, 0x14
+    0x009568: andi     $a0, $s4, 0xff
+    0x00956c: beql     $a0, $zero, 0x9588
+    0x009570: andi     $a0, $s3, 0xff
+    0x009574: lui      $v0, 0
+    0x009578: addiu    $v0, $v0, 0
+    0x00957c: jalr     $v0
+    0x009580: move     $a1, $zero
+    0x009584: andi     $a0, $s3, 0xff
+    0x009588: beql     $a0, $zero, 0x95a4
+    0x00958c: andi     $a0, $s2, 0xff
+    0x009590: lui      $v0, 0  <-- CALL
+    0x009594: addiu    $v0, $v0, 0
+    0x009598: jalr     $v0
+    0x00959c: move     $a1, $zero
+    0x0095a0: andi     $a0, $s2, 0xff
+
+=== call to gpio_direction_output at .text+0x9594 (in function ~ingenic_db_step_motor_stop) ===
+    0x009564: addiu    $a0, $zero, 0x14
+    0x009568: andi     $a0, $s4, 0xff
+    0x00956c: beql     $a0, $zero, 0x9588
+    0x009570: andi     $a0, $s3, 0xff
+    0x009574: lui      $v0, 0
+    0x009578: addiu    $v0, $v0, 0
+    0x00957c: jalr     $v0
+    0x009580: move     $a1, $zero
+    0x009584: andi     $a0, $s3, 0xff
+    0x009588: beql     $a0, $zero, 0x95a4
+    0x00958c: andi     $a0, $s2, 0xff
+    0x009590: lui      $v0, 0
+    0x009594: addiu    $v0, $v0, 0  <-- CALL
+    0x009598: jalr     $v0
+    0x00959c: move     $a1, $zero
+    0x0095a0: andi     $a0, $s2, 0xff
+    0x0095a4: beql     $a0, $zero, 0x95c0
+
+=== call to gpio_direction_output at .text+0x95ac (in function ~ingenic_db_step_motor_stop) ===
+    0x00957c: jalr     $v0
+    0x009580: move     $a1, $zero
+    0x009584: andi     $a0, $s3, 0xff
+    0x009588: beql     $a0, $zero, 0x95a4
+    0x00958c: andi     $a0, $s2, 0xff
+    0x009590: lui      $v0, 0
+    0x009594: addiu    $v0, $v0, 0
+    0x009598: jalr     $v0
+    0x00959c: move     $a1, $zero
+    0x0095a0: andi     $a0, $s2, 0xff
+    0x0095a4: beql     $a0, $zero, 0x95c0
+    0x0095a8: andi     $a0, $s0, 0xff
+    0x0095ac: lui      $v0, 0  <-- CALL
+    0x0095b0: addiu    $v0, $v0, 0
+    0x0095b4: jalr     $v0
+    0x0095b8: move     $a1, $zero
+    0x0095bc: andi     $a0, $s0, 0xff
+
+=== call to gpio_direction_output at .text+0x95b0 (in function ~ingenic_db_step_motor_stop) ===
+    0x009580: move     $a1, $zero
+    0x009584: andi     $a0, $s3, 0xff
+    0x009588: beql     $a0, $zero, 0x95a4
+    0x00958c: andi     $a0, $s2, 0xff
+    0x009590: lui      $v0, 0
+    0x009594: addiu    $v0, $v0, 0
+    0x009598: jalr     $v0
+    0x00959c: move     $a1, $zero
+    0x0095a0: andi     $a0, $s2, 0xff
+    0x0095a4: beql     $a0, $zero, 0x95c0
+    0x0095a8: andi     $a0, $s0, 0xff
+    0x0095ac: lui      $v0, 0
+    0x0095b0: addiu    $v0, $v0, 0  <-- CALL
+    0x0095b4: jalr     $v0
+    0x0095b8: move     $a1, $zero
+    0x0095bc: andi     $a0, $s0, 0xff
+    0x0095c0: beql     $a0, $zero, 0x95dc
+
+=== call to gpio_direction_output at .text+0x95c8 (in function ~ingenic_db_step_motor_stop) ===
+    0x009598: jalr     $v0
+    0x00959c: move     $a1, $zero
+    0x0095a0: andi     $a0, $s2, 0xff
+    0x0095a4: beql     $a0, $zero, 0x95c0
+    0x0095a8: andi     $a0, $s0, 0xff
+    0x0095ac: lui      $v0, 0
+    0x0095b0: addiu    $v0, $v0, 0
+    0x0095b4: jalr     $v0
+    0x0095b8: move     $a1, $zero
+    0x0095bc: andi     $a0, $s0, 0xff
+    0x0095c0: beql     $a0, $zero, 0x95dc
+    0x0095c4: addiu    $v0, $s1, 0
+    0x0095c8: lui      $v0, 0  <-- CALL
+    0x0095cc: addiu    $v0, $v0, 0
+    0x0095d0: jalr     $v0
+    0x0095d4: move     $a1, $zero
+    0x0095d8: addiu    $v0, $s1, 0
+
+=== call to gpio_direction_output at .text+0x95cc (in function ~ingenic_db_step_motor_stop) ===
+    0x00959c: move     $a1, $zero
+    0x0095a0: andi     $a0, $s2, 0xff
+    0x0095a4: beql     $a0, $zero, 0x95c0
+    0x0095a8: andi     $a0, $s0, 0xff
+    0x0095ac: lui      $v0, 0
+    0x0095b0: addiu    $v0, $v0, 0
+    0x0095b4: jalr     $v0
+    0x0095b8: move     $a1, $zero
+    0x0095bc: andi     $a0, $s0, 0xff
+    0x0095c0: beql     $a0, $zero, 0x95dc
+    0x0095c4: addiu    $v0, $s1, 0
+    0x0095c8: lui      $v0, 0
+    0x0095cc: addiu    $v0, $v0, 0  <-- CALL
+    0x0095d0: jalr     $v0
+    0x0095d4: move     $a1, $zero
+    0x0095d8: addiu    $v0, $s1, 0
+    0x0095dc: sw       $zero, 0xcc8($v0)
+
+=== call to gpio_direction_output at .text+0x97c8 (in function ~ingenic_db_step_motor_timer_exit) ===
+    0x009798: divu     $zero, $a0, $v1
+    0x00979c: mfhi     $a1
+    0x0097a0: slt      $v0, $v0, $a1
+    0x0097a4: bnez     $v0, 0x97bc
+    0x0097a8: lw       $a0, ($s0)
+    0x0097ac: bnez     $a0, 0x97c8
+    0x0097b0: addiu    $a1, $zero, 1
+    0x0097b4: b        0x97dc
+    0x0097b8: lw       $v0, 0x24($s0)
+    0x0097bc: beql     $a0, $zero, 0x97dc
+    0x0097c0: lw       $v0, 0x24($s0)
+    0x0097c4: move     $a1, $zero
+    0x0097c8: lui      $v0, 0  <-- CALL
+    0x0097cc: addiu    $v0, $v0, 0
+    0x0097d0: jalr     $v0
+    0x0097d4: nop      
+    0x0097d8: lw       $v0, 0x24($s0)
+
+=== call to gpio_direction_output at .text+0x97cc (in function ~ingenic_db_step_motor_timer_exit) ===
+    0x00979c: mfhi     $a1
+    0x0097a0: slt      $v0, $v0, $a1
+    0x0097a4: bnez     $v0, 0x97bc
+    0x0097a8: lw       $a0, ($s0)
+    0x0097ac: bnez     $a0, 0x97c8
+    0x0097b0: addiu    $a1, $zero, 1
+    0x0097b4: b        0x97dc
+    0x0097b8: lw       $v0, 0x24($s0)
+    0x0097bc: beql     $a0, $zero, 0x97dc
+    0x0097c0: lw       $v0, 0x24($s0)
+    0x0097c4: move     $a1, $zero
+    0x0097c8: lui      $v0, 0
+    0x0097cc: addiu    $v0, $v0, 0  <-- CALL
+    0x0097d0: jalr     $v0
+    0x0097d4: nop      
+    0x0097d8: lw       $v0, 0x24($s0)
+    0x0097dc: addiu    $v0, $v0, 1
+
+=== call to gpio_direction_output at .text+0x9c8c (in function ~ingenic_db_step_motor_timer_exit) ===
+    0x009c5c: addiu    $v0, $v0, -0x65a0
+    0x009c60: sw       $ra, 0x14($sp)
+    0x009c64: sw       $s0, 0x10($sp)
+    0x009c68: jalr     $v0
+    0x009c6c: move     $s0, $a0
+    0x009c70: lui      $v0, 0
+    0x009c74: addiu    $v0, $v0, 0
+    0x009c78: jalr     $v0
+    0x009c7c: addiu    $a0, $zero, 0x14
+    0x009c80: lw       $a0, -0x14($s0)
+    0x009c84: beqz     $a0, 0x9ca0
+    0x009c88: addiu    $v0, $zero, 3
+    0x009c8c: lui      $v0, 0  <-- CALL
+    0x009c90: addiu    $v0, $v0, 0
+    0x009c94: jalr     $v0
+    0x009c98: addiu    $a1, $zero, 1
+    0x009c9c: addiu    $v0, $zero, 3
+
+=== call to gpio_direction_output at .text+0x9c90 (in function ~ingenic_db_step_motor_timer_exit) ===
+    0x009c60: sw       $ra, 0x14($sp)
+    0x009c64: sw       $s0, 0x10($sp)
+    0x009c68: jalr     $v0
+    0x009c6c: move     $s0, $a0
+    0x009c70: lui      $v0, 0
+    0x009c74: addiu    $v0, $v0, 0
+    0x009c78: jalr     $v0
+    0x009c7c: addiu    $a0, $zero, 0x14
+    0x009c80: lw       $a0, -0x14($s0)
+    0x009c84: beqz     $a0, 0x9ca0
+    0x009c88: addiu    $v0, $zero, 3
+    0x009c8c: lui      $v0, 0
+    0x009c90: addiu    $v0, $v0, 0  <-- CALL
+    0x009c94: jalr     $v0
+    0x009c98: addiu    $a1, $zero, 1
+    0x009c9c: addiu    $v0, $zero, 3
+    0x009ca0: sw       $v0, 0x1c($s0)
+
+=== call to gpio_direction_output at .text+0x9d18 (in function ~ingenic_dc_motor_run) ===
+    0x009ce8: addiu    $v0, $v0, 0
+    0x009cec: jalr     $v0
+    0x009cf0: addiu    $a0, $a0, 0
+    0x009cf4: b        0x9d84
+    0x009cf8: move     $v0, $zero
+    0x009cfc: lui      $v1, 2
+    0x009d00: and      $v0, $v1, $v0
+    0x009d04: beql     $v0, $zero, 0x9d84
+    0x009d08: addiu    $v0, $zero, -1
+    0x009d0c: lw       $a0, ($s0)
+    0x009d10: beql     $a0, $zero, 0x9d2c
+    0x009d14: lui      $v0, 0
+    0x009d18: lui      $v0, 0  <-- CALL
+    0x009d1c: addiu    $v0, $v0, 0
+    0x009d20: jalr     $v0
+    0x009d24: addiu    $a1, $zero, 1
+    0x009d28: lui      $v0, 0
+
+=== call to gpio_direction_output at .text+0x9d1c (in function ~ingenic_dc_motor_run) ===
+    0x009cec: jalr     $v0
+    0x009cf0: addiu    $a0, $a0, 0
+    0x009cf4: b        0x9d84
+    0x009cf8: move     $v0, $zero
+    0x009cfc: lui      $v1, 2
+    0x009d00: and      $v0, $v1, $v0
+    0x009d04: beql     $v0, $zero, 0x9d84
+    0x009d08: addiu    $v0, $zero, -1
+    0x009d0c: lw       $a0, ($s0)
+    0x009d10: beql     $a0, $zero, 0x9d2c
+    0x009d14: lui      $v0, 0
+    0x009d18: lui      $v0, 0
+    0x009d1c: addiu    $v0, $v0, 0  <-- CALL
+    0x009d20: jalr     $v0
+    0x009d24: addiu    $a1, $zero, 1
+    0x009d28: lui      $v0, 0
+    0x009d2c: lw       $v0, 0x1e24($v0)
+
+=== call to gpio_direction_output at .text+0x9e0c (in function ~ingenic_dc_motor_stop) ===
+    0x009ddc: beqz     $v0, 0x9e30
+    0x009de0: lui      $v0, 1
+    0x009de4: addiu    $v0, $v0, -0x65a0
+    0x009de8: jalr     $v0
+    0x009dec: nop      
+    0x009df0: lui      $v0, 0
+    0x009df4: addiu    $v0, $v0, 0
+    0x009df8: jalr     $v0
+    0x009dfc: addiu    $a0, $zero, 0x14
+    0x009e00: lw       $a0, ($s0)
+    0x009e04: beql     $a0, $zero, 0x9e20
+    0x009e08: addiu    $v0, $zero, 3
+    0x009e0c: lui      $v0, 0  <-- CALL
+    0x009e10: addiu    $v0, $v0, 0
+    0x009e14: jalr     $v0
+    0x009e18: addiu    $a1, $zero, 1
+    0x009e1c: addiu    $v0, $zero, 3
+
+=== call to gpio_direction_output at .text+0x9e10 (in function ~ingenic_dc_motor_stop) ===
+    0x009de0: lui      $v0, 1
+    0x009de4: addiu    $v0, $v0, -0x65a0
+    0x009de8: jalr     $v0
+    0x009dec: nop      
+    0x009df0: lui      $v0, 0
+    0x009df4: addiu    $v0, $v0, 0
+    0x009df8: jalr     $v0
+    0x009dfc: addiu    $a0, $zero, 0x14
+    0x009e00: lw       $a0, ($s0)
+    0x009e04: beql     $a0, $zero, 0x9e20
+    0x009e08: addiu    $v0, $zero, 3
+    0x009e0c: lui      $v0, 0
+    0x009e10: addiu    $v0, $v0, 0  <-- CALL
+    0x009e14: jalr     $v0
+    0x009e18: addiu    $a1, $zero, 1
+    0x009e1c: addiu    $v0, $zero, 3
+    0x009e20: sw       $v0, 0x30($s0)
+
+=== call to gpio_direction_output at .text+0x9ee4 (in function ~ingenic_dc_motor_init) ===
+    0x009eb4: lui      $v1, 0
+    0x009eb8: addiu    $v1, $v1, 0
+    0x009ebc: lw       $a0, 0xcac($v1)
+    0x009ec0: lbu      $a0, 0x30($a0)
+    0x009ec4: sw       $a0, ($v0)
+    0x009ec8: lw       $a1, 0xcac($v1)
+    0x009ecc: lbu      $a1, 0x32($a1)
+    0x009ed0: sw       $a1, 4($v0)
+    0x009ed4: lw       $v1, 0xcac($v1)
+    0x009ed8: lbu      $v1, 0x34($v1)
+    0x009edc: beqz     $a0, 0x9ef4
+    0x009ee0: sw       $v1, 8($v0)
+    0x009ee4: lui      $v0, 0  <-- CALL
+    0x009ee8: addiu    $v0, $v0, 0
+    0x009eec: jalr     $v0
+    0x009ef0: addiu    $a1, $zero, 1
+    0x009ef4: lw       $v0, 0x1e20($s0)
+
+=== call to gpio_direction_output at .text+0x9ee8 (in function ~ingenic_dc_motor_init) ===
+    0x009eb8: addiu    $v1, $v1, 0
+    0x009ebc: lw       $a0, 0xcac($v1)
+    0x009ec0: lbu      $a0, 0x30($a0)
+    0x009ec4: sw       $a0, ($v0)
+    0x009ec8: lw       $a1, 0xcac($v1)
+    0x009ecc: lbu      $a1, 0x32($a1)
+    0x009ed0: sw       $a1, 4($v0)
+    0x009ed4: lw       $v1, 0xcac($v1)
+    0x009ed8: lbu      $v1, 0x34($v1)
+    0x009edc: beqz     $a0, 0x9ef4
+    0x009ee0: sw       $v1, 8($v0)
+    0x009ee4: lui      $v0, 0
+    0x009ee8: addiu    $v0, $v0, 0  <-- CALL
+    0x009eec: jalr     $v0
+    0x009ef0: addiu    $a1, $zero, 1
+    0x009ef4: lw       $v0, 0x1e20($s0)
+    0x009ef8: addiu    $v1, $zero, 3
+
+=== call to gpio_direction_input at .text+0x9f20 (in function ~ingenic_dc_motor_init) ===
+    0x009ef0: addiu    $a1, $zero, 1
+    0x009ef4: lw       $v0, 0x1e20($s0)
+    0x009ef8: addiu    $v1, $zero, 3
+    0x009efc: sw       $v1, 0x30($v0)
+    0x009f00: addiu    $v1, $zero, -0x20
+    0x009f04: sw       $v1, 0x14($v0)
+    0x009f08: addiu    $v1, $v0, 0x18
+    0x009f0c: sw       $v1, 0x18($v0)
+    0x009f10: sw       $v1, 0x1c($v0)
+    0x009f14: lui      $v1, 1
+    0x009f18: addiu    $v1, $v1, -0x63b8
+    0x009f1c: lw       $a0, 4($v0)
+    0x009f20: lui      $s2, 0  <-- CALL
+    0x009f24: addiu    $s2, $s2, 0
+    0x009f28: jalr     $s2
+    0x009f2c: sw       $v1, 0x20($v0)
+    0x009f30: lw       $v0, 0x1e20($s0)
+
+=== call to gpio_direction_input at .text+0x9f24 (in function ~ingenic_dc_motor_init) ===
+    0x009ef4: lw       $v0, 0x1e20($s0)
+    0x009ef8: addiu    $v1, $zero, 3
+    0x009efc: sw       $v1, 0x30($v0)
+    0x009f00: addiu    $v1, $zero, -0x20
+    0x009f04: sw       $v1, 0x14($v0)
+    0x009f08: addiu    $v1, $v0, 0x18
+    0x009f0c: sw       $v1, 0x18($v0)
+    0x009f10: sw       $v1, 0x1c($v0)
+    0x009f14: lui      $v1, 1
+    0x009f18: addiu    $v1, $v1, -0x63b8
+    0x009f1c: lw       $a0, 4($v0)
+    0x009f20: lui      $s2, 0
+    0x009f24: addiu    $s2, $s2, 0  <-- CALL
+    0x009f28: jalr     $s2
+    0x009f2c: sw       $v1, 0x20($v0)
+    0x009f30: lw       $v0, 0x1e20($s0)
+    0x009f34: lui      $s1, 0
+
+=== call to gpio_direction_output at .text+0xa144 (in function ~ingenic_dc_motor_exit) ===
+    0x00a114: addiu    $v0, $v0, 0
+    0x00a118: jalr     $v0
+    0x00a11c: nop      
+    0x00a120: lw       $a0, 0x1e20($s0)
+    0x00a124: lui      $v0, 0
+    0x00a128: addiu    $v0, $v0, 0
+    0x00a12c: jalr     $v0
+    0x00a130: addiu    $a0, $a0, 0x14
+    0x00a134: lw       $v0, 0x1e20($s0)
+    0x00a138: lw       $a0, ($v0)
+    0x00a13c: beql     $a0, $zero, 0xa158
+    0x00a140: lw       $a0, 0x1e20($s0)
+    0x00a144: lui      $v0, 0  <-- CALL
+    0x00a148: addiu    $v0, $v0, 0
+    0x00a14c: jalr     $v0
+    0x00a150: addiu    $a1, $zero, 1
+    0x00a154: lw       $a0, 0x1e20($s0)
+
+=== call to gpio_direction_output at .text+0xa148 (in function ~ingenic_dc_motor_exit) ===
+    0x00a118: jalr     $v0
+    0x00a11c: nop      
+    0x00a120: lw       $a0, 0x1e20($s0)
+    0x00a124: lui      $v0, 0
+    0x00a128: addiu    $v0, $v0, 0
+    0x00a12c: jalr     $v0
+    0x00a130: addiu    $a0, $a0, 0x14
+    0x00a134: lw       $v0, 0x1e20($s0)
+    0x00a138: lw       $a0, ($v0)
+    0x00a13c: beql     $a0, $zero, 0xa158
+    0x00a140: lw       $a0, 0x1e20($s0)
+    0x00a144: lui      $v0, 0
+    0x00a148: addiu    $v0, $v0, 0  <-- CALL
+    0x00a14c: jalr     $v0
+    0x00a150: addiu    $a1, $zero, 1
+    0x00a154: lw       $a0, 0x1e20($s0)
+    0x00a158: beqz     $a0, 0xa16c
+
+=== call to gpio_direction_output at .text+0xa1ec (in function ~ingenic_dc_motor_exit) ===
+    0x00a1bc: beql     $v0, $zero, 0xa200
+    0x00a1c0: lw       $ra, 0x14($sp)
+    0x00a1c4: lui      $v0, 0
+    0x00a1c8: lw       $a0, 0x1e38($v0)
+    0x00a1cc: lui      $v0, 0
+    0x00a1d0: addiu    $v0, $v0, 0
+    0x00a1d4: jalr     $v0
+    0x00a1d8: nop      
+    0x00a1dc: b        0xa200
+    0x00a1e0: lw       $ra, 0x14($sp)
+    0x00a1e4: beqz     $a0, 0xa200
+    0x00a1e8: lw       $ra, 0x14($sp)
+    0x00a1ec: lui      $v0, 0  <-- CALL
+    0x00a1f0: addiu    $v0, $v0, 0
+    0x00a1f4: jalr     $v0
+    0x00a1f8: move     $a1, $zero
+    0x00a1fc: lw       $ra, 0x14($sp)
+
+=== call to gpio_direction_output at .text+0xa1f0 (in function ~ingenic_dc_motor_exit) ===
+    0x00a1c0: lw       $ra, 0x14($sp)
+    0x00a1c4: lui      $v0, 0
+    0x00a1c8: lw       $a0, 0x1e38($v0)
+    0x00a1cc: lui      $v0, 0
+    0x00a1d0: addiu    $v0, $v0, 0
+    0x00a1d4: jalr     $v0
+    0x00a1d8: nop      
+    0x00a1dc: b        0xa200
+    0x00a1e0: lw       $ra, 0x14($sp)
+    0x00a1e4: beqz     $a0, 0xa200
+    0x00a1e8: lw       $ra, 0x14($sp)
+    0x00a1ec: lui      $v0, 0
+    0x00a1f0: addiu    $v0, $v0, 0  <-- CALL
+    0x00a1f4: jalr     $v0
+    0x00a1f8: move     $a1, $zero
+    0x00a1fc: lw       $ra, 0x14($sp)
+    0x00a200: sw       $zero, 0x1e30($s0)
+
+=== call to gpio_direction_output at .text+0xa288 (in function ~ingenic_light_ctrl) ===
+    0x00a258: beqz     $a2, 0xa3d4
+    0x00a25c: sw       $s0, 0x10($sp)
+    0x00a260: lui      $v0, 0
+    0x00a264: lw       $v0, 0xcac($v0)
+    0x00a268: lhu      $a0, 0x16($v0)
+    0x00a26c: lw       $v0, 4($v0)
+    0x00a270: andi     $v0, $v0, 0x20
+    0x00a274: bnez     $v0, 0xa2a0
+    0x00a278: lui      $s4, 0
+    0x00a27c: andi     $a0, $a0, 0xff
+    0x00a280: beql     $a0, $zero, 0xa3cc
+    0x00a284: addiu    $v0, $zero, 1
+    0x00a288: lui      $v0, 0  <-- CALL
+    0x00a28c: addiu    $v0, $v0, 0
+    0x00a290: jalr     $v0
+    0x00a294: addiu    $a1, $zero, 1
+    0x00a298: b        0xa3cc
+
+=== call to gpio_direction_output at .text+0xa28c (in function ~ingenic_light_ctrl) ===
+    0x00a25c: sw       $s0, 0x10($sp)
+    0x00a260: lui      $v0, 0
+    0x00a264: lw       $v0, 0xcac($v0)
+    0x00a268: lhu      $a0, 0x16($v0)
+    0x00a26c: lw       $v0, 4($v0)
+    0x00a270: andi     $v0, $v0, 0x20
+    0x00a274: bnez     $v0, 0xa2a0
+    0x00a278: lui      $s4, 0
+    0x00a27c: andi     $a0, $a0, 0xff
+    0x00a280: beql     $a0, $zero, 0xa3cc
+    0x00a284: addiu    $v0, $zero, 1
+    0x00a288: lui      $v0, 0
+    0x00a28c: addiu    $v0, $v0, 0  <-- CALL
+    0x00a290: jalr     $v0
+    0x00a294: addiu    $a1, $zero, 1
+    0x00a298: b        0xa3cc
+    0x00a29c: addiu    $v0, $zero, 1
+
+=== call to __gpio_get_value at .text+0xad78 (in function ~ingenic_get_charge_status) ===
+    0x00ad48: jr       $ra
+    0x00ad4c: addiu    $sp, $sp, 0x28
+    0x00ad50: addiu    $sp, $sp, -0x20
+    0x00ad54: sw       $s0, 0x10($sp)
+    0x00ad58: sw       $ra, 0x1c($sp)
+    0x00ad5c: sw       $s2, 0x18($sp)
+    0x00ad60: sw       $s1, 0x14($sp)
+    0x00ad64: lw       $v0, 4($a0)
+    0x00ad68: andi     $v0, $v0, 0x1000
+    0x00ad6c: beqz     $v0, 0xadc0
+    0x00ad70: move     $s0, $zero
+    0x00ad74: move     $s1, $a0
+    0x00ad78: lui      $s0, 0  <-- CALL
+    0x00ad7c: addiu    $s0, $s0, 0
+    0x00ad80: jalr     $s0
+    0x00ad84: lbu      $a0, 0x6e($a0)
+    0x00ad88: lbu      $a0, 0x70($s1)
+
+=== call to __gpio_get_value at .text+0xad7c (in function ~ingenic_get_charge_status) ===
+    0x00ad4c: addiu    $sp, $sp, 0x28
+    0x00ad50: addiu    $sp, $sp, -0x20
+    0x00ad54: sw       $s0, 0x10($sp)
+    0x00ad58: sw       $ra, 0x1c($sp)
+    0x00ad5c: sw       $s2, 0x18($sp)
+    0x00ad60: sw       $s1, 0x14($sp)
+    0x00ad64: lw       $v0, 4($a0)
+    0x00ad68: andi     $v0, $v0, 0x1000
+    0x00ad6c: beqz     $v0, 0xadc0
+    0x00ad70: move     $s0, $zero
+    0x00ad74: move     $s1, $a0
+    0x00ad78: lui      $s0, 0
+    0x00ad7c: addiu    $s0, $s0, 0  <-- CALL
+    0x00ad80: jalr     $s0
+    0x00ad84: lbu      $a0, 0x6e($a0)
+    0x00ad88: lbu      $a0, 0x70($s1)
+    0x00ad8c: jalr     $s0
+
+=== call to gpio_direction_output at .text+0xae04 (in function ~ingenic_get_charge_status) ===
+    0x00add4: jr       $ra
+    0x00add8: addiu    $sp, $sp, 0x20
+    0x00addc: nop      
+    0x00ade0: lui      $v0, 0
+    0x00ade4: lhu      $a0, 0x1e60($v0)
+    0x00ade8: addiu    $sp, $sp, -0x20
+    0x00adec: sw       $s2, 0x18($sp)
+    0x00adf0: sw       $ra, 0x1c($sp)
+    0x00adf4: sw       $s1, 0x14($sp)
+    0x00adf8: sw       $s0, 0x10($sp)
+    0x00adfc: beqz     $a0, 0xae14
+    0x00ae00: move     $s2, $v0
+    0x00ae04: lui      $v0, 0  <-- CALL
+    0x00ae08: addiu    $v0, $v0, 0
+    0x00ae0c: jalr     $v0
+    0x00ae10: addiu    $a1, $zero, 1
+    0x00ae14: lui      $s0, 0
+
+=== call to gpio_direction_output at .text+0xae08 (in function ~ingenic_get_charge_status) ===
+    0x00add8: addiu    $sp, $sp, 0x20
+    0x00addc: nop      
+    0x00ade0: lui      $v0, 0
+    0x00ade4: lhu      $a0, 0x1e60($v0)
+    0x00ade8: addiu    $sp, $sp, -0x20
+    0x00adec: sw       $s2, 0x18($sp)
+    0x00adf0: sw       $ra, 0x1c($sp)
+    0x00adf4: sw       $s1, 0x14($sp)
+    0x00adf8: sw       $s0, 0x10($sp)
+    0x00adfc: beqz     $a0, 0xae14
+    0x00ae00: move     $s2, $v0
+    0x00ae04: lui      $v0, 0
+    0x00ae08: addiu    $v0, $v0, 0  <-- CALL
+    0x00ae0c: jalr     $v0
+    0x00ae10: addiu    $a1, $zero, 1
+    0x00ae14: lui      $s0, 0
+    0x00ae18: addiu    $v0, $s0, 0
+
+=== call to gpio_direction_output at .text+0xae34 (in function ~ingenic_get_charge_status) ===
+    0x00ae04: lui      $v0, 0
+    0x00ae08: addiu    $v0, $v0, 0
+    0x00ae0c: jalr     $v0
+    0x00ae10: addiu    $a1, $zero, 1
+    0x00ae14: lui      $s0, 0
+    0x00ae18: addiu    $v0, $s0, 0
+    0x00ae1c: jalr     $v0
+    0x00ae20: addiu    $a0, $zero, 0xa
+    0x00ae24: lui      $v0, 0
+    0x00ae28: lhu      $a0, 0x1e62($v0)
+    0x00ae2c: beqz     $a0, 0xae44
+    0x00ae30: move     $s1, $v0
+    0x00ae34: lui      $v0, 0  <-- CALL
+    0x00ae38: addiu    $v0, $v0, 0
+    0x00ae3c: jalr     $v0
+    0x00ae40: addiu    $a1, $zero, 1
+    0x00ae44: addiu    $v0, $s0, 0
+
+=== call to gpio_direction_output at .text+0xae38 (in function ~ingenic_get_charge_status) ===
+    0x00ae08: addiu    $v0, $v0, 0
+    0x00ae0c: jalr     $v0
+    0x00ae10: addiu    $a1, $zero, 1
+    0x00ae14: lui      $s0, 0
+    0x00ae18: addiu    $v0, $s0, 0
+    0x00ae1c: jalr     $v0
+    0x00ae20: addiu    $a0, $zero, 0xa
+    0x00ae24: lui      $v0, 0
+    0x00ae28: lhu      $a0, 0x1e62($v0)
+    0x00ae2c: beqz     $a0, 0xae44
+    0x00ae30: move     $s1, $v0
+    0x00ae34: lui      $v0, 0
+    0x00ae38: addiu    $v0, $v0, 0  <-- CALL
+    0x00ae3c: jalr     $v0
+    0x00ae40: addiu    $a1, $zero, 1
+    0x00ae44: addiu    $v0, $s0, 0
+    0x00ae48: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xae5c (in function ~ingenic_get_charge_status) ===
+    0x00ae2c: beqz     $a0, 0xae44
+    0x00ae30: move     $s1, $v0
+    0x00ae34: lui      $v0, 0
+    0x00ae38: addiu    $v0, $v0, 0
+    0x00ae3c: jalr     $v0
+    0x00ae40: addiu    $a1, $zero, 1
+    0x00ae44: addiu    $v0, $s0, 0
+    0x00ae48: jalr     $v0
+    0x00ae4c: addiu    $a0, $zero, 0xa
+    0x00ae50: lhu      $a0, 0x1e60($s2)
+    0x00ae54: beqz     $a0, 0xae70
+    0x00ae58: addiu    $v0, $s0, 0
+    0x00ae5c: lui      $v0, 0  <-- CALL
+    0x00ae60: addiu    $v0, $v0, 0
+    0x00ae64: jalr     $v0
+    0x00ae68: move     $a1, $zero
+    0x00ae6c: addiu    $v0, $s0, 0
+
+=== call to gpio_direction_output at .text+0xae60 (in function ~ingenic_get_charge_status) ===
+    0x00ae30: move     $s1, $v0
+    0x00ae34: lui      $v0, 0
+    0x00ae38: addiu    $v0, $v0, 0
+    0x00ae3c: jalr     $v0
+    0x00ae40: addiu    $a1, $zero, 1
+    0x00ae44: addiu    $v0, $s0, 0
+    0x00ae48: jalr     $v0
+    0x00ae4c: addiu    $a0, $zero, 0xa
+    0x00ae50: lhu      $a0, 0x1e60($s2)
+    0x00ae54: beqz     $a0, 0xae70
+    0x00ae58: addiu    $v0, $s0, 0
+    0x00ae5c: lui      $v0, 0
+    0x00ae60: addiu    $v0, $v0, 0  <-- CALL
+    0x00ae64: jalr     $v0
+    0x00ae68: move     $a1, $zero
+    0x00ae6c: addiu    $v0, $s0, 0
+    0x00ae70: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xae84 (in function ~ingenic_get_charge_status) ===
+    0x00ae54: beqz     $a0, 0xae70
+    0x00ae58: addiu    $v0, $s0, 0
+    0x00ae5c: lui      $v0, 0
+    0x00ae60: addiu    $v0, $v0, 0
+    0x00ae64: jalr     $v0
+    0x00ae68: move     $a1, $zero
+    0x00ae6c: addiu    $v0, $s0, 0
+    0x00ae70: jalr     $v0
+    0x00ae74: addiu    $a0, $zero, 0xa
+    0x00ae78: lhu      $a0, 0x1e62($s1)
+    0x00ae7c: beqz     $a0, 0xae98
+    0x00ae80: lw       $ra, 0x1c($sp)
+    0x00ae84: lui      $v0, 0  <-- CALL
+    0x00ae88: addiu    $v0, $v0, 0
+    0x00ae8c: jalr     $v0
+    0x00ae90: move     $a1, $zero
+    0x00ae94: lw       $ra, 0x1c($sp)
+
+=== call to gpio_direction_output at .text+0xae88 (in function ~ingenic_get_charge_status) ===
+    0x00ae58: addiu    $v0, $s0, 0
+    0x00ae5c: lui      $v0, 0
+    0x00ae60: addiu    $v0, $v0, 0
+    0x00ae64: jalr     $v0
+    0x00ae68: move     $a1, $zero
+    0x00ae6c: addiu    $v0, $s0, 0
+    0x00ae70: jalr     $v0
+    0x00ae74: addiu    $a0, $zero, 0xa
+    0x00ae78: lhu      $a0, 0x1e62($s1)
+    0x00ae7c: beqz     $a0, 0xae98
+    0x00ae80: lw       $ra, 0x1c($sp)
+    0x00ae84: lui      $v0, 0
+    0x00ae88: addiu    $v0, $v0, 0  <-- CALL
+    0x00ae8c: jalr     $v0
+    0x00ae90: move     $a1, $zero
+    0x00ae94: lw       $ra, 0x1c($sp)
+    0x00ae98: lw       $s2, 0x18($sp)
+
+=== call to gpio_direction_output at .text+0xaee8 (in function ~ingenic_get_charge_status) ===
+    0x00aeb8: sw       $s5, 0x24($sp)
+    0x00aebc: lui      $s5, 0
+    0x00aec0: sw       $s2, 0x18($sp)
+    0x00aec4: move     $s2, $a0
+    0x00aec8: lhu      $a0, 0x1e60($s5)
+    0x00aecc: sw       $ra, 0x2c($sp)
+    0x00aed0: sw       $s6, 0x28($sp)
+    0x00aed4: sw       $s4, 0x20($sp)
+    0x00aed8: sw       $s3, 0x1c($sp)
+    0x00aedc: sw       $s1, 0x14($sp)
+    0x00aee0: beqz     $a0, 0xaef8
+    0x00aee4: sw       $s0, 0x10($sp)
+    0x00aee8: lui      $v0, 0  <-- CALL
+    0x00aeec: addiu    $v0, $v0, 0
+    0x00aef0: jalr     $v0
+    0x00aef4: move     $a1, $zero
+    0x00aef8: lui      $s3, 0
+
+=== call to gpio_direction_output at .text+0xaeec (in function ~ingenic_get_charge_status) ===
+    0x00aebc: lui      $s5, 0
+    0x00aec0: sw       $s2, 0x18($sp)
+    0x00aec4: move     $s2, $a0
+    0x00aec8: lhu      $a0, 0x1e60($s5)
+    0x00aecc: sw       $ra, 0x2c($sp)
+    0x00aed0: sw       $s6, 0x28($sp)
+    0x00aed4: sw       $s4, 0x20($sp)
+    0x00aed8: sw       $s3, 0x1c($sp)
+    0x00aedc: sw       $s1, 0x14($sp)
+    0x00aee0: beqz     $a0, 0xaef8
+    0x00aee4: sw       $s0, 0x10($sp)
+    0x00aee8: lui      $v0, 0
+    0x00aeec: addiu    $v0, $v0, 0  <-- CALL
+    0x00aef0: jalr     $v0
+    0x00aef4: move     $a1, $zero
+    0x00aef8: lui      $s3, 0
+    0x00aefc: lhu      $a0, 0x1e62($s3)
+
+=== call to gpio_direction_output at .text+0xaf08 (in function ~ingenic_get_charge_status) ===
+    0x00aed8: sw       $s3, 0x1c($sp)
+    0x00aedc: sw       $s1, 0x14($sp)
+    0x00aee0: beqz     $a0, 0xaef8
+    0x00aee4: sw       $s0, 0x10($sp)
+    0x00aee8: lui      $v0, 0
+    0x00aeec: addiu    $v0, $v0, 0
+    0x00aef0: jalr     $v0
+    0x00aef4: move     $a1, $zero
+    0x00aef8: lui      $s3, 0
+    0x00aefc: lhu      $a0, 0x1e62($s3)
+    0x00af00: beql     $a0, $zero, 0xaf1c
+    0x00af04: lui      $s6, 0
+    0x00af08: lui      $v0, 0  <-- CALL
+    0x00af0c: addiu    $v0, $v0, 0
+    0x00af10: jalr     $v0
+    0x00af14: move     $a1, $zero
+    0x00af18: lui      $s6, 0
+
+=== call to gpio_direction_output at .text+0xaf0c (in function ~ingenic_get_charge_status) ===
+    0x00aedc: sw       $s1, 0x14($sp)
+    0x00aee0: beqz     $a0, 0xaef8
+    0x00aee4: sw       $s0, 0x10($sp)
+    0x00aee8: lui      $v0, 0
+    0x00aeec: addiu    $v0, $v0, 0
+    0x00aef0: jalr     $v0
+    0x00aef4: move     $a1, $zero
+    0x00aef8: lui      $s3, 0
+    0x00aefc: lhu      $a0, 0x1e62($s3)
+    0x00af00: beql     $a0, $zero, 0xaf1c
+    0x00af04: lui      $s6, 0
+    0x00af08: lui      $v0, 0
+    0x00af0c: addiu    $v0, $v0, 0  <-- CALL
+    0x00af10: jalr     $v0
+    0x00af14: move     $a1, $zero
+    0x00af18: lui      $s6, 0
+    0x00af1c: addiu    $s1, $zero, 9
+
+=== call to gpio_direction_output at .text+0xaf20 (in function ~ingenic_get_charge_status) ===
+    0x00aef0: jalr     $v0
+    0x00aef4: move     $a1, $zero
+    0x00aef8: lui      $s3, 0
+    0x00aefc: lhu      $a0, 0x1e62($s3)
+    0x00af00: beql     $a0, $zero, 0xaf1c
+    0x00af04: lui      $s6, 0
+    0x00af08: lui      $v0, 0
+    0x00af0c: addiu    $v0, $v0, 0
+    0x00af10: jalr     $v0
+    0x00af14: move     $a1, $zero
+    0x00af18: lui      $s6, 0
+    0x00af1c: addiu    $s1, $zero, 9
+    0x00af20: lui      $s0, 0  <-- CALL
+    0x00af24: b        0xafdc
+    0x00af28: move     $s4, $s6
+    0x00af2c: beqz     $a0, 0xaf44
+    0x00af30: addiu    $v0, $s6, 0
+
+=== call to gpio_direction_output at .text+0xaf34 (in function ~ingenic_get_charge_status) ===
+    0x00af04: lui      $s6, 0
+    0x00af08: lui      $v0, 0
+    0x00af0c: addiu    $v0, $v0, 0
+    0x00af10: jalr     $v0
+    0x00af14: move     $a1, $zero
+    0x00af18: lui      $s6, 0
+    0x00af1c: addiu    $s1, $zero, 9
+    0x00af20: lui      $s0, 0
+    0x00af24: b        0xafdc
+    0x00af28: move     $s4, $s6
+    0x00af2c: beqz     $a0, 0xaf44
+    0x00af30: addiu    $v0, $s6, 0
+    0x00af34: addiu    $v0, $s0, 0  <-- CALL
+    0x00af38: jalr     $v0
+    0x00af3c: move     $a1, $zero
+    0x00af40: addiu    $v0, $s6, 0
+    0x00af44: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xaf78 (in function ~ingenic_get_charge_status) ===
+    0x00af48: addiu    $a0, $zero, 0xa
+    0x00af4c: sll      $v0, $s2, 0x18
+    0x00af50: sra      $v0, $v0, 0x18
+    0x00af54: bgez     $v0, 0xaf6c
+    0x00af58: lhu      $a0, 0x1e60($s5)
+    0x00af5c: bnez     $a0, 0xaf78
+    0x00af60: addiu    $a1, $zero, 1
+    0x00af64: b        0xaf88
+    0x00af68: addiu    $v0, $s4, 0
+    0x00af6c: beqz     $a0, 0xaf88
+    0x00af70: addiu    $v0, $s4, 0
+    0x00af74: move     $a1, $zero
+    0x00af78: addiu    $v0, $s0, 0  <-- CALL
+    0x00af7c: jalr     $v0
+    0x00af80: nop      
+    0x00af84: addiu    $v0, $s4, 0
+    0x00af88: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xafa0 (in function ~ingenic_get_charge_status) ===
+    0x00af70: addiu    $v0, $s4, 0
+    0x00af74: move     $a1, $zero
+    0x00af78: addiu    $v0, $s0, 0
+    0x00af7c: jalr     $v0
+    0x00af80: nop      
+    0x00af84: addiu    $v0, $s4, 0
+    0x00af88: jalr     $v0
+    0x00af8c: addiu    $a0, $zero, 0xa
+    0x00af90: lhu      $a0, 0x1e62($s3)
+    0x00af94: sll      $s2, $s2, 1
+    0x00af98: beqz     $a0, 0xafac
+    0x00af9c: andi     $s2, $s2, 0xff
+    0x00afa0: addiu    $v0, $s0, 0  <-- CALL
+    0x00afa4: jalr     $v0
+    0x00afa8: addiu    $a1, $zero, 1
+    0x00afac: addiu    $v0, $s4, 0
+    0x00afb0: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xafc4 (in function ~ingenic_get_charge_status) ===
+    0x00af94: sll      $s2, $s2, 1
+    0x00af98: beqz     $a0, 0xafac
+    0x00af9c: andi     $s2, $s2, 0xff
+    0x00afa0: addiu    $v0, $s0, 0
+    0x00afa4: jalr     $v0
+    0x00afa8: addiu    $a1, $zero, 1
+    0x00afac: addiu    $v0, $s4, 0
+    0x00afb0: jalr     $v0
+    0x00afb4: addiu    $a0, $zero, 0xa
+    0x00afb8: lhu      $a0, 0x1e62($s3)
+    0x00afbc: beqz     $a0, 0xafd4
+    0x00afc0: addiu    $v0, $s4, 0
+    0x00afc4: addiu    $v0, $s0, 0  <-- CALL
+    0x00afc8: jalr     $v0
+    0x00afcc: move     $a1, $zero
+    0x00afd0: addiu    $v0, $s4, 0
+    0x00afd4: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xb038 (in function ~ingenic_get_charge_status) ===
+    0x00b008: lw       $s0, 0x10($sp)
+    0x00b00c: jr       $ra
+    0x00b010: addiu    $sp, $sp, 0x30
+    0x00b014: lui      $v0, 0
+    0x00b018: lhu      $a0, 0x1e62($v0)
+    0x00b01c: addiu    $sp, $sp, -0x20
+    0x00b020: sw       $s2, 0x18($sp)
+    0x00b024: sw       $ra, 0x1c($sp)
+    0x00b028: sw       $s1, 0x14($sp)
+    0x00b02c: sw       $s0, 0x10($sp)
+    0x00b030: beqz     $a0, 0xb048
+    0x00b034: move     $s2, $v0
+    0x00b038: lui      $v0, 0  <-- CALL
+    0x00b03c: addiu    $v0, $v0, 0
+    0x00b040: jalr     $v0
+    0x00b044: move     $a1, $zero
+    0x00b048: lui      $s0, 0
+
+=== call to gpio_direction_output at .text+0xb03c (in function ~ingenic_get_charge_status) ===
+    0x00b00c: jr       $ra
+    0x00b010: addiu    $sp, $sp, 0x30
+    0x00b014: lui      $v0, 0
+    0x00b018: lhu      $a0, 0x1e62($v0)
+    0x00b01c: addiu    $sp, $sp, -0x20
+    0x00b020: sw       $s2, 0x18($sp)
+    0x00b024: sw       $ra, 0x1c($sp)
+    0x00b028: sw       $s1, 0x14($sp)
+    0x00b02c: sw       $s0, 0x10($sp)
+    0x00b030: beqz     $a0, 0xb048
+    0x00b034: move     $s2, $v0
+    0x00b038: lui      $v0, 0
+    0x00b03c: addiu    $v0, $v0, 0  <-- CALL
+    0x00b040: jalr     $v0
+    0x00b044: move     $a1, $zero
+    0x00b048: lui      $s0, 0
+    0x00b04c: addiu    $v0, $s0, 0
+
+=== call to gpio_direction_output at .text+0xb068 (in function ~ingenic_get_charge_status) ===
+    0x00b038: lui      $v0, 0
+    0x00b03c: addiu    $v0, $v0, 0
+    0x00b040: jalr     $v0
+    0x00b044: move     $a1, $zero
+    0x00b048: lui      $s0, 0
+    0x00b04c: addiu    $v0, $s0, 0
+    0x00b050: jalr     $v0
+    0x00b054: addiu    $a0, $zero, 0xa
+    0x00b058: lui      $v0, 0
+    0x00b05c: lhu      $a0, 0x1e60($v0)
+    0x00b060: beqz     $a0, 0xb078
+    0x00b064: move     $s1, $v0
+    0x00b068: lui      $v0, 0  <-- CALL
+    0x00b06c: addiu    $v0, $v0, 0
+    0x00b070: jalr     $v0
+    0x00b074: move     $a1, $zero
+    0x00b078: addiu    $v0, $s0, 0
+
+=== call to gpio_direction_output at .text+0xb06c (in function ~ingenic_get_charge_status) ===
+    0x00b03c: addiu    $v0, $v0, 0
+    0x00b040: jalr     $v0
+    0x00b044: move     $a1, $zero
+    0x00b048: lui      $s0, 0
+    0x00b04c: addiu    $v0, $s0, 0
+    0x00b050: jalr     $v0
+    0x00b054: addiu    $a0, $zero, 0xa
+    0x00b058: lui      $v0, 0
+    0x00b05c: lhu      $a0, 0x1e60($v0)
+    0x00b060: beqz     $a0, 0xb078
+    0x00b064: move     $s1, $v0
+    0x00b068: lui      $v0, 0
+    0x00b06c: addiu    $v0, $v0, 0  <-- CALL
+    0x00b070: jalr     $v0
+    0x00b074: move     $a1, $zero
+    0x00b078: addiu    $v0, $s0, 0
+    0x00b07c: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xb090 (in function ~ingenic_get_charge_status) ===
+    0x00b060: beqz     $a0, 0xb078
+    0x00b064: move     $s1, $v0
+    0x00b068: lui      $v0, 0
+    0x00b06c: addiu    $v0, $v0, 0
+    0x00b070: jalr     $v0
+    0x00b074: move     $a1, $zero
+    0x00b078: addiu    $v0, $s0, 0
+    0x00b07c: jalr     $v0
+    0x00b080: addiu    $a0, $zero, 0xa
+    0x00b084: lhu      $a0, 0x1e62($s2)
+    0x00b088: beqz     $a0, 0xb0a4
+    0x00b08c: addiu    $v0, $s0, 0
+    0x00b090: lui      $v0, 0  <-- CALL
+    0x00b094: addiu    $v0, $v0, 0
+    0x00b098: jalr     $v0
+    0x00b09c: addiu    $a1, $zero, 1
+    0x00b0a0: addiu    $v0, $s0, 0
+
+=== call to gpio_direction_output at .text+0xb094 (in function ~ingenic_get_charge_status) ===
+    0x00b064: move     $s1, $v0
+    0x00b068: lui      $v0, 0
+    0x00b06c: addiu    $v0, $v0, 0
+    0x00b070: jalr     $v0
+    0x00b074: move     $a1, $zero
+    0x00b078: addiu    $v0, $s0, 0
+    0x00b07c: jalr     $v0
+    0x00b080: addiu    $a0, $zero, 0xa
+    0x00b084: lhu      $a0, 0x1e62($s2)
+    0x00b088: beqz     $a0, 0xb0a4
+    0x00b08c: addiu    $v0, $s0, 0
+    0x00b090: lui      $v0, 0
+    0x00b094: addiu    $v0, $v0, 0  <-- CALL
+    0x00b098: jalr     $v0
+    0x00b09c: addiu    $a1, $zero, 1
+    0x00b0a0: addiu    $v0, $s0, 0
+    0x00b0a4: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xb0b8 (in function ~ingenic_get_charge_status) ===
+    0x00b088: beqz     $a0, 0xb0a4
+    0x00b08c: addiu    $v0, $s0, 0
+    0x00b090: lui      $v0, 0
+    0x00b094: addiu    $v0, $v0, 0
+    0x00b098: jalr     $v0
+    0x00b09c: addiu    $a1, $zero, 1
+    0x00b0a0: addiu    $v0, $s0, 0
+    0x00b0a4: jalr     $v0
+    0x00b0a8: addiu    $a0, $zero, 0xa
+    0x00b0ac: lhu      $a0, 0x1e60($s1)
+    0x00b0b0: beqz     $a0, 0xb0cc
+    0x00b0b4: lw       $ra, 0x1c($sp)
+    0x00b0b8: lui      $v0, 0  <-- CALL
+    0x00b0bc: addiu    $v0, $v0, 0
+    0x00b0c0: jalr     $v0
+    0x00b0c4: addiu    $a1, $zero, 1
+    0x00b0c8: lw       $ra, 0x1c($sp)
+
+=== call to gpio_direction_output at .text+0xb0bc (in function ~ingenic_get_charge_status) ===
+    0x00b08c: addiu    $v0, $s0, 0
+    0x00b090: lui      $v0, 0
+    0x00b094: addiu    $v0, $v0, 0
+    0x00b098: jalr     $v0
+    0x00b09c: addiu    $a1, $zero, 1
+    0x00b0a0: addiu    $v0, $s0, 0
+    0x00b0a4: jalr     $v0
+    0x00b0a8: addiu    $a0, $zero, 0xa
+    0x00b0ac: lhu      $a0, 0x1e60($s1)
+    0x00b0b0: beqz     $a0, 0xb0cc
+    0x00b0b4: lw       $ra, 0x1c($sp)
+    0x00b0b8: lui      $v0, 0
+    0x00b0bc: addiu    $v0, $v0, 0  <-- CALL
+    0x00b0c0: jalr     $v0
+    0x00b0c4: addiu    $a1, $zero, 1
+    0x00b0c8: lw       $ra, 0x1c($sp)
+    0x00b0cc: lw       $s2, 0x18($sp)
+
+=== call to gpio_direction_input at .text+0xb0f8 (in function ~ingenic_get_charge_status) ===
+    0x00b0c8: lw       $ra, 0x1c($sp)
+    0x00b0cc: lw       $s2, 0x18($sp)
+    0x00b0d0: lw       $s1, 0x14($sp)
+    0x00b0d4: addiu    $t9, $s0, 0
+    0x00b0d8: lw       $s0, 0x10($sp)
+    0x00b0dc: addiu    $a0, $zero, 0xa
+    0x00b0e0: jr       $t9
+    0x00b0e4: addiu    $sp, $sp, 0x20
+    0x00b0e8: addiu    $sp, $sp, -0x28
+    0x00b0ec: sw       $s2, 0x18($sp)
+    0x00b0f0: lui      $s2, 0
+    0x00b0f4: lhu      $a0, 0x1e60($s2)
+    0x00b0f8: lui      $v0, 0  <-- CALL
+    0x00b0fc: sw       $ra, 0x24($sp)
+    0x00b100: sw       $s3, 0x1c($sp)
+    0x00b104: sw       $s0, 0x10($sp)
+    0x00b108: sw       $s4, 0x20($sp)
+
+=== call to gpio_direction_input at .text+0xb110 (in function ~ingenic_get_charge_status) ===
+    0x00b0e0: jr       $t9
+    0x00b0e4: addiu    $sp, $sp, 0x20
+    0x00b0e8: addiu    $sp, $sp, -0x28
+    0x00b0ec: sw       $s2, 0x18($sp)
+    0x00b0f0: lui      $s2, 0
+    0x00b0f4: lhu      $a0, 0x1e60($s2)
+    0x00b0f8: lui      $v0, 0
+    0x00b0fc: sw       $ra, 0x24($sp)
+    0x00b100: sw       $s3, 0x1c($sp)
+    0x00b104: sw       $s0, 0x10($sp)
+    0x00b108: sw       $s4, 0x20($sp)
+    0x00b10c: sw       $s1, 0x14($sp)
+    0x00b110: addiu    $v0, $v0, 0  <-- CALL
+    0x00b114: jalr     $v0
+    0x00b118: lui      $s0, 0
+    0x00b11c: addiu    $v0, $s0, 0
+    0x00b120: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xb138 (in function ~ingenic_get_charge_status) ===
+    0x00b108: sw       $s4, 0x20($sp)
+    0x00b10c: sw       $s1, 0x14($sp)
+    0x00b110: addiu    $v0, $v0, 0
+    0x00b114: jalr     $v0
+    0x00b118: lui      $s0, 0
+    0x00b11c: addiu    $v0, $s0, 0
+    0x00b120: jalr     $v0
+    0x00b124: addiu    $a0, $zero, 0xa
+    0x00b128: lui      $v0, 0
+    0x00b12c: lhu      $a0, 0x1e62($v0)
+    0x00b130: beqz     $a0, 0xb148
+    0x00b134: move     $s3, $v0
+    0x00b138: lui      $v0, 0  <-- CALL
+    0x00b13c: addiu    $v0, $v0, 0
+    0x00b140: jalr     $v0
+    0x00b144: addiu    $a1, $zero, 1
+    0x00b148: addiu    $v0, $s0, 0
+
+=== call to gpio_direction_output at .text+0xb13c (in function ~ingenic_get_charge_status) ===
+    0x00b10c: sw       $s1, 0x14($sp)
+    0x00b110: addiu    $v0, $v0, 0
+    0x00b114: jalr     $v0
+    0x00b118: lui      $s0, 0
+    0x00b11c: addiu    $v0, $s0, 0
+    0x00b120: jalr     $v0
+    0x00b124: addiu    $a0, $zero, 0xa
+    0x00b128: lui      $v0, 0
+    0x00b12c: lhu      $a0, 0x1e62($v0)
+    0x00b130: beqz     $a0, 0xb148
+    0x00b134: move     $s3, $v0
+    0x00b138: lui      $v0, 0
+    0x00b13c: addiu    $v0, $v0, 0  <-- CALL
+    0x00b140: jalr     $v0
+    0x00b144: addiu    $a1, $zero, 1
+    0x00b148: addiu    $v0, $s0, 0
+    0x00b14c: jalr     $v0
+
+=== call to __gpio_get_value at .text+0xb15c (in function ~ingenic_get_charge_status) ===
+    0x00b12c: lhu      $a0, 0x1e62($v0)
+    0x00b130: beqz     $a0, 0xb148
+    0x00b134: move     $s3, $v0
+    0x00b138: lui      $v0, 0
+    0x00b13c: addiu    $v0, $v0, 0
+    0x00b140: jalr     $v0
+    0x00b144: addiu    $a1, $zero, 1
+    0x00b148: addiu    $v0, $s0, 0
+    0x00b14c: jalr     $v0
+    0x00b150: addiu    $a0, $zero, 0xa
+    0x00b154: addiu    $s1, $zero, 6
+    0x00b158: b        0xb168
+    0x00b15c: lui      $s4, 0  <-- CALL
+    0x00b160: jalr     $v0
+    0x00b164: addiu    $a0, $zero, 1
+    0x00b168: addiu    $v0, $s4, 0
+    0x00b16c: jalr     $v0
+
+=== call to __gpio_get_value at .text+0xb168 (in function ~ingenic_get_charge_status) ===
+    0x00b138: lui      $v0, 0
+    0x00b13c: addiu    $v0, $v0, 0
+    0x00b140: jalr     $v0
+    0x00b144: addiu    $a1, $zero, 1
+    0x00b148: addiu    $v0, $s0, 0
+    0x00b14c: jalr     $v0
+    0x00b150: addiu    $a0, $zero, 0xa
+    0x00b154: addiu    $s1, $zero, 6
+    0x00b158: b        0xb168
+    0x00b15c: lui      $s4, 0
+    0x00b160: jalr     $v0
+    0x00b164: addiu    $a0, $zero, 1
+    0x00b168: addiu    $v0, $s4, 0  <-- CALL
+    0x00b16c: jalr     $v0
+    0x00b170: lhu      $a0, 0x1e60($s2)
+    0x00b174: beqz     $v0, 0xb18c
+    0x00b178: lui      $v0, 0
+
+=== call to __gpio_get_value at .text+0xb178 (in function ~ingenic_get_charge_status) ===
+    0x00b148: addiu    $v0, $s0, 0
+    0x00b14c: jalr     $v0
+    0x00b150: addiu    $a0, $zero, 0xa
+    0x00b154: addiu    $s1, $zero, 6
+    0x00b158: b        0xb168
+    0x00b15c: lui      $s4, 0
+    0x00b160: jalr     $v0
+    0x00b164: addiu    $a0, $zero, 1
+    0x00b168: addiu    $v0, $s4, 0
+    0x00b16c: jalr     $v0
+    0x00b170: lhu      $a0, 0x1e60($s2)
+    0x00b174: beqz     $v0, 0xb18c
+    0x00b178: lui      $v0, 0  <-- CALL
+    0x00b17c: addiu    $s1, $s1, -1
+    0x00b180: bnez     $s1, 0xb160
+    0x00b184: addiu    $v0, $s0, 0
+    0x00b188: lui      $v0, 0
+
+=== call to __gpio_get_value at .text+0xb188 (in function ~ingenic_get_charge_status) ===
+    0x00b158: b        0xb168
+    0x00b15c: lui      $s4, 0
+    0x00b160: jalr     $v0
+    0x00b164: addiu    $a0, $zero, 1
+    0x00b168: addiu    $v0, $s4, 0
+    0x00b16c: jalr     $v0
+    0x00b170: lhu      $a0, 0x1e60($s2)
+    0x00b174: beqz     $v0, 0xb18c
+    0x00b178: lui      $v0, 0
+    0x00b17c: addiu    $s1, $s1, -1
+    0x00b180: bnez     $s1, 0xb160
+    0x00b184: addiu    $v0, $s0, 0
+    0x00b188: lui      $v0, 0  <-- CALL
+    0x00b18c: addiu    $v0, $v0, 0
+    0x00b190: jalr     $v0
+    0x00b194: lhu      $a0, 0x1e60($s2)
+    0x00b198: bnez     $v0, 0xb1f8
+
+=== call to __gpio_get_value at .text+0xb18c (in function ~ingenic_get_charge_status) ===
+    0x00b15c: lui      $s4, 0
+    0x00b160: jalr     $v0
+    0x00b164: addiu    $a0, $zero, 1
+    0x00b168: addiu    $v0, $s4, 0
+    0x00b16c: jalr     $v0
+    0x00b170: lhu      $a0, 0x1e60($s2)
+    0x00b174: beqz     $v0, 0xb18c
+    0x00b178: lui      $v0, 0
+    0x00b17c: addiu    $s1, $s1, -1
+    0x00b180: bnez     $s1, 0xb160
+    0x00b184: addiu    $v0, $s0, 0
+    0x00b188: lui      $v0, 0
+    0x00b18c: addiu    $v0, $v0, 0  <-- CALL
+    0x00b190: jalr     $v0
+    0x00b194: lhu      $a0, 0x1e60($s2)
+    0x00b198: bnez     $v0, 0xb1f8
+    0x00b19c: move     $v1, $zero
+
+=== call to gpio_direction_output at .text+0xb1b0 (in function ~ingenic_get_charge_status) ===
+    0x00b180: bnez     $s1, 0xb160
+    0x00b184: addiu    $v0, $s0, 0
+    0x00b188: lui      $v0, 0
+    0x00b18c: addiu    $v0, $v0, 0
+    0x00b190: jalr     $v0
+    0x00b194: lhu      $a0, 0x1e60($s2)
+    0x00b198: bnez     $v0, 0xb1f8
+    0x00b19c: move     $v1, $zero
+    0x00b1a0: lui      $v0, 0
+    0x00b1a4: lhu      $a0, 0x1e60($v0)
+    0x00b1a8: beqz     $a0, 0xb1c4
+    0x00b1ac: addiu    $v0, $s0, 0
+    0x00b1b0: lui      $v0, 0  <-- CALL
+    0x00b1b4: addiu    $v0, $v0, 0
+    0x00b1b8: jalr     $v0
+    0x00b1bc: move     $a1, $zero
+    0x00b1c0: addiu    $v0, $s0, 0
+
+=== call to gpio_direction_output at .text+0xb1b4 (in function ~ingenic_get_charge_status) ===
+    0x00b184: addiu    $v0, $s0, 0
+    0x00b188: lui      $v0, 0
+    0x00b18c: addiu    $v0, $v0, 0
+    0x00b190: jalr     $v0
+    0x00b194: lhu      $a0, 0x1e60($s2)
+    0x00b198: bnez     $v0, 0xb1f8
+    0x00b19c: move     $v1, $zero
+    0x00b1a0: lui      $v0, 0
+    0x00b1a4: lhu      $a0, 0x1e60($v0)
+    0x00b1a8: beqz     $a0, 0xb1c4
+    0x00b1ac: addiu    $v0, $s0, 0
+    0x00b1b0: lui      $v0, 0
+    0x00b1b4: addiu    $v0, $v0, 0  <-- CALL
+    0x00b1b8: jalr     $v0
+    0x00b1bc: move     $a1, $zero
+    0x00b1c0: addiu    $v0, $s0, 0
+    0x00b1c4: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xb1d8 (in function ~ingenic_get_charge_status) ===
+    0x00b1a8: beqz     $a0, 0xb1c4
+    0x00b1ac: addiu    $v0, $s0, 0
+    0x00b1b0: lui      $v0, 0
+    0x00b1b4: addiu    $v0, $v0, 0
+    0x00b1b8: jalr     $v0
+    0x00b1bc: move     $a1, $zero
+    0x00b1c0: addiu    $v0, $s0, 0
+    0x00b1c4: jalr     $v0
+    0x00b1c8: addiu    $a0, $zero, 0xa
+    0x00b1cc: lhu      $a0, 0x1e62($s3)
+    0x00b1d0: beql     $a0, $zero, 0xb1ec
+    0x00b1d4: addiu    $s0, $s0, 0
+    0x00b1d8: lui      $v0, 0  <-- CALL
+    0x00b1dc: addiu    $v0, $v0, 0
+    0x00b1e0: jalr     $v0
+    0x00b1e4: move     $a1, $zero
+    0x00b1e8: addiu    $s0, $s0, 0
+
+=== call to gpio_direction_output at .text+0xb1dc (in function ~ingenic_get_charge_status) ===
+    0x00b1ac: addiu    $v0, $s0, 0
+    0x00b1b0: lui      $v0, 0
+    0x00b1b4: addiu    $v0, $v0, 0
+    0x00b1b8: jalr     $v0
+    0x00b1bc: move     $a1, $zero
+    0x00b1c0: addiu    $v0, $s0, 0
+    0x00b1c4: jalr     $v0
+    0x00b1c8: addiu    $a0, $zero, 0xa
+    0x00b1cc: lhu      $a0, 0x1e62($s3)
+    0x00b1d0: beql     $a0, $zero, 0xb1ec
+    0x00b1d4: addiu    $s0, $s0, 0
+    0x00b1d8: lui      $v0, 0
+    0x00b1dc: addiu    $v0, $v0, 0  <-- CALL
+    0x00b1e0: jalr     $v0
+    0x00b1e4: move     $a1, $zero
+    0x00b1e8: addiu    $s0, $s0, 0
+    0x00b1ec: jalr     $s0
+
+=== call to gpio_direction_output at .text+0xb300 (in function ~ingenic_get_charge_status) ===
+    0x00b2d0: addiu    $a0, $zero, 0x28
+    0x00b2d4: jalr     $s3
+    0x00b2d8: nop      
+    0x00b2dc: jalr     $s1
+    0x00b2e0: ori      $a0, $s2, 1
+    0x00b2e4: jalr     $s0
+    0x00b2e8: nop      
+    0x00b2ec: beqz     $v0, 0xb28c
+    0x00b2f0: lui      $s6, 0
+    0x00b2f4: move     $s2, $zero
+    0x00b2f8: lui      $s4, 0
+    0x00b2fc: lui      $s3, 0
+    0x00b300: lui      $s0, 0  <-- CALL
+    0x00b304: b        0xb448
+    0x00b308: move     $fp, $s6
+    0x00b30c: lhu      $a0, 0x1e60($s4)
+    0x00b310: beqz     $a0, 0xb328
+
+=== call to gpio_direction_input at .text+0xb314 (in function ~ingenic_get_charge_status) ===
+    0x00b2e4: jalr     $s0
+    0x00b2e8: nop      
+    0x00b2ec: beqz     $v0, 0xb28c
+    0x00b2f0: lui      $s6, 0
+    0x00b2f4: move     $s2, $zero
+    0x00b2f8: lui      $s4, 0
+    0x00b2fc: lui      $s3, 0
+    0x00b300: lui      $s0, 0
+    0x00b304: b        0xb448
+    0x00b308: move     $fp, $s6
+    0x00b30c: lhu      $a0, 0x1e60($s4)
+    0x00b310: beqz     $a0, 0xb328
+    0x00b314: lui      $v0, 0  <-- CALL
+    0x00b318: addiu    $v0, $s0, 0
+    0x00b31c: jalr     $v0
+    0x00b320: addiu    $a1, $zero, 1
+    0x00b324: lui      $v0, 0
+
+=== call to gpio_direction_output at .text+0xb318 (in function ~ingenic_get_charge_status) ===
+    0x00b2e8: nop      
+    0x00b2ec: beqz     $v0, 0xb28c
+    0x00b2f0: lui      $s6, 0
+    0x00b2f4: move     $s2, $zero
+    0x00b2f8: lui      $s4, 0
+    0x00b2fc: lui      $s3, 0
+    0x00b300: lui      $s0, 0
+    0x00b304: b        0xb448
+    0x00b308: move     $fp, $s6
+    0x00b30c: lhu      $a0, 0x1e60($s4)
+    0x00b310: beqz     $a0, 0xb328
+    0x00b314: lui      $v0, 0
+    0x00b318: addiu    $v0, $s0, 0  <-- CALL
+    0x00b31c: jalr     $v0
+    0x00b320: addiu    $a1, $zero, 1
+    0x00b324: lui      $v0, 0
+    0x00b328: addiu    $v0, $v0, 0
+
+=== call to gpio_direction_input at .text+0xb324 (in function ~ingenic_get_charge_status) ===
+    0x00b2f4: move     $s2, $zero
+    0x00b2f8: lui      $s4, 0
+    0x00b2fc: lui      $s3, 0
+    0x00b300: lui      $s0, 0
+    0x00b304: b        0xb448
+    0x00b308: move     $fp, $s6
+    0x00b30c: lhu      $a0, 0x1e60($s4)
+    0x00b310: beqz     $a0, 0xb328
+    0x00b314: lui      $v0, 0
+    0x00b318: addiu    $v0, $s0, 0
+    0x00b31c: jalr     $v0
+    0x00b320: addiu    $a1, $zero, 1
+    0x00b324: lui      $v0, 0  <-- CALL
+    0x00b328: addiu    $v0, $v0, 0
+    0x00b32c: jalr     $v0
+    0x00b330: lhu      $a0, 0x1e60($s4)
+    0x00b334: addiu    $s7, $zero, 9
+
+=== call to gpio_direction_input at .text+0xb328 (in function ~ingenic_get_charge_status) ===
+    0x00b2f8: lui      $s4, 0
+    0x00b2fc: lui      $s3, 0
+    0x00b300: lui      $s0, 0
+    0x00b304: b        0xb448
+    0x00b308: move     $fp, $s6
+    0x00b30c: lhu      $a0, 0x1e60($s4)
+    0x00b310: beqz     $a0, 0xb328
+    0x00b314: lui      $v0, 0
+    0x00b318: addiu    $v0, $s0, 0
+    0x00b31c: jalr     $v0
+    0x00b320: addiu    $a1, $zero, 1
+    0x00b324: lui      $v0, 0
+    0x00b328: addiu    $v0, $v0, 0  <-- CALL
+    0x00b32c: jalr     $v0
+    0x00b330: lhu      $a0, 0x1e60($s4)
+    0x00b334: addiu    $s7, $zero, 9
+    0x00b338: b        0xb3a0
+
+=== call to gpio_direction_output at .text+0xb34c (in function ~ingenic_get_charge_status) ===
+    0x00b31c: jalr     $v0
+    0x00b320: addiu    $a1, $zero, 1
+    0x00b324: lui      $v0, 0
+    0x00b328: addiu    $v0, $v0, 0
+    0x00b32c: jalr     $v0
+    0x00b330: lhu      $a0, 0x1e60($s4)
+    0x00b334: addiu    $s7, $zero, 9
+    0x00b338: b        0xb3a0
+    0x00b33c: move     $s1, $zero
+    0x00b340: sll      $s1, $s1, 1
+    0x00b344: beqz     $a0, 0xb358
+    0x00b348: andi     $s1, $s1, 0xff
+    0x00b34c: addiu    $v0, $s0, 0  <-- CALL
+    0x00b350: jalr     $v0
+    0x00b354: move     $a1, $zero
+    0x00b358: addiu    $v0, $s6, 0
+    0x00b35c: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xb370 (in function ~ingenic_get_charge_status) ===
+    0x00b340: sll      $s1, $s1, 1
+    0x00b344: beqz     $a0, 0xb358
+    0x00b348: andi     $s1, $s1, 0xff
+    0x00b34c: addiu    $v0, $s0, 0
+    0x00b350: jalr     $v0
+    0x00b354: move     $a1, $zero
+    0x00b358: addiu    $v0, $s6, 0
+    0x00b35c: jalr     $v0
+    0x00b360: addiu    $a0, $zero, 0xa
+    0x00b364: lhu      $a0, 0x1e62($s3)
+    0x00b368: beqz     $a0, 0xb380
+    0x00b36c: addiu    $v0, $fp, 0
+    0x00b370: addiu    $v0, $s0, 0  <-- CALL
+    0x00b374: jalr     $v0
+    0x00b378: addiu    $a1, $zero, 1
+    0x00b37c: addiu    $v0, $fp, 0
+    0x00b380: jalr     $v0
+
+=== call to __gpio_get_value at .text+0xb388 (in function ~ingenic_get_charge_status) ===
+    0x00b358: addiu    $v0, $s6, 0
+    0x00b35c: jalr     $v0
+    0x00b360: addiu    $a0, $zero, 0xa
+    0x00b364: lhu      $a0, 0x1e62($s3)
+    0x00b368: beqz     $a0, 0xb380
+    0x00b36c: addiu    $v0, $fp, 0
+    0x00b370: addiu    $v0, $s0, 0
+    0x00b374: jalr     $v0
+    0x00b378: addiu    $a1, $zero, 1
+    0x00b37c: addiu    $v0, $fp, 0
+    0x00b380: jalr     $v0
+    0x00b384: addiu    $a0, $zero, 0xa
+    0x00b388: lui      $v1, 0  <-- CALL
+    0x00b38c: addiu    $v0, $v1, 0
+    0x00b390: jalr     $v0
+    0x00b394: lhu      $a0, 0x1e60($s4)
+    0x00b398: ori      $v1, $s1, 1
+
+=== call to __gpio_get_value at .text+0xb38c (in function ~ingenic_get_charge_status) ===
+    0x00b35c: jalr     $v0
+    0x00b360: addiu    $a0, $zero, 0xa
+    0x00b364: lhu      $a0, 0x1e62($s3)
+    0x00b368: beqz     $a0, 0xb380
+    0x00b36c: addiu    $v0, $fp, 0
+    0x00b370: addiu    $v0, $s0, 0
+    0x00b374: jalr     $v0
+    0x00b378: addiu    $a1, $zero, 1
+    0x00b37c: addiu    $v0, $fp, 0
+    0x00b380: jalr     $v0
+    0x00b384: addiu    $a0, $zero, 0xa
+    0x00b388: lui      $v1, 0
+    0x00b38c: addiu    $v0, $v1, 0  <-- CALL
+    0x00b390: jalr     $v0
+    0x00b394: lhu      $a0, 0x1e60($s4)
+    0x00b398: ori      $v1, $s1, 1
+    0x00b39c: movn     $s1, $v1, $v0
+
+=== call to gpio_direction_output at .text+0xb3b8 (in function ~ingenic_get_charge_status) ===
+    0x00b388: lui      $v1, 0
+    0x00b38c: addiu    $v0, $v1, 0
+    0x00b390: jalr     $v0
+    0x00b394: lhu      $a0, 0x1e60($s4)
+    0x00b398: ori      $v1, $s1, 1
+    0x00b39c: movn     $s1, $v1, $v0
+    0x00b3a0: addiu    $s7, $s7, -1
+    0x00b3a4: andi     $s7, $s7, 0xff
+    0x00b3a8: bnez     $s7, 0xb340
+    0x00b3ac: lhu      $a0, 0x1e62($s3)
+    0x00b3b0: beqz     $a0, 0xb3c8
+    0x00b3b4: lw       $v1, 0x4c($sp)
+    0x00b3b8: addiu    $v0, $s0, 0  <-- CALL
+    0x00b3bc: jalr     $v0
+    0x00b3c0: move     $a1, $zero
+    0x00b3c4: lw       $v1, 0x4c($sp)
+    0x00b3c8: addu     $v0, $v1, $s2
+
+=== call to gpio_direction_output at .text+0xb3f0 (in function ~ingenic_get_charge_status) ===
+    0x00b3c0: move     $a1, $zero
+    0x00b3c4: lw       $v1, 0x4c($sp)
+    0x00b3c8: addu     $v0, $v1, $s2
+    0x00b3cc: lw       $v1, 0x10($sp)
+    0x00b3d0: sb       $s1, ($v0)
+    0x00b3d4: addiu    $v0, $v1, -1
+    0x00b3d8: slt      $v0, $s2, $v0
+    0x00b3dc: beql     $v0, $zero, 0xb448
+    0x00b3e0: addiu    $s2, $s2, 1
+    0x00b3e4: lhu      $a0, 0x1e60($s4)
+    0x00b3e8: beqz     $a0, 0xb400
+    0x00b3ec: addiu    $v0, $s6, 0
+    0x00b3f0: addiu    $v0, $s0, 0  <-- CALL
+    0x00b3f4: jalr     $v0
+    0x00b3f8: move     $a1, $zero
+    0x00b3fc: addiu    $v0, $s6, 0
+    0x00b400: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xb414 (in function ~ingenic_get_charge_status) ===
+    0x00b3e4: lhu      $a0, 0x1e60($s4)
+    0x00b3e8: beqz     $a0, 0xb400
+    0x00b3ec: addiu    $v0, $s6, 0
+    0x00b3f0: addiu    $v0, $s0, 0
+    0x00b3f4: jalr     $v0
+    0x00b3f8: move     $a1, $zero
+    0x00b3fc: addiu    $v0, $s6, 0
+    0x00b400: jalr     $v0
+    0x00b404: addiu    $a0, $zero, 0xa
+    0x00b408: lhu      $a0, 0x1e62($s3)
+    0x00b40c: beqz     $a0, 0xb424
+    0x00b410: addiu    $v0, $fp, 0
+    0x00b414: addiu    $v0, $s0, 0  <-- CALL
+    0x00b418: jalr     $v0
+    0x00b41c: addiu    $a1, $zero, 1
+    0x00b420: addiu    $v0, $fp, 0
+    0x00b424: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xb438 (in function ~ingenic_get_charge_status) ===
+    0x00b408: lhu      $a0, 0x1e62($s3)
+    0x00b40c: beqz     $a0, 0xb424
+    0x00b410: addiu    $v0, $fp, 0
+    0x00b414: addiu    $v0, $s0, 0
+    0x00b418: jalr     $v0
+    0x00b41c: addiu    $a1, $zero, 1
+    0x00b420: addiu    $v0, $fp, 0
+    0x00b424: jalr     $v0
+    0x00b428: addiu    $a0, $zero, 0xa
+    0x00b42c: lhu      $a0, 0x1e62($s3)
+    0x00b430: beql     $a0, $zero, 0xb448
+    0x00b434: addiu    $s2, $s2, 1
+    0x00b438: addiu    $v0, $s0, 0  <-- CALL
+    0x00b43c: jalr     $v0
+    0x00b440: move     $a1, $zero
+    0x00b444: addiu    $s2, $s2, 1
+    0x00b448: lw       $v1, 0x10($sp)
+
+=== call to gpio_direction_output at .text+0xb46c (in function ~ingenic_get_charge_status) ===
+    0x00b43c: jalr     $v0
+    0x00b440: move     $a1, $zero
+    0x00b444: addiu    $s2, $s2, 1
+    0x00b448: lw       $v1, 0x10($sp)
+    0x00b44c: andi     $v0, $s2, 0xff
+    0x00b450: sltu     $v0, $v0, $v1
+    0x00b454: bnez     $v0, 0xb30c
+    0x00b458: lui      $s1, 0
+    0x00b45c: lui      $v0, 0
+    0x00b460: lhu      $a0, 0x1e60($v0)
+    0x00b464: beqz     $a0, 0xb480
+    0x00b468: lui      $s0, 0
+    0x00b46c: lui      $v0, 0  <-- CALL
+    0x00b470: addiu    $v0, $v0, 0
+    0x00b474: jalr     $v0
+    0x00b478: addiu    $a1, $zero, 1
+    0x00b47c: lui      $s0, 0
+
+=== call to gpio_direction_output at .text+0xb470 (in function ~ingenic_get_charge_status) ===
+    0x00b440: move     $a1, $zero
+    0x00b444: addiu    $s2, $s2, 1
+    0x00b448: lw       $v1, 0x10($sp)
+    0x00b44c: andi     $v0, $s2, 0xff
+    0x00b450: sltu     $v0, $v0, $v1
+    0x00b454: bnez     $v0, 0xb30c
+    0x00b458: lui      $s1, 0
+    0x00b45c: lui      $v0, 0
+    0x00b460: lhu      $a0, 0x1e60($v0)
+    0x00b464: beqz     $a0, 0xb480
+    0x00b468: lui      $s0, 0
+    0x00b46c: lui      $v0, 0
+    0x00b470: addiu    $v0, $v0, 0  <-- CALL
+    0x00b474: jalr     $v0
+    0x00b478: addiu    $a1, $zero, 1
+    0x00b47c: lui      $s0, 0
+    0x00b480: addiu    $v0, $s0, 0
+
+=== call to gpio_direction_output at .text+0xb498 (in function ~ingenic_get_charge_status) ===
+    0x00b468: lui      $s0, 0
+    0x00b46c: lui      $v0, 0
+    0x00b470: addiu    $v0, $v0, 0
+    0x00b474: jalr     $v0
+    0x00b478: addiu    $a1, $zero, 1
+    0x00b47c: lui      $s0, 0
+    0x00b480: addiu    $v0, $s0, 0
+    0x00b484: jalr     $v0
+    0x00b488: addiu    $a0, $zero, 0xa
+    0x00b48c: lhu      $a0, 0x1e62($s1)
+    0x00b490: beql     $a0, $zero, 0xb4ac
+    0x00b494: addiu    $s0, $s0, 0
+    0x00b498: lui      $v0, 0  <-- CALL
+    0x00b49c: addiu    $v0, $v0, 0
+    0x00b4a0: jalr     $v0
+    0x00b4a4: addiu    $a1, $zero, 1
+    0x00b4a8: addiu    $s0, $s0, 0
+
+=== call to gpio_direction_output at .text+0xb49c (in function ~ingenic_get_charge_status) ===
+    0x00b46c: lui      $v0, 0
+    0x00b470: addiu    $v0, $v0, 0
+    0x00b474: jalr     $v0
+    0x00b478: addiu    $a1, $zero, 1
+    0x00b47c: lui      $s0, 0
+    0x00b480: addiu    $v0, $s0, 0
+    0x00b484: jalr     $v0
+    0x00b488: addiu    $a0, $zero, 0xa
+    0x00b48c: lhu      $a0, 0x1e62($s1)
+    0x00b490: beql     $a0, $zero, 0xb4ac
+    0x00b494: addiu    $s0, $s0, 0
+    0x00b498: lui      $v0, 0
+    0x00b49c: addiu    $v0, $v0, 0  <-- CALL
+    0x00b4a0: jalr     $v0
+    0x00b4a4: addiu    $a1, $zero, 1
+    0x00b4a8: addiu    $s0, $s0, 0
+    0x00b4ac: jalr     $s0
+
+=== call to gpio_direction_output at .text+0xb4c0 (in function ~ingenic_get_charge_status) ===
+    0x00b490: beql     $a0, $zero, 0xb4ac
+    0x00b494: addiu    $s0, $s0, 0
+    0x00b498: lui      $v0, 0
+    0x00b49c: addiu    $v0, $v0, 0
+    0x00b4a0: jalr     $v0
+    0x00b4a4: addiu    $a1, $zero, 1
+    0x00b4a8: addiu    $s0, $s0, 0
+    0x00b4ac: jalr     $s0
+    0x00b4b0: addiu    $a0, $zero, 0xa
+    0x00b4b4: lhu      $a0, 0x1e62($s1)
+    0x00b4b8: beql     $a0, $zero, 0xb4d4
+    0x00b4bc: addiu    $s5, $s5, -0x4fec
+    0x00b4c0: lui      $v0, 0  <-- CALL
+    0x00b4c4: addiu    $v0, $v0, 0
+    0x00b4c8: jalr     $v0
+    0x00b4cc: move     $a1, $zero
+    0x00b4d0: addiu    $s5, $s5, -0x4fec
+
+=== call to gpio_direction_output at .text+0xb4c4 (in function ~ingenic_get_charge_status) ===
+    0x00b494: addiu    $s0, $s0, 0
+    0x00b498: lui      $v0, 0
+    0x00b49c: addiu    $v0, $v0, 0
+    0x00b4a0: jalr     $v0
+    0x00b4a4: addiu    $a1, $zero, 1
+    0x00b4a8: addiu    $s0, $s0, 0
+    0x00b4ac: jalr     $s0
+    0x00b4b0: addiu    $a0, $zero, 0xa
+    0x00b4b4: lhu      $a0, 0x1e62($s1)
+    0x00b4b8: beql     $a0, $zero, 0xb4d4
+    0x00b4bc: addiu    $s5, $s5, -0x4fec
+    0x00b4c0: lui      $v0, 0
+    0x00b4c4: addiu    $v0, $v0, 0  <-- CALL
+    0x00b4c8: jalr     $v0
+    0x00b4cc: move     $a1, $zero
+    0x00b4d0: addiu    $s5, $s5, -0x4fec
+    0x00b4d4: jalr     $s5
+
+=== call to gpio_direction_output at .text+0xb6b4 (in function ~ingenic_th_init) ===
+    0x00b684: lui      $s1, 0
+    0x00b688: sh       $v0, 0x1e60($s1)
+    0x00b68c: lbu      $v0, 0x68($a0)
+    0x00b690: lui      $s0, 0
+    0x00b694: lui      $s2, 0
+    0x00b698: sh       $v0, 0x1e62($s0)
+    0x00b69c: addiu    $v0, $s2, 0
+    0x00b6a0: jalr     $v0
+    0x00b6a4: addiu    $a0, $zero, 1
+    0x00b6a8: lhu      $a0, 0x1e62($s0)
+    0x00b6ac: beqz     $a0, 0xb6c8
+    0x00b6b0: lui      $v0, 0
+    0x00b6b4: lui      $v0, 0  <-- CALL
+    0x00b6b8: addiu    $v0, $v0, 0
+    0x00b6bc: jalr     $v0
+    0x00b6c0: move     $a1, $zero
+    0x00b6c4: lui      $v0, 0
+
+=== call to gpio_direction_output at .text+0xb6b8 (in function ~ingenic_th_init) ===
+    0x00b688: sh       $v0, 0x1e60($s1)
+    0x00b68c: lbu      $v0, 0x68($a0)
+    0x00b690: lui      $s0, 0
+    0x00b694: lui      $s2, 0
+    0x00b698: sh       $v0, 0x1e62($s0)
+    0x00b69c: addiu    $v0, $s2, 0
+    0x00b6a0: jalr     $v0
+    0x00b6a4: addiu    $a0, $zero, 1
+    0x00b6a8: lhu      $a0, 0x1e62($s0)
+    0x00b6ac: beqz     $a0, 0xb6c8
+    0x00b6b0: lui      $v0, 0
+    0x00b6b4: lui      $v0, 0
+    0x00b6b8: addiu    $v0, $v0, 0  <-- CALL
+    0x00b6bc: jalr     $v0
+    0x00b6c0: move     $a1, $zero
+    0x00b6c4: lui      $v0, 0
+    0x00b6c8: addiu    $v0, $v0, 0
+
+=== call to gpio_direction_output at .text+0xb6e0 (in function ~ingenic_th_init) ===
+    0x00b6b0: lui      $v0, 0
+    0x00b6b4: lui      $v0, 0
+    0x00b6b8: addiu    $v0, $v0, 0
+    0x00b6bc: jalr     $v0
+    0x00b6c0: move     $a1, $zero
+    0x00b6c4: lui      $v0, 0
+    0x00b6c8: addiu    $v0, $v0, 0
+    0x00b6cc: jalr     $v0
+    0x00b6d0: addiu    $a0, $zero, 0xa
+    0x00b6d4: lhu      $a0, 0x1e60($s1)
+    0x00b6d8: beql     $a0, $zero, 0xb6f4
+    0x00b6dc: addiu    $s2, $s2, 0
+    0x00b6e0: lui      $v0, 0  <-- CALL
+    0x00b6e4: addiu    $v0, $v0, 0
+    0x00b6e8: jalr     $v0
+    0x00b6ec: move     $a1, $zero
+    0x00b6f0: addiu    $s2, $s2, 0
+
+=== call to gpio_direction_output at .text+0xb6e4 (in function ~ingenic_th_init) ===
+    0x00b6b4: lui      $v0, 0
+    0x00b6b8: addiu    $v0, $v0, 0
+    0x00b6bc: jalr     $v0
+    0x00b6c0: move     $a1, $zero
+    0x00b6c4: lui      $v0, 0
+    0x00b6c8: addiu    $v0, $v0, 0
+    0x00b6cc: jalr     $v0
+    0x00b6d0: addiu    $a0, $zero, 0xa
+    0x00b6d4: lhu      $a0, 0x1e60($s1)
+    0x00b6d8: beql     $a0, $zero, 0xb6f4
+    0x00b6dc: addiu    $s2, $s2, 0
+    0x00b6e0: lui      $v0, 0
+    0x00b6e4: addiu    $v0, $v0, 0  <-- CALL
+    0x00b6e8: jalr     $v0
+    0x00b6ec: move     $a1, $zero
+    0x00b6f0: addiu    $s2, $s2, 0
+    0x00b6f4: jalr     $s2
+
+=== call to gpio_direction_output at .text+0xb708 (in function ~ingenic_th_init) ===
+    0x00b6d8: beql     $a0, $zero, 0xb6f4
+    0x00b6dc: addiu    $s2, $s2, 0
+    0x00b6e0: lui      $v0, 0
+    0x00b6e4: addiu    $v0, $v0, 0
+    0x00b6e8: jalr     $v0
+    0x00b6ec: move     $a1, $zero
+    0x00b6f0: addiu    $s2, $s2, 0
+    0x00b6f4: jalr     $s2
+    0x00b6f8: addiu    $a0, $zero, 1
+    0x00b6fc: lhu      $a0, 0x1e60($s1)
+    0x00b700: beql     $a0, $zero, 0xb71c
+    0x00b704: lhu      $a0, 0x1e62($s0)
+    0x00b708: lui      $v0, 0  <-- CALL
+    0x00b70c: addiu    $v0, $v0, 0
+    0x00b710: jalr     $v0
+    0x00b714: addiu    $a1, $zero, 1
+    0x00b718: lhu      $a0, 0x1e62($s0)
+
+=== call to gpio_direction_output at .text+0xb70c (in function ~ingenic_th_init) ===
+    0x00b6dc: addiu    $s2, $s2, 0
+    0x00b6e0: lui      $v0, 0
+    0x00b6e4: addiu    $v0, $v0, 0
+    0x00b6e8: jalr     $v0
+    0x00b6ec: move     $a1, $zero
+    0x00b6f0: addiu    $s2, $s2, 0
+    0x00b6f4: jalr     $s2
+    0x00b6f8: addiu    $a0, $zero, 1
+    0x00b6fc: lhu      $a0, 0x1e60($s1)
+    0x00b700: beql     $a0, $zero, 0xb71c
+    0x00b704: lhu      $a0, 0x1e62($s0)
+    0x00b708: lui      $v0, 0
+    0x00b70c: addiu    $v0, $v0, 0  <-- CALL
+    0x00b710: jalr     $v0
+    0x00b714: addiu    $a1, $zero, 1
+    0x00b718: lhu      $a0, 0x1e62($s0)
+    0x00b71c: beqz     $a0, 0xb738
+
+=== call to gpio_direction_output at .text+0xb724 (in function ~ingenic_th_init) ===
+    0x00b6f4: jalr     $s2
+    0x00b6f8: addiu    $a0, $zero, 1
+    0x00b6fc: lhu      $a0, 0x1e60($s1)
+    0x00b700: beql     $a0, $zero, 0xb71c
+    0x00b704: lhu      $a0, 0x1e62($s0)
+    0x00b708: lui      $v0, 0
+    0x00b70c: addiu    $v0, $v0, 0
+    0x00b710: jalr     $v0
+    0x00b714: addiu    $a1, $zero, 1
+    0x00b718: lhu      $a0, 0x1e62($s0)
+    0x00b71c: beqz     $a0, 0xb738
+    0x00b720: lw       $ra, 0x1c($sp)
+    0x00b724: lui      $v0, 0  <-- CALL
+    0x00b728: addiu    $v0, $v0, 0
+    0x00b72c: jalr     $v0
+    0x00b730: addiu    $a1, $zero, 1
+    0x00b734: lw       $ra, 0x1c($sp)
+
+=== call to gpio_direction_output at .text+0xb728 (in function ~ingenic_th_init) ===
+    0x00b6f8: addiu    $a0, $zero, 1
+    0x00b6fc: lhu      $a0, 0x1e60($s1)
+    0x00b700: beql     $a0, $zero, 0xb71c
+    0x00b704: lhu      $a0, 0x1e62($s0)
+    0x00b708: lui      $v0, 0
+    0x00b70c: addiu    $v0, $v0, 0
+    0x00b710: jalr     $v0
+    0x00b714: addiu    $a1, $zero, 1
+    0x00b718: lhu      $a0, 0x1e62($s0)
+    0x00b71c: beqz     $a0, 0xb738
+    0x00b720: lw       $ra, 0x1c($sp)
+    0x00b724: lui      $v0, 0
+    0x00b728: addiu    $v0, $v0, 0  <-- CALL
+    0x00b72c: jalr     $v0
+    0x00b730: addiu    $a1, $zero, 1
+    0x00b734: lw       $ra, 0x1c($sp)
+    0x00b738: lw       $s2, 0x18($sp)
+
+=== call to gpio_request at .text+0xbe10 (in function ~sensor_check) ===
+    0x00bde0: addiu    $s4, $s4, 0
+    0x00bde4: lui      $a1, 0x16e
+    0x00bde8: lui      $v0, 0
+    0x00bdec: addiu    $a1, $a1, 0x3600
+    0x00bdf0: addiu    $v0, $v0, 0
+    0x00bdf4: jalr     $v0
+    0x00bdf8: move     $a0, $s0
+    0x00bdfc: lui      $v0, 0
+    0x00be00: addiu    $v0, $v0, 0
+    0x00be04: jalr     $v0
+    0x00be08: move     $a0, $s0
+    0x00be0c: lui      $a1, 0
+    0x00be10: lui      $v0, 0  <-- CALL
+    0x00be14: addiu    $a0, $zero, 0x12
+    0x00be18: addiu    $v0, $v0, 0
+    0x00be1c: jalr     $v0
+    0x00be20: addiu    $a1, $a1, 0
+
+=== call to gpio_request at .text+0xbe18 (in function ~sensor_check) ===
+    0x00bde8: lui      $v0, 0
+    0x00bdec: addiu    $a1, $a1, 0x3600
+    0x00bdf0: addiu    $v0, $v0, 0
+    0x00bdf4: jalr     $v0
+    0x00bdf8: move     $a0, $s0
+    0x00bdfc: lui      $v0, 0
+    0x00be00: addiu    $v0, $v0, 0
+    0x00be04: jalr     $v0
+    0x00be08: move     $a0, $s0
+    0x00be0c: lui      $a1, 0
+    0x00be10: lui      $v0, 0
+    0x00be14: addiu    $a0, $zero, 0x12
+    0x00be18: addiu    $v0, $v0, 0  <-- CALL
+    0x00be1c: jalr     $v0
+    0x00be20: addiu    $a1, $a1, 0
+    0x00be24: bnez     $v0, 0xbe78
+    0x00be28: lui      $s3, 0
+
+=== call to gpio_direction_output at .text+0xbe28 (in function ~sensor_check) ===
+    0x00bdf8: move     $a0, $s0
+    0x00bdfc: lui      $v0, 0
+    0x00be00: addiu    $v0, $v0, 0
+    0x00be04: jalr     $v0
+    0x00be08: move     $a0, $s0
+    0x00be0c: lui      $a1, 0
+    0x00be10: lui      $v0, 0
+    0x00be14: addiu    $a0, $zero, 0x12
+    0x00be18: addiu    $v0, $v0, 0
+    0x00be1c: jalr     $v0
+    0x00be20: addiu    $a1, $a1, 0
+    0x00be24: bnez     $v0, 0xbe78
+    0x00be28: lui      $s3, 0  <-- CALL
+    0x00be2c: addiu    $s3, $s3, 0
+    0x00be30: addiu    $a1, $zero, 1
+    0x00be34: jalr     $s3
+    0x00be38: addiu    $a0, $zero, 0x12
+
+=== call to gpio_direction_output at .text+0xbe2c (in function ~sensor_check) ===
+    0x00bdfc: lui      $v0, 0
+    0x00be00: addiu    $v0, $v0, 0
+    0x00be04: jalr     $v0
+    0x00be08: move     $a0, $s0
+    0x00be0c: lui      $a1, 0
+    0x00be10: lui      $v0, 0
+    0x00be14: addiu    $a0, $zero, 0x12
+    0x00be18: addiu    $v0, $v0, 0
+    0x00be1c: jalr     $v0
+    0x00be20: addiu    $a1, $a1, 0
+    0x00be24: bnez     $v0, 0xbe78
+    0x00be28: lui      $s3, 0
+    0x00be2c: addiu    $s3, $s3, 0  <-- CALL
+    0x00be30: addiu    $a1, $zero, 1
+    0x00be34: jalr     $s3
+    0x00be38: addiu    $a0, $zero, 0x12
+    0x00be3c: addiu    $s0, $s4, 0
+
+=== call to gpio_free at .text+0xc088 (in function ~sensor_check) ===
+    0x00c058: addiu    $s4, $s4, 1
+    0x00c05c: sb       $at, ($s5)
+    0x00c060: bnez     $at, 0xc054
+    0x00c064: addiu    $s5, $s5, 1
+    0x00c068: b        0xc078
+    0x00c06c: sw       $s0, 0x15f4($s6)
+    0x00c070: bne      $s0, $s4, 0xbed4
+    0x00c074: addiu    $s1, $s1, 0x34
+    0x00c078: lui      $v0, 0
+    0x00c07c: addiu    $v0, $v0, 0
+    0x00c080: jalr     $v0
+    0x00c084: lw       $a0, 0x1e70($s3)
+    0x00c088: lui      $v0, 0  <-- CALL
+    0x00c08c: addiu    $v0, $v0, 0
+    0x00c090: jalr     $v0
+    0x00c094: addiu    $a0, $zero, 0x12
+    0x00c098: lui      $v0, 0
+
+=== call to gpio_free at .text+0xc08c (in function ~sensor_check) ===
+    0x00c05c: sb       $at, ($s5)
+    0x00c060: bnez     $at, 0xc054
+    0x00c064: addiu    $s5, $s5, 1
+    0x00c068: b        0xc078
+    0x00c06c: sw       $s0, 0x15f4($s6)
+    0x00c070: bne      $s0, $s4, 0xbed4
+    0x00c074: addiu    $s1, $s1, 0x34
+    0x00c078: lui      $v0, 0
+    0x00c07c: addiu    $v0, $v0, 0
+    0x00c080: jalr     $v0
+    0x00c084: lw       $a0, 0x1e70($s3)
+    0x00c088: lui      $v0, 0
+    0x00c08c: addiu    $v0, $v0, 0  <-- CALL
+    0x00c090: jalr     $v0
+    0x00c094: addiu    $a0, $zero, 0x12
+    0x00c098: lui      $v0, 0
+    0x00c09c: move     $a0, $zero
+
+=== call to gpio_request at .text+0xc688 (in function ~rgb_light_spi_ctrl) ===
+    0x00c658: beqz     $v0, 0xc674
+    0x00c65c: move     $s1, $v0
+    0x00c660: lui      $a0, 0
+    0x00c664: lui      $v0, 0
+    0x00c668: addiu    $v0, $v0, 0
+    0x00c66c: jalr     $v0
+    0x00c670: addiu    $a0, $a0, 0
+    0x00c674: lui      $v0, 0
+    0x00c678: addiu    $v0, $v0, 0
+    0x00c67c: jalr     $v0
+    0x00c680: move     $a0, $s0
+    0x00c684: lui      $a1, 0
+    0x00c688: lui      $v0, 0  <-- CALL
+    0x00c68c: addiu    $a0, $zero, 0x3b
+    0x00c690: addiu    $v0, $v0, 0
+    0x00c694: jalr     $v0
+    0x00c698: addiu    $a1, $a1, 0
+
+=== call to gpio_request at .text+0xc690 (in function ~rgb_light_spi_ctrl) ===
+    0x00c660: lui      $a0, 0
+    0x00c664: lui      $v0, 0
+    0x00c668: addiu    $v0, $v0, 0
+    0x00c66c: jalr     $v0
+    0x00c670: addiu    $a0, $a0, 0
+    0x00c674: lui      $v0, 0
+    0x00c678: addiu    $v0, $v0, 0
+    0x00c67c: jalr     $v0
+    0x00c680: move     $a0, $s0
+    0x00c684: lui      $a1, 0
+    0x00c688: lui      $v0, 0
+    0x00c68c: addiu    $a0, $zero, 0x3b
+    0x00c690: addiu    $v0, $v0, 0  <-- CALL
+    0x00c694: jalr     $v0
+    0x00c698: addiu    $a1, $a1, 0
+    0x00c69c: beqz     $v0, 0xc6c0
+    0x00c6a0: lui      $v0, 0
+
+=== call to gpio_direction_output at .text+0xc6a0 (in function ~rgb_light_spi_ctrl) ===
+    0x00c670: addiu    $a0, $a0, 0
+    0x00c674: lui      $v0, 0
+    0x00c678: addiu    $v0, $v0, 0
+    0x00c67c: jalr     $v0
+    0x00c680: move     $a0, $s0
+    0x00c684: lui      $a1, 0
+    0x00c688: lui      $v0, 0
+    0x00c68c: addiu    $a0, $zero, 0x3b
+    0x00c690: addiu    $v0, $v0, 0
+    0x00c694: jalr     $v0
+    0x00c698: addiu    $a1, $a1, 0
+    0x00c69c: beqz     $v0, 0xc6c0
+    0x00c6a0: lui      $v0, 0  <-- CALL
+    0x00c6a4: lui      $a0, 0
+    0x00c6a8: lui      $v0, 0
+    0x00c6ac: addiu    $v0, $v0, 0
+    0x00c6b0: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xc6c4 (in function ~rgb_light_spi_ctrl) ===
+    0x00c694: jalr     $v0
+    0x00c698: addiu    $a1, $a1, 0
+    0x00c69c: beqz     $v0, 0xc6c0
+    0x00c6a0: lui      $v0, 0
+    0x00c6a4: lui      $a0, 0
+    0x00c6a8: lui      $v0, 0
+    0x00c6ac: addiu    $v0, $v0, 0
+    0x00c6b0: jalr     $v0
+    0x00c6b4: addiu    $a0, $a0, 0
+    0x00c6b8: b        0xc6e4
+    0x00c6bc: lw       $ra, 0x74($sp)
+    0x00c6c0: addiu    $a0, $zero, 0x3b
+    0x00c6c4: addiu    $v0, $v0, 0  <-- CALL
+    0x00c6c8: jalr     $v0
+    0x00c6cc: move     $a1, $zero
+    0x00c6d0: lui      $v0, 0
+    0x00c6d4: addiu    $v0, $v0, 0
+
+=== call to gpio_free at .text+0xc6d0 (in function ~rgb_light_spi_ctrl) ===
+    0x00c6a0: lui      $v0, 0
+    0x00c6a4: lui      $a0, 0
+    0x00c6a8: lui      $v0, 0
+    0x00c6ac: addiu    $v0, $v0, 0
+    0x00c6b0: jalr     $v0
+    0x00c6b4: addiu    $a0, $a0, 0
+    0x00c6b8: b        0xc6e4
+    0x00c6bc: lw       $ra, 0x74($sp)
+    0x00c6c0: addiu    $a0, $zero, 0x3b
+    0x00c6c4: addiu    $v0, $v0, 0
+    0x00c6c8: jalr     $v0
+    0x00c6cc: move     $a1, $zero
+    0x00c6d0: lui      $v0, 0  <-- CALL
+    0x00c6d4: addiu    $v0, $v0, 0
+    0x00c6d8: jalr     $v0
+    0x00c6dc: addiu    $a0, $zero, 0x3b
+    0x00c6e0: lw       $ra, 0x74($sp)
+
+=== call to gpio_free at .text+0xc6d4 (in function ~rgb_light_spi_ctrl) ===
+    0x00c6a4: lui      $a0, 0
+    0x00c6a8: lui      $v0, 0
+    0x00c6ac: addiu    $v0, $v0, 0
+    0x00c6b0: jalr     $v0
+    0x00c6b4: addiu    $a0, $a0, 0
+    0x00c6b8: b        0xc6e4
+    0x00c6bc: lw       $ra, 0x74($sp)
+    0x00c6c0: addiu    $a0, $zero, 0x3b
+    0x00c6c4: addiu    $v0, $v0, 0
+    0x00c6c8: jalr     $v0
+    0x00c6cc: move     $a1, $zero
+    0x00c6d0: lui      $v0, 0
+    0x00c6d4: addiu    $v0, $v0, 0  <-- CALL
+    0x00c6d8: jalr     $v0
+    0x00c6dc: addiu    $a0, $zero, 0x3b
+    0x00c6e0: lw       $ra, 0x74($sp)
+    0x00c6e4: move     $v0, $s1
+
+=== call to gpio_direction_output at .text+0xc79c (in function ~rgb_light_spi_ctrl) ===
+    0x00c76c: or       $v0, $v1, $v0
+    0x00c770: addiu    $sp, $sp, -0x30
+    0x00c774: sw       $s5, 0x28($sp)
+    0x00c778: sw       $s0, 0x14($sp)
+    0x00c77c: sw       $ra, 0x2c($sp)
+    0x00c780: sw       $s4, 0x24($sp)
+    0x00c784: sw       $s3, 0x20($sp)
+    0x00c788: sw       $s2, 0x1c($sp)
+    0x00c78c: sw       $s1, 0x18($sp)
+    0x00c790: move     $s0, $a0
+    0x00c794: beqz     $a0, 0xc7ac
+    0x00c798: move     $s5, $a1
+    0x00c79c: lui      $v0, 0  <-- CALL
+    0x00c7a0: addiu    $v0, $v0, 0
+    0x00c7a4: jalr     $v0
+    0x00c7a8: move     $a1, $zero
+    0x00c7ac: lui      $s2, 0
+
+=== call to gpio_direction_output at .text+0xc7a0 (in function ~rgb_light_spi_ctrl) ===
+    0x00c770: addiu    $sp, $sp, -0x30
+    0x00c774: sw       $s5, 0x28($sp)
+    0x00c778: sw       $s0, 0x14($sp)
+    0x00c77c: sw       $ra, 0x2c($sp)
+    0x00c780: sw       $s4, 0x24($sp)
+    0x00c784: sw       $s3, 0x20($sp)
+    0x00c788: sw       $s2, 0x1c($sp)
+    0x00c78c: sw       $s1, 0x18($sp)
+    0x00c790: move     $s0, $a0
+    0x00c794: beqz     $a0, 0xc7ac
+    0x00c798: move     $s5, $a1
+    0x00c79c: lui      $v0, 0
+    0x00c7a0: addiu    $v0, $v0, 0  <-- CALL
+    0x00c7a4: jalr     $v0
+    0x00c7a8: move     $a1, $zero
+    0x00c7ac: lui      $s2, 0
+    0x00c7b0: addiu    $v0, $s2, 0
+
+=== call to gpio_direction_output at .text+0xc7c0 (in function ~rgb_light_spi_ctrl) ===
+    0x00c790: move     $s0, $a0
+    0x00c794: beqz     $a0, 0xc7ac
+    0x00c798: move     $s5, $a1
+    0x00c79c: lui      $v0, 0
+    0x00c7a0: addiu    $v0, $v0, 0
+    0x00c7a4: jalr     $v0
+    0x00c7a8: move     $a1, $zero
+    0x00c7ac: lui      $s2, 0
+    0x00c7b0: addiu    $v0, $s2, 0
+    0x00c7b4: jalr     $v0
+    0x00c7b8: addiu    $a0, $zero, 0x3e8
+    0x00c7bc: addiu    $s1, $zero, 0x18
+    0x00c7c0: lui      $s3, 0  <-- CALL
+    0x00c7c4: addiu    $s4, $zero, -1
+    0x00c7c8: beqz     $s0, 0xc7e4
+    0x00c7cc: addiu    $v0, $s2, 0
+    0x00c7d0: move     $a0, $s0
+
+=== call to gpio_direction_output at .text+0xc7d4 (in function ~rgb_light_spi_ctrl) ===
+    0x00c7a4: jalr     $v0
+    0x00c7a8: move     $a1, $zero
+    0x00c7ac: lui      $s2, 0
+    0x00c7b0: addiu    $v0, $s2, 0
+    0x00c7b4: jalr     $v0
+    0x00c7b8: addiu    $a0, $zero, 0x3e8
+    0x00c7bc: addiu    $s1, $zero, 0x18
+    0x00c7c0: lui      $s3, 0
+    0x00c7c4: addiu    $s4, $zero, -1
+    0x00c7c8: beqz     $s0, 0xc7e4
+    0x00c7cc: addiu    $v0, $s2, 0
+    0x00c7d0: move     $a0, $s0
+    0x00c7d4: addiu    $v0, $s3, 0  <-- CALL
+    0x00c7d8: jalr     $v0
+    0x00c7dc: move     $a1, $zero
+    0x00c7e0: addiu    $v0, $s2, 0
+    0x00c7e4: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xc7f8 (in function ~rgb_light_spi_ctrl) ===
+    0x00c7c8: beqz     $s0, 0xc7e4
+    0x00c7cc: addiu    $v0, $s2, 0
+    0x00c7d0: move     $a0, $s0
+    0x00c7d4: addiu    $v0, $s3, 0
+    0x00c7d8: jalr     $v0
+    0x00c7dc: move     $a1, $zero
+    0x00c7e0: addiu    $v0, $s2, 0
+    0x00c7e4: jalr     $v0
+    0x00c7e8: addiu    $a0, $zero, 1
+    0x00c7ec: beqz     $s0, 0xc808
+    0x00c7f0: addiu    $v0, $s2, 0
+    0x00c7f4: move     $a0, $s0
+    0x00c7f8: addiu    $v0, $s3, 0  <-- CALL
+    0x00c7fc: jalr     $v0
+    0x00c800: addiu    $a1, $zero, 1
+    0x00c804: addiu    $v0, $s2, 0
+    0x00c808: jalr     $v0
+
+=== call to gpio_direction_output at .text+0xc820 (in function ~rgb_light_spi_ctrl) ===
+    0x00c7f0: addiu    $v0, $s2, 0
+    0x00c7f4: move     $a0, $s0
+    0x00c7f8: addiu    $v0, $s3, 0
+    0x00c7fc: jalr     $v0
+    0x00c800: addiu    $a1, $zero, 1
+    0x00c804: addiu    $v0, $s2, 0
+    0x00c808: jalr     $v0
+    0x00c80c: addiu    $a0, $zero, 1
+    0x00c810: beqz     $s0, 0xc840
+    0x00c814: addiu    $a0, $zero, 0x64
+    0x00c818: srlv     $v1, $s5, $s1
+    0x00c81c: andi     $v1, $v1, 1
+    0x00c820: addiu    $v0, $s3, 0  <-- CALL
+    0x00c824: move     $a0, $s0
+    0x00c828: beqz     $v1, 0xc834
+    0x00c82c: move     $a1, $zero
+    0x00c830: addiu    $a1, $zero, 1
+
+=== call to gpio_direction_output at .text+0xc85c (in function ~rgb_light_spi_ctrl) ===
+    0x00c82c: move     $a1, $zero
+    0x00c830: addiu    $a1, $zero, 1
+    0x00c834: jalr     $v0
+    0x00c838: nop      
+    0x00c83c: addiu    $a0, $zero, 0x64
+    0x00c840: addiu    $v0, $s2, 0
+    0x00c844: jalr     $v0
+    0x00c848: addiu    $s1, $s1, -1
+    0x00c84c: bne      $s1, $s4, 0xc7c8
+    0x00c850: nop      
+    0x00c854: beqz     $s0, 0xc874
+    0x00c858: lw       $ra, 0x2c($sp)
+    0x00c85c: lui      $v0, 0  <-- CALL
+    0x00c860: move     $a0, $s0
+    0x00c864: addiu    $v0, $v0, 0
+    0x00c868: jalr     $v0
+    0x00c86c: move     $a1, $zero
+
+=== call to gpio_direction_output at .text+0xc864 (in function ~rgb_light_spi_ctrl) ===
+    0x00c834: jalr     $v0
+    0x00c838: nop      
+    0x00c83c: addiu    $a0, $zero, 0x64
+    0x00c840: addiu    $v0, $s2, 0
+    0x00c844: jalr     $v0
+    0x00c848: addiu    $s1, $s1, -1
+    0x00c84c: bne      $s1, $s4, 0xc7c8
+    0x00c850: nop      
+    0x00c854: beqz     $s0, 0xc874
+    0x00c858: lw       $ra, 0x2c($sp)
+    0x00c85c: lui      $v0, 0
+    0x00c860: move     $a0, $s0
+    0x00c864: addiu    $v0, $v0, 0  <-- CALL
+    0x00c868: jalr     $v0
+    0x00c86c: move     $a1, $zero
+    0x00c870: lw       $ra, 0x2c($sp)
+    0x00c874: lw       $s5, 0x28($sp)
+
+=== call to gpio_direction_output at .text+0xcb34 (in function ~nicera_init) ===
+    0x00cb04: addiu    $sp, $sp, -0x20
+    0x00cb08: jr       $ra
+    0x00cb0c: move     $v0, $zero
+    0x00cb10: sw       $s0, 0x18($sp)
+    0x00cb14: sw       $ra, 0x1c($sp)
+    0x00cb18: move     $s0, $a0
+    0x00cb1c: lw       $a0, 4($a0)
+    0x00cb20: beqz     $a0, 0xcc48
+    0x00cb24: move     $v0, $zero
+    0x00cb28: lw       $v0, ($s0)
+    0x00cb2c: beqz     $v0, 0xcc48
+    0x00cb30: move     $v0, $zero
+    0x00cb34: lui      $v0, 0  <-- CALL
+    0x00cb38: addiu    $v0, $v0, 0
+    0x00cb3c: jalr     $v0
+    0x00cb40: move     $a1, $zero
+    0x00cb44: lui      $v0, 0
+
+=== call to gpio_direction_output at .text+0xcb38 (in function ~nicera_init) ===
+    0x00cb08: jr       $ra
+    0x00cb0c: move     $v0, $zero
+    0x00cb10: sw       $s0, 0x18($sp)
+    0x00cb14: sw       $ra, 0x1c($sp)
+    0x00cb18: move     $s0, $a0
+    0x00cb1c: lw       $a0, 4($a0)
+    0x00cb20: beqz     $a0, 0xcc48
+    0x00cb24: move     $v0, $zero
+    0x00cb28: lw       $v0, ($s0)
+    0x00cb2c: beqz     $v0, 0xcc48
+    0x00cb30: move     $v0, $zero
+    0x00cb34: lui      $v0, 0
+    0x00cb38: addiu    $v0, $v0, 0  <-- CALL
+    0x00cb3c: jalr     $v0
+    0x00cb40: move     $a1, $zero
+    0x00cb44: lui      $v0, 0
+    0x00cb48: addiu    $a2, $zero, 0x28
+
+=== call to gpio_direction_input at .text+0xcbc8 (in function ~nicera_init) ===
+    0x00cb98: sw       $zero, 0x74($s0)
+    0x00cb9c: addiu    $v0, $v0, 0
+    0x00cba0: jalr     $v0
+    0x00cba4: sw       $zero, 0x7c($s0)
+    0x00cba8: addiu    $v0, $zero, -0x20
+    0x00cbac: sw       $v0, 0x8c($s0)
+    0x00cbb0: addiu    $v0, $s0, 0x90
+    0x00cbb4: sw       $v0, 0x90($s0)
+    0x00cbb8: sw       $v0, 0x94($s0)
+    0x00cbbc: lui      $v0, 1
+    0x00cbc0: addiu    $v0, $v0, -0x36e8
+    0x00cbc4: sw       $v0, 0x98($s0)
+    0x00cbc8: lui      $v0, 0  <-- CALL
+    0x00cbcc: addiu    $v0, $v0, 0
+    0x00cbd0: jalr     $v0
+    0x00cbd4: lw       $a0, 4($s0)
+    0x00cbd8: lui      $v0, 0
+
+=== call to gpio_direction_input at .text+0xcbcc (in function ~nicera_init) ===
+    0x00cb9c: addiu    $v0, $v0, 0
+    0x00cba0: jalr     $v0
+    0x00cba4: sw       $zero, 0x7c($s0)
+    0x00cba8: addiu    $v0, $zero, -0x20
+    0x00cbac: sw       $v0, 0x8c($s0)
+    0x00cbb0: addiu    $v0, $s0, 0x90
+    0x00cbb4: sw       $v0, 0x90($s0)
+    0x00cbb8: sw       $v0, 0x94($s0)
+    0x00cbbc: lui      $v0, 1
+    0x00cbc0: addiu    $v0, $v0, -0x36e8
+    0x00cbc4: sw       $v0, 0x98($s0)
+    0x00cbc8: lui      $v0, 0
+    0x00cbcc: addiu    $v0, $v0, 0  <-- CALL
+    0x00cbd0: jalr     $v0
+    0x00cbd4: lw       $a0, 4($s0)
+    0x00cbd8: lui      $v0, 0
+    0x00cbdc: addiu    $v0, $v0, 0
+
+=== call to __gpio_get_value at .text+0xcddc (in function ~ingenic_pir_get_status) ===
+    0x00cdac: addiu    $t9, $t9, 0
+    0x00cdb0: jr       $t9
+    0x00cdb4: addiu    $a0, $a0, 0x1e90
+    0x00cdb8: jr       $ra
+    0x00cdbc: nop      
+    0x00cdc0: addiu    $sp, $sp, -0x18
+    0x00cdc4: sw       $s0, 0x10($sp)
+    0x00cdc8: sw       $ra, 0x14($sp)
+    0x00cdcc: move     $s0, $a0
+    0x00cdd0: lhu      $a0, 0x4c($a0)
+    0x00cdd4: beql     $a0, $zero, 0xce00
+    0x00cdd8: lhu      $v1, 0x4a($s0)
+    0x00cddc: lui      $v0, 0  <-- CALL
+    0x00cde0: addiu    $v0, $v0, 0
+    0x00cde4: jalr     $v0
+    0x00cde8: andi     $a0, $a0, 0xff
+    0x00cdec: lhu      $v1, 0x4c($s0)
+
+=== call to __gpio_get_value at .text+0xcde0 (in function ~ingenic_pir_get_status) ===
+    0x00cdb0: jr       $t9
+    0x00cdb4: addiu    $a0, $a0, 0x1e90
+    0x00cdb8: jr       $ra
+    0x00cdbc: nop      
+    0x00cdc0: addiu    $sp, $sp, -0x18
+    0x00cdc4: sw       $s0, 0x10($sp)
+    0x00cdc8: sw       $ra, 0x14($sp)
+    0x00cdcc: move     $s0, $a0
+    0x00cdd0: lhu      $a0, 0x4c($a0)
+    0x00cdd4: beql     $a0, $zero, 0xce00
+    0x00cdd8: lhu      $v1, 0x4a($s0)
+    0x00cddc: lui      $v0, 0
+    0x00cde0: addiu    $v0, $v0, 0  <-- CALL
+    0x00cde4: jalr     $v0
+    0x00cde8: andi     $a0, $a0, 0xff
+    0x00cdec: lhu      $v1, 0x4c($s0)
+    0x00cdf0: srl      $v1, $v1, 8
+
+=== call to __gpio_get_value at .text+0xd2b8 (in function ~pir_exit) ===
+    0x00d288: sw       $s6, 0x40($sp)
+    0x00d28c: sw       $s5, 0x3c($sp)
+    0x00d290: sw       $s2, 0x30($sp)
+    0x00d294: sw       $ra, 0x4c($sp)
+    0x00d298: sw       $s4, 0x38($sp)
+    0x00d29c: sw       $s1, 0x2c($sp)
+    0x00d2a0: sw       $s0, 0x28($sp)
+    0x00d2a4: addiu    $s2, $zero, 0x17
+    0x00d2a8: lui      $s5, 0
+    0x00d2ac: lui      $s6, 0
+    0x00d2b0: move     $s7, $s3
+    0x00d2b4: b        0xd35c
+    0x00d2b8: lui      $fp, 0  <-- CALL
+    0x00d2bc: addiu    $a0, $zero, 0x64
+    0x00d2c0: addiu    $v0, $s3, 0
+    0x00d2c4: jalr     $v0
+    0x00d2c8: addiu    $s4, $sp, 0x10
+
+=== call to __gpio_get_value at .text+0xd2ec (in function ~pir_exit) ===
+    0x00d2bc: addiu    $a0, $zero, 0x64
+    0x00d2c0: addiu    $v0, $s3, 0
+    0x00d2c4: jalr     $v0
+    0x00d2c8: addiu    $s4, $sp, 0x10
+    0x00d2cc: move     $a0, $s4
+    0x00d2d0: move     $a1, $zero
+    0x00d2d4: addiu    $v0, $s6, 0
+    0x00d2d8: jalr     $v0
+    0x00d2dc: addiu    $a2, $zero, 0xc
+    0x00d2e0: move     $s0, $zero
+    0x00d2e4: addiu    $v1, $zero, 0xc
+    0x00d2e8: lw       $a0, 0x1f30($s5)
+    0x00d2ec: addiu    $v0, $fp, 0  <-- CALL
+    0x00d2f0: jalr     $v0
+    0x00d2f4: sw       $v1, 0x20($sp)
+    0x00d2f8: addu     $a0, $s4, $s0
+    0x00d2fc: sw       $v0, ($a0)
+
+=== call to gpio_direction_output at .text+0xd3d0 (in function ~pir_exit) ===
+    0x00d3a0: move     $a1, $v0
+    0x00d3a4: addiu    $s2, $s2, 0
+    0x00d3a8: jalr     $s2
+    0x00d3ac: slti     $s0, $s0, 0xbb9
+    0x00d3b0: bnel     $s0, $zero, 0xd3e4
+    0x00d3b4: addiu    $s1, $s1, 0x1f30
+    0x00d3b8: lui      $a0, 0
+    0x00d3bc: jalr     $s2
+    0x00d3c0: addiu    $a0, $a0, 0
+    0x00d3c4: addiu    $v0, $s1, 0x1f30
+    0x00d3c8: lw       $a0, 4($v0)
+    0x00d3cc: beqz     $a0, 0xd3e0
+    0x00d3d0: lui      $v0, 0  <-- CALL
+    0x00d3d4: addiu    $v0, $v0, 0
+    0x00d3d8: jalr     $v0
+    0x00d3dc: move     $a1, $zero
+    0x00d3e0: addiu    $s1, $s1, 0x1f30
+
+=== call to gpio_direction_output at .text+0xd3d4 (in function ~pir_exit) ===
+    0x00d3a4: addiu    $s2, $s2, 0
+    0x00d3a8: jalr     $s2
+    0x00d3ac: slti     $s0, $s0, 0xbb9
+    0x00d3b0: bnel     $s0, $zero, 0xd3e4
+    0x00d3b4: addiu    $s1, $s1, 0x1f30
+    0x00d3b8: lui      $a0, 0
+    0x00d3bc: jalr     $s2
+    0x00d3c0: addiu    $a0, $a0, 0
+    0x00d3c4: addiu    $v0, $s1, 0x1f30
+    0x00d3c8: lw       $a0, 4($v0)
+    0x00d3cc: beqz     $a0, 0xd3e0
+    0x00d3d0: lui      $v0, 0
+    0x00d3d4: addiu    $v0, $v0, 0  <-- CALL
+    0x00d3d8: jalr     $v0
+    0x00d3dc: move     $a1, $zero
+    0x00d3e0: addiu    $s1, $s1, 0x1f30
+    0x00d3e4: lui      $v0, 0
+
+=== call to gpio_direction_output at .text+0xd468 (in function ~power_init) ===
+    0x00d438: sw       $s1, 0x20($sp)
+    0x00d43c: lhu      $v1, 0x6a($v0)
+    0x00d440: beqz     $v1, 0xd45c
+    0x00d444: lui      $s0, 0
+    0x00d448: andi     $v1, $v1, 0xff
+    0x00d44c: lbu      $v0, 0x6c($v0)
+    0x00d450: sw       $v1, 0x1f30($s0)
+    0x00d454: addiu    $v1, $s0, 0x1f30
+    0x00d458: sw       $v0, 4($v1)
+    0x00d45c: addiu    $v0, $s0, 0x1f30
+    0x00d460: lw       $a0, 4($v0)
+    0x00d464: beqz     $a0, 0xd478
+    0x00d468: lui      $v0, 0  <-- CALL
+    0x00d46c: addiu    $v0, $v0, 0
+    0x00d470: jalr     $v0
+    0x00d474: addiu    $a1, $zero, 1
+    0x00d478: addiu    $s1, $s0, 0x1f30
+
+=== call to gpio_direction_output at .text+0xd46c (in function ~power_init) ===
+    0x00d43c: lhu      $v1, 0x6a($v0)
+    0x00d440: beqz     $v1, 0xd45c
+    0x00d444: lui      $s0, 0
+    0x00d448: andi     $v1, $v1, 0xff
+    0x00d44c: lbu      $v0, 0x6c($v0)
+    0x00d450: sw       $v1, 0x1f30($s0)
+    0x00d454: addiu    $v1, $s0, 0x1f30
+    0x00d458: sw       $v0, 4($v1)
+    0x00d45c: addiu    $v0, $s0, 0x1f30
+    0x00d460: lw       $a0, 4($v0)
+    0x00d464: beqz     $a0, 0xd478
+    0x00d468: lui      $v0, 0
+    0x00d46c: addiu    $v0, $v0, 0  <-- CALL
+    0x00d470: jalr     $v0
+    0x00d474: addiu    $a1, $zero, 1
+    0x00d478: addiu    $s1, $s0, 0x1f30
+    0x00d47c: addiu    $v0, $zero, -0x20
+
+=== call to gpio_direction_input at .text+0xd4a0 (in function ~power_init) ===
+    0x00d470: jalr     $v0
+    0x00d474: addiu    $a1, $zero, 1
+    0x00d478: addiu    $s1, $s0, 0x1f30
+    0x00d47c: addiu    $v0, $zero, -0x20
+    0x00d480: sw       $v0, 8($s1)
+    0x00d484: lui      $v0, 0
+    0x00d488: addiu    $v0, $v0, 0x1f3c
+    0x00d48c: sw       $v0, 0xc($s1)
+    0x00d490: sw       $v0, 0x10($s1)
+    0x00d494: lui      $v0, 1
+    0x00d498: addiu    $v0, $v0, -0x2d8c
+    0x00d49c: sw       $v0, 0x14($s1)
+    0x00d4a0: lui      $v0, 0  <-- CALL
+    0x00d4a4: addiu    $v0, $v0, 0
+    0x00d4a8: jalr     $v0
+    0x00d4ac: lw       $a0, 0x1f30($s0)
+    0x00d4b0: lui      $v0, 0
+
+=== call to gpio_direction_input at .text+0xd4a4 (in function ~power_init) ===
+    0x00d474: addiu    $a1, $zero, 1
+    0x00d478: addiu    $s1, $s0, 0x1f30
+    0x00d47c: addiu    $v0, $zero, -0x20
+    0x00d480: sw       $v0, 8($s1)
+    0x00d484: lui      $v0, 0
+    0x00d488: addiu    $v0, $v0, 0x1f3c
+    0x00d48c: sw       $v0, 0xc($s1)
+    0x00d490: sw       $v0, 0x10($s1)
+    0x00d494: lui      $v0, 1
+    0x00d498: addiu    $v0, $v0, -0x2d8c
+    0x00d49c: sw       $v0, 0x14($s1)
+    0x00d4a0: lui      $v0, 0
+    0x00d4a4: addiu    $v0, $v0, 0  <-- CALL
+    0x00d4a8: jalr     $v0
+    0x00d4ac: lw       $a0, 0x1f30($s0)
+    0x00d4b0: lui      $v0, 0
+    0x00d4b4: addiu    $v0, $v0, 0
+

@@ -1,0 +1,87 @@
+#!/bin/sh
+# Treat dispense cycle for the petcam.
+#
+# Timeline (4s total):
+#   t=0..2s   Ruehrwerk (agitator stepper) dreht CW
+#   t=1s      DC-Auswurf an (active-low)
+#   t=2..4s   Ruehrwerk dreht CCW
+#   DC-Auswurf aus, sobald der Sensor eine Umdrehung meldet (unabhaengig
+#   vom Ruehrwerk-Timing, mit Sicherheits-Timeout)
+
+STEPPER=/usr/sbin/stepper
+GPIO_DC=57
+GPIO_SENSE=54
+GPIO_SPARE=51
+
+# 1600 Halbschritte @ 800 Hz = exakt 2.0s, am Geraet als "seidenweich" verifiziert
+AGITATE_STEPS=1600
+AGITATE_SPEED=800
+
+setup_gpio_dc() {
+    [ -d /sys/class/gpio/gpio$GPIO_DC ] || echo $GPIO_DC > /sys/class/gpio/export
+    echo out > /sys/class/gpio/gpio$GPIO_DC/direction 2>/dev/null
+    echo 1 > /sys/class/gpio/gpio$GPIO_DC/value   # active-low: 1 = aus
+}
+
+setup_gpio_sense() {
+    [ -d /sys/class/gpio/gpio$GPIO_SENSE ] || echo $GPIO_SENSE > /sys/class/gpio/export
+    echo in > /sys/class/gpio/gpio$GPIO_SENSE/direction 2>/dev/null
+}
+
+# Vendor board table lists this as DCMOTOR-STOP-IRQ but no pulse was ever
+# observed on it here - parked as input so it can't float into an output.
+setup_gpio_spare() {
+    [ -d /sys/class/gpio/gpio$GPIO_SPARE ] || echo $GPIO_SPARE > /sys/class/gpio/export
+    echo in > /sys/class/gpio/gpio$GPIO_SPARE/direction 2>/dev/null
+}
+
+dispense() {
+    sleep 1
+    echo "Auswurf: DC an"
+    echo 0 > /sys/class/gpio/gpio$GPIO_DC/value   # active-low: 0 = an
+
+    # Nocke freifahren, falls Sensor beim Einschalten schon 0 meldet
+    clear_ticks=0
+    while [ "$(cat /sys/class/gpio/gpio$GPIO_SENSE/value)" = "0" ] && [ $clear_ticks -lt 40 ]; do
+        usleep 25000
+        clear_ticks=$((clear_ticks + 1))
+    done
+
+    # Warten auf naechste Schaltflanke (Sensor wird 0), 5s Timeout (200*25ms)
+    run_ticks=0
+    while [ "$(cat /sys/class/gpio/gpio$GPIO_SENSE/value)" = "1" ] && [ $run_ticks -lt 200 ]; do
+        usleep 25000
+        run_ticks=$((run_ticks + 1))
+    done
+
+    echo 1 > /sys/class/gpio/gpio$GPIO_DC/value   # active-low: 1 = aus
+
+    if [ $run_ticks -ge 200 ]; then
+        echo "Auswurf: Timeout, Sensor kam nicht" >&2
+        return 1
+    fi
+    echo "Auswurf: fertig nach $((run_ticks * 25)) ms"
+    return 0
+}
+
+setup_gpio_dc
+setup_gpio_sense
+setup_gpio_spare
+
+echo "Ruehrwerk: CW"
+$STEPPER --steps $AGITATE_STEPS --speed $AGITATE_SPEED &
+stepper_cw_pid=$!
+
+dispense &
+dispense_pid=$!
+
+wait $stepper_cw_pid
+
+echo "Ruehrwerk: CCW"
+$STEPPER --steps -$AGITATE_STEPS --speed $AGITATE_SPEED
+
+wait $dispense_pid
+dispense_status=$?
+
+echo "Zyklus abgeschlossen."
+exit $dispense_status

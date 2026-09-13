@@ -1,0 +1,4 @@
+[submodule "firmware"]
+	path = firmware
+	url = https://github.com/schnebeck/thingino-firmware.git
+	branch = arenti_petcam

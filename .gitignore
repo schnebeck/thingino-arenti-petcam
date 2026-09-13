@@ -1,0 +1,29 @@
+# Python virtualenv - never committed, recreate locally
+venv/
+
+# Claude Code local session state
+.claude/
+
+# Build scratch (thingino-firmware itself lives in firmware/ as a submodule
+# with its own .gitignore for dl/ and output/)
+custom-build/
+
+# Proprietary/copyrighted material extracted from or about the vendor's
+# original firmware - reverse-engineering notes and our own scripts stay
+# tracked, the actual vendor binaries and copyrighted datasheet do not.
+fw_orig/audio.ko
+fw_orig/strnio.ko
+fw_orig/ppsapp
+fw_orig/mp_config.db
+fw_orig/mp_config.db.bak
+fw_orig/full_dump/
+fw_orig/datasheet/
+
+# Large third-party toolchain tarball - fetch fresh instead of tracking in git
+stepper/mipsel-linux-muslsf-cross.tgz
+
+# Full-device filesystem backups: contain real secrets (dropbear host
+# private key, /etc/shadow password hashes, WiFi PSK in
+# wpa_supplicant.conf, uhttpd TLS private key, thingino-api.key) - never
+# commit these, not even to a private repo.
+overlay_backup/

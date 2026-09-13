@@ -1,0 +1,972 @@
+=== ingenic_step_motor_run @ 0x81e4-0x83e8 (size 516) ===
+  0x0081e4: addiu    $sp, $sp, -0x28
+  0x0081e8: sw       $s1, 0x18($sp)
+  0x0081ec: sw       $ra, 0x24($sp)
+  0x0081f0: sw       $s3, 0x20($sp)
+  0x0081f4: sw       $s2, 0x1c($sp)
+  0x0081f8: sw       $s0, 0x14($sp)
+  0x0081fc: lw       $v0, 4($a0)
+  0x008200: andi     $v0, $v0, 1
+  0x008204: beqz     $v0, 0x83c8
+  0x008208: lw       $s1, 0x38($sp)
+  0x00820c: bnez     $a1, 0x822c
+  0x008210: move     $s2, $a0
+  0x008214: lui      $v0, 0    ; RELOC -> ingenic_board_ctx
+  0x008218: lw       $v0, 0xcc4($v0)    ; RELOC -> ingenic_board_ctx
+  0x00821c: beqz     $v0, 0x8260
+  0x008220: lui      $a0, 0    ; RELOC -> $LC8
+  0x008224: b        0x8248
+  0x008228: addiu    $a0, $a0, 0    ; RELOC -> $LC8
+  0x00822c: addiu    $v0, $zero, 1
+  0x008230: bne      $a1, $v0, 0x8260
+  0x008234: lui      $v0, 0    ; RELOC -> ingenic_board_ctx
+  0x008238: lw       $v0, 0xcc8($v0)    ; RELOC -> ingenic_board_ctx
+  0x00823c: beqz     $v0, 0x8260
+  0x008240: lui      $a0, 0    ; RELOC -> $LC9
+  0x008244: addiu    $a0, $a0, 0    ; RELOC -> $LC9
+  0x008248: lui      $v0, 0    ; RELOC -> printk
+  0x00824c: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x008250: jalr     $v0
+  0x008254: nop      
+  0x008258: b        0x83cc
+  0x00825c: addiu    $v0, $zero, -1
+  0x008260: beqz     $a3, 0x8274
+  0x008264: lui      $a0, 0    ; RELOC -> $LC10
+  0x008268: bnez     $s1, 0x8294
+  0x00826c: lui      $s3, 0    ; RELOC -> ingenic_board_ctx
+  0x008270: lui      $a0, 0    ; RELOC -> $LC10
+  0x008274: lui      $a1, 0    ; RELOC -> 
+  0x008278: lui      $v0, 0    ; RELOC -> printk
+  0x00827c: addiu    $a0, $a0, 0    ; RELOC -> $LC10
+  0x008280: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x008284: jalr     $v0
+  0x008288: addiu    $a1, $a1, 0x400    ; RELOC -> 
+  0x00828c: b        0x83cc
+  0x008290: addiu    $v0, $zero, -1
+  0x008294: addiu    $v1, $s3, 0    ; RELOC -> ingenic_board_ctx
+  0x008298: lw       $v0, 0xcac($v1)
+  0x00829c: lhu      $t0, 0x2c($v0)
+  0x0082a0: lhu      $a0, 0x2e($v0)
+  0x0082a4: bnez     $a1, 0x8330
+  0x0082a8: lhu      $s0, 0x2a($v0)
+  0x0082ac: andi     $a0, $t0, 0xff
+  0x0082b0: sw       $a2, 0xcb0($v1)
+  0x0082b4: sw       $a3, 0xcb4($v1)
+  0x0082b8: sw       $zero, 0xcb8($v1)
+  0x0082bc: beqz     $a0, 0x82d4
+  0x0082c0: sw       $zero, 0xccc($v1)
+  0x0082c4: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x0082c8: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x0082cc: jalr     $v0
+  0x0082d0: addiu    $a1, $zero, 1
+  0x0082d4: lw       $v0, 4($s2)
+  0x0082d8: andi     $v0, $v0, 8
+  0x0082dc: beql     $v0, $zero, 0x8314
+  0x0082e0: lui      $v0, 1    ; RELOC -> 
+  0x0082e4: andi     $a0, $s0, 0xff
+  0x0082e8: beqz     $a0, 0x8310
+  0x0082ec: srl      $s0, $s0, 8
+  0x0082f0: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x0082f4: andi     $s0, $s0, 1
+  0x0082f8: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x0082fc: beqz     $s0, 0x8308
+  0x008300: move     $a1, $zero
+  0x008304: addiu    $a1, $zero, 1
+  0x008308: jalr     $v0
+  0x00830c: nop      
+  0x008310: lui      $v0, 1    ; RELOC -> 
+  0x008314: addiu    $v0, $v0, -0x7ec4    ; RELOC -> 
+  0x008318: jalr     $v0
+  0x00831c: move     $a0, $s1
+  0x008320: addiu    $s3, $s3, 0    ; RELOC -> ingenic_board_ctx
+  0x008324: addiu    $v0, $zero, 1
+  0x008328: b        0x83c0
+  0x00832c: sw       $v0, 0xcc4($s3)
+  0x008330: addiu    $t0, $zero, 1
+  0x008334: bne      $a1, $t0, 0x83cc
+  0x008338: move     $v0, $zero
+  0x00833c: andi     $a0, $a0, 0xff
+  0x008340: sw       $a2, 0xcb0($v1)
+  0x008344: sw       $a3, 0xcb4($v1)
+  0x008348: sw       $zero, 0xcb8($v1)
+  0x00834c: beqz     $a0, 0x8364
+  0x008350: sw       $a1, 0xccc($v1)
+  0x008354: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x008358: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x00835c: jalr     $v0
+  0x008360: addiu    $a1, $zero, 1
+  0x008364: lw       $v0, 4($s2)
+  0x008368: andi     $v0, $v0, 8
+  0x00836c: beqz     $v0, 0x83a8
+  0x008370: lui      $v0, 1    ; RELOC -> 
+  0x008374: andi     $a0, $s0, 0xff
+  0x008378: beqz     $a0, 0x83ac
+  0x00837c: addiu    $v0, $v0, -0x7ec4    ; RELOC -> 
+  0x008380: srl      $s0, $s0, 8
+  0x008384: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x008388: andi     $s0, $s0, 1
+  0x00838c: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x008390: bnez     $s0, 0x839c
+  0x008394: move     $a1, $zero
+  0x008398: addiu    $a1, $zero, 1
+  0x00839c: jalr     $v0
+  0x0083a0: nop      
+  0x0083a4: lui      $v0, 1    ; RELOC -> 
+  0x0083a8: addiu    $v0, $v0, -0x7ec4    ; RELOC -> 
+  0x0083ac: jalr     $v0
+  0x0083b0: move     $a0, $s1
+  0x0083b4: addiu    $s3, $s3, 0    ; RELOC -> ingenic_board_ctx
+  0x0083b8: addiu    $v0, $zero, 1
+  0x0083bc: sw       $v0, 0xcc8($s3)
+  0x0083c0: b        0x83cc
+  0x0083c4: move     $v0, $zero
+  0x0083c8: addiu    $v0, $zero, -1
+  0x0083cc: lw       $ra, 0x24($sp)
+  0x0083d0: lw       $s3, 0x20($sp)
+  0x0083d4: lw       $s2, 0x1c($sp)
+  0x0083d8: lw       $s1, 0x18($sp)
+  0x0083dc: lw       $s0, 0x14($sp)
+  0x0083e0: jr       $ra
+  0x0083e4: addiu    $sp, $sp, 0x28
+
+=== ingenic_step_motor_stop @ 0x83e8-0x8674 (size 652) ===
+  0x0083e8: lw       $v0, 4($a0)
+  0x0083ec: andi     $v0, $v0, 1
+  0x0083f0: beqz     $v0, 0x8644
+  0x0083f4: nop      
+  0x0083f8: addiu    $sp, $sp, -0x30
+  0x0083fc: sw       $s0, 0x10($sp)
+  0x008400: lui      $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x008404: sw       $s1, 0x14($sp)
+  0x008408: sw       $ra, 0x2c($sp)
+  0x00840c: sw       $s6, 0x28($sp)
+  0x008410: sw       $s5, 0x24($sp)
+  0x008414: sw       $s4, 0x20($sp)
+  0x008418: sw       $s3, 0x1c($sp)
+  0x00841c: sw       $s2, 0x18($sp)
+  0x008420: bnez     $a1, 0x8440
+  0x008424: addiu    $s1, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x008428: lw       $v0, 0xcc4($s1)
+  0x00842c: bnel     $v0, $zero, 0x8478
+  0x008430: addiu    $v0, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x008434: lui      $a0, 0    ; RELOC -> $LC11
+  0x008438: b        0x8460
+  0x00843c: addiu    $a0, $a0, 0    ; RELOC -> $LC11
+  0x008440: addiu    $v0, $zero, 1
+  0x008444: bne      $a1, $v0, 0x8478
+  0x008448: addiu    $v0, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x00844c: lw       $v0, 0xcc8($s1)
+  0x008450: bnel     $v0, $zero, 0x8478
+  0x008454: addiu    $v0, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x008458: lui      $a0, 0    ; RELOC -> $LC12
+  0x00845c: addiu    $a0, $a0, 0    ; RELOC -> $LC12
+  0x008460: lui      $v0, 0    ; RELOC -> printk
+  0x008464: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x008468: jalr     $v0
+  0x00846c: nop      
+  0x008470: b        0x864c
+  0x008474: lw       $v0, 0xcb8($s1)
+  0x008478: lw       $v0, 0xcac($v0)
+  0x00847c: lhu      $v1, 0x2a($v0)
+  0x008480: bnel     $v1, $zero, 0x84a8
+  0x008484: lhu      $s4, 0x1a($v0)
+  0x008488: addiu    $v1, $zero, 1
+  0x00848c: bnel     $a1, $v1, 0x84a8
+  0x008490: lhu      $s4, 0x1a($v0)
+  0x008494: lhu      $s4, 0x22($v0)
+  0x008498: lhu      $s3, 0x24($v0)
+  0x00849c: lhu      $s2, 0x26($v0)
+  0x0084a0: b        0x84b4
+  0x0084a4: lhu      $s1, 0x28($v0)
+  0x0084a8: lhu      $s3, 0x1c($v0)
+  0x0084ac: lhu      $s2, 0x1e($v0)
+  0x0084b0: lhu      $s1, 0x20($v0)
+  0x0084b4: lhu      $s6, 0x2c($v0)
+  0x0084b8: bnez     $a1, 0x8578
+  0x0084bc: lhu      $s5, 0x2e($v0)
+  0x0084c0: lui      $v0, 0    ; RELOC -> 
+  0x0084c4: addiu    $v0, $v0, 0x7ccc    ; RELOC -> 
+  0x0084c8: jalr     $v0
+  0x0084cc: nop      
+  0x0084d0: lui      $v0, 0    ; RELOC -> msleep
+  0x0084d4: addiu    $v0, $v0, 0    ; RELOC -> msleep
+  0x0084d8: jalr     $v0
+  0x0084dc: addiu    $a0, $zero, 0x14
+  0x0084e0: andi     $a0, $s4, 0xff
+  0x0084e4: beql     $a0, $zero, 0x8500
+  0x0084e8: andi     $a0, $s3, 0xff
+  0x0084ec: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x0084f0: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x0084f4: jalr     $v0
+  0x0084f8: move     $a1, $zero
+  0x0084fc: andi     $a0, $s3, 0xff
+  0x008500: beql     $a0, $zero, 0x851c
+  0x008504: andi     $a0, $s2, 0xff
+  0x008508: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x00850c: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x008510: jalr     $v0
+  0x008514: move     $a1, $zero
+  0x008518: andi     $a0, $s2, 0xff
+  0x00851c: beql     $a0, $zero, 0x8538
+  0x008520: andi     $a0, $s1, 0xff
+  0x008524: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x008528: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x00852c: jalr     $v0
+  0x008530: move     $a1, $zero
+  0x008534: andi     $a0, $s1, 0xff
+  0x008538: beql     $a0, $zero, 0x8554
+  0x00853c: andi     $a0, $s6, 0xff
+  0x008540: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x008544: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x008548: jalr     $v0
+  0x00854c: move     $a1, $zero
+  0x008550: andi     $a0, $s6, 0xff
+  0x008554: beql     $a0, $zero, 0x8570
+  0x008558: addiu    $v0, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x00855c: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x008560: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x008564: jalr     $v0
+  0x008568: move     $a1, $zero
+  0x00856c: addiu    $v0, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x008570: b        0x8638
+  0x008574: sw       $zero, 0xcc4($v0)
+  0x008578: addiu    $v0, $zero, 1
+  0x00857c: bnel     $a1, $v0, 0x863c
+  0x008580: addiu    $s0, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x008584: lui      $v0, 0    ; RELOC -> 
+  0x008588: addiu    $v0, $v0, 0x7ccc    ; RELOC -> 
+  0x00858c: jalr     $v0
+  0x008590: nop      
+  0x008594: lui      $v0, 0    ; RELOC -> msleep
+  0x008598: addiu    $v0, $v0, 0    ; RELOC -> msleep
+  0x00859c: jalr     $v0
+  0x0085a0: addiu    $a0, $zero, 0x14
+  0x0085a4: andi     $a0, $s4, 0xff
+  0x0085a8: beql     $a0, $zero, 0x85c4
+  0x0085ac: andi     $a0, $s3, 0xff
+  0x0085b0: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x0085b4: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x0085b8: jalr     $v0
+  0x0085bc: move     $a1, $zero
+  0x0085c0: andi     $a0, $s3, 0xff
+  0x0085c4: beql     $a0, $zero, 0x85e0
+  0x0085c8: andi     $a0, $s2, 0xff
+  0x0085cc: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x0085d0: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x0085d4: jalr     $v0
+  0x0085d8: move     $a1, $zero
+  0x0085dc: andi     $a0, $s2, 0xff
+  0x0085e0: beql     $a0, $zero, 0x85fc
+  0x0085e4: andi     $a0, $s1, 0xff
+  0x0085e8: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x0085ec: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x0085f0: jalr     $v0
+  0x0085f4: move     $a1, $zero
+  0x0085f8: andi     $a0, $s1, 0xff
+  0x0085fc: beql     $a0, $zero, 0x8618
+  0x008600: andi     $a0, $s5, 0xff
+  0x008604: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x008608: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x00860c: jalr     $v0
+  0x008610: move     $a1, $zero
+  0x008614: andi     $a0, $s5, 0xff
+  0x008618: beql     $a0, $zero, 0x8634
+  0x00861c: addiu    $v0, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x008620: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x008624: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x008628: jalr     $v0
+  0x00862c: move     $a1, $zero
+  0x008630: addiu    $v0, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x008634: sw       $zero, 0xcc8($v0)
+  0x008638: addiu    $s0, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x00863c: b        0x864c
+  0x008640: lw       $v0, 0xcb8($s0)
+  0x008644: jr       $ra
+  0x008648: addiu    $v0, $zero, -1
+  0x00864c: lw       $ra, 0x2c($sp)
+  0x008650: lw       $s6, 0x28($sp)
+  0x008654: lw       $s5, 0x24($sp)
+  0x008658: lw       $s4, 0x20($sp)
+  0x00865c: lw       $s3, 0x1c($sp)
+  0x008660: lw       $s2, 0x18($sp)
+  0x008664: lw       $s1, 0x14($sp)
+  0x008668: lw       $s0, 0x10($sp)
+  0x00866c: jr       $ra
+  0x008670: addiu    $sp, $sp, 0x30
+
+=== ingenic_db_step_motor_run @ 0x91a4-0x93e0 (size 572) ===
+  0x0091a4: addiu    $sp, $sp, -0x20
+  0x0091a8: sw       $ra, 0x1c($sp)
+  0x0091ac: sw       $s0, 0x18($sp)
+  0x0091b0: lw       $v0, 4($a0)
+  0x0091b4: lui      $a0, 4
+  0x0091b8: and      $v0, $a0, $v0
+  0x0091bc: beqz     $v0, 0x93cc
+  0x0091c0: lw       $v1, 0x30($sp)
+  0x0091c4: bnez     $a1, 0x91e4
+  0x0091c8: addiu    $v0, $zero, 1
+  0x0091cc: lui      $v0, 0    ; RELOC -> ingenic_board_ctx
+  0x0091d0: lw       $v0, 0xcc4($v0)    ; RELOC -> ingenic_board_ctx
+  0x0091d4: beqz     $v0, 0x9214
+  0x0091d8: lui      $a0, 0    ; RELOC -> $LC8
+  0x0091dc: b        0x91fc
+  0x0091e0: addiu    $a0, $a0, 0    ; RELOC -> $LC8
+  0x0091e4: bne      $a1, $v0, 0x9214
+  0x0091e8: lui      $v0, 0    ; RELOC -> ingenic_board_ctx
+  0x0091ec: lw       $v0, 0xcc8($v0)    ; RELOC -> ingenic_board_ctx
+  0x0091f0: beqz     $v0, 0x9214
+  0x0091f4: lui      $a0, 0    ; RELOC -> $LC9
+  0x0091f8: addiu    $a0, $a0, 0    ; RELOC -> $LC9
+  0x0091fc: lui      $v0, 0    ; RELOC -> printk
+  0x009200: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x009204: jalr     $v0
+  0x009208: nop      
+  0x00920c: b        0x93d0
+  0x009210: addiu    $v0, $zero, -1
+  0x009214: beqz     $a3, 0x9224
+  0x009218: lui      $a0, 0    ; RELOC -> $LC10
+  0x00921c: bnez     $v1, 0x9244
+  0x009220: nop      
+  0x009224: lui      $a1, 0    ; RELOC -> 
+  0x009228: lui      $v0, 0    ; RELOC -> printk
+  0x00922c: addiu    $a0, $a0, 0    ; RELOC -> $LC10
+  0x009230: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x009234: jalr     $v0
+  0x009238: addiu    $a1, $a1, 0x4a0    ; RELOC -> 
+  0x00923c: b        0x93d0
+  0x009240: addiu    $v0, $zero, -1
+  0x009244: bnez     $a1, 0x9308
+  0x009248: addiu    $a0, $zero, 1
+  0x00924c: lui      $a1, 0    ; RELOC -> ingenic_board_ctx
+  0x009250: addiu    $v0, $a1, 0    ; RELOC -> ingenic_board_ctx
+  0x009254: lui      $a0, 0xf
+  0x009258: sw       $a2, 0xcb0($v0)
+  0x00925c: sw       $a3, 0xcb4($v0)
+  0x009260: sw       $zero, 0xcb8($v0)
+  0x009264: sw       $zero, 0xccc($v0)
+  0x009268: addiu    $a0, $a0, 0x4240
+  0x00926c: addiu    $v0, $v1, -1
+  0x009270: sltu     $v0, $v0, $a0
+  0x009274: bnez     $v0, 0x9298
+  0x009278: move     $s0, $a1
+  0x00927c: lui      $a0, 0    ; RELOC -> $LC11
+  0x009280: lui      $v0, 0    ; RELOC -> printk
+  0x009284: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x009288: jalr     $v0
+  0x00928c: addiu    $a0, $a0, 0    ; RELOC -> $LC11
+  0x009290: b        0x92fc
+  0x009294: addiu    $s0, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x009298: divu     $zero, $a0, $v1
+  0x00929c: lui      $a0, 5
+  0x0092a0: ori      $a0, $a0, 0xb8d8
+  0x0092a4: lui      $v0, 0    ; RELOC -> 
+  0x0092a8: lw       $v0, 0x1e10($v0)    ; RELOC -> 
+  0x0092ac: lw       $a1, 0xc($v0)
+  0x0092b0: mflo     $v1
+  0x0092b4: div      $zero, $a0, $v1
+  0x0092b8: sw       $v1, 0x10($v0)
+  0x0092bc: lw       $v1, 0x3c($a1)
+  0x0092c0: mflo     $a2
+  0x0092c4: andi     $a0, $a2, 0xffff
+  0x0092c8: sw       $a2, 0x10($sp)
+  0x0092cc: lw       $a2, ($v1)
+  0x0092d0: lw       $v1, 4($a1)
+  0x0092d4: addu     $v1, $a2, $v1
+  0x0092d8: sw       $a0, ($v1)
+  0x0092dc: lw       $v0, 0xc($v0)
+  0x0092e0: addiu    $a0, $zero, 1
+  0x0092e4: lw       $v1, ($v0)
+  0x0092e8: lw       $v0, 0x3c($v0)
+  0x0092ec: sllv     $v1, $a0, $v1
+  0x0092f0: lw       $v0, ($v0)
+  0x0092f4: sw       $v1, 0x14($v0)
+  0x0092f8: addiu    $s0, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x0092fc: addiu    $v0, $zero, 1
+  0x009300: b        0x93c4
+  0x009304: sw       $v0, 0xcc4($s0)
+  0x009308: bne      $a1, $a0, 0x93d0
+  0x00930c: move     $v0, $zero
+  0x009310: lui      $t0, 0    ; RELOC -> ingenic_board_ctx
+  0x009314: addiu    $v0, $t0, 0    ; RELOC -> ingenic_board_ctx
+  0x009318: lui      $a0, 0xf
+  0x00931c: sw       $a2, 0xcd0($v0)
+  0x009320: sw       $a3, 0xcd4($v0)
+  0x009324: sw       $zero, 0xcd8($v0)
+  0x009328: sw       $a1, 0xcdc($v0)
+  0x00932c: addiu    $a0, $a0, 0x4240
+  0x009330: addiu    $v0, $v1, -1
+  0x009334: sltu     $v0, $v0, $a0
+  0x009338: bnez     $v0, 0x935c
+  0x00933c: move     $s0, $t0
+  0x009340: lui      $a0, 0    ; RELOC -> $LC11
+  0x009344: lui      $v0, 0    ; RELOC -> printk
+  0x009348: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x00934c: jalr     $v0
+  0x009350: addiu    $a0, $a0, 0    ; RELOC -> $LC11
+  0x009354: b        0x93bc
+  0x009358: addiu    $s0, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x00935c: divu     $zero, $a0, $v1
+  0x009360: lui      $a0, 5
+  0x009364: ori      $a0, $a0, 0xb8d8
+  0x009368: lui      $v0, 0    ; RELOC -> 
+  0x00936c: lw       $v0, 0x1e14($v0)    ; RELOC -> 
+  0x009370: lw       $a2, 0xc($v0)
+  0x009374: mflo     $v1
+  0x009378: div      $zero, $a0, $v1
+  0x00937c: sw       $v1, 0x10($v0)
+  0x009380: lw       $v1, 0x3c($a2)
+  0x009384: mflo     $a3
+  0x009388: andi     $a0, $a3, 0xffff
+  0x00938c: sw       $a3, 0x10($sp)
+  0x009390: lw       $a3, ($v1)
+  0x009394: lw       $v1, 4($a2)
+  0x009398: addu     $v1, $a3, $v1
+  0x00939c: sw       $a0, ($v1)
+  0x0093a0: lw       $v0, 0xc($v0)
+  0x0093a4: lw       $v1, ($v0)
+  0x0093a8: lw       $v0, 0x3c($v0)
+  0x0093ac: sllv     $a1, $a1, $v1
+  0x0093b0: lw       $v0, ($v0)
+  0x0093b4: sw       $a1, 0x14($v0)
+  0x0093b8: addiu    $s0, $s0, 0    ; RELOC -> ingenic_board_ctx
+  0x0093bc: addiu    $v0, $zero, 1
+  0x0093c0: sw       $v0, 0xcc8($s0)
+  0x0093c4: b        0x93d0
+  0x0093c8: move     $v0, $zero
+  0x0093cc: addiu    $v0, $zero, -1
+  0x0093d0: lw       $ra, 0x1c($sp)
+  0x0093d4: lw       $s0, 0x18($sp)
+  0x0093d8: jr       $ra
+  0x0093dc: addiu    $sp, $sp, 0x20
+
+=== ingenic_db_step_motor_stop @ 0x93e0-0x9604 (size 548) ===
+  0x0093e0: addiu    $sp, $sp, -0x28
+  0x0093e4: sw       $ra, 0x24($sp)
+  0x0093e8: sw       $s4, 0x20($sp)
+  0x0093ec: sw       $s3, 0x1c($sp)
+  0x0093f0: sw       $s2, 0x18($sp)
+  0x0093f4: sw       $s1, 0x14($sp)
+  0x0093f8: sw       $s0, 0x10($sp)
+  0x0093fc: lw       $v0, 4($a0)
+  0x009400: lui      $v1, 4
+  0x009404: and      $v0, $v1, $v0
+  0x009408: beql     $v0, $zero, 0x95e4
+  0x00940c: addiu    $v0, $zero, -1
+  0x009410: bnez     $a1, 0x9448
+  0x009414: addiu    $v1, $zero, 1
+  0x009418: lui      $v0, 0    ; RELOC -> ingenic_board_ctx
+  0x00941c: addiu    $s0, $v0, 0    ; RELOC -> ingenic_board_ctx
+  0x009420: lw       $v1, 0xcc4($s0)
+  0x009424: bnez     $v1, 0x9480
+  0x009428: move     $s1, $v0
+  0x00942c: lui      $a0, 0    ; RELOC -> $LC12
+  0x009430: lui      $v0, 0    ; RELOC -> printk
+  0x009434: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x009438: jalr     $v0
+  0x00943c: addiu    $a0, $a0, 0    ; RELOC -> $LC12
+  0x009440: b        0x95e4
+  0x009444: lw       $v0, 0xcb8($s0)
+  0x009448: bne      $a1, $v1, 0x95e4
+  0x00944c: move     $v0, $zero
+  0x009450: lui      $v0, 0    ; RELOC -> ingenic_board_ctx
+  0x009454: addiu    $s0, $v0, 0    ; RELOC -> ingenic_board_ctx
+  0x009458: lw       $v1, 0xcc8($s0)
+  0x00945c: bnez     $v1, 0x9534
+  0x009460: move     $s1, $v0
+  0x009464: lui      $a0, 0    ; RELOC -> $LC13
+  0x009468: lui      $v0, 0    ; RELOC -> printk
+  0x00946c: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x009470: jalr     $v0
+  0x009474: addiu    $a0, $a0, 0    ; RELOC -> $LC13
+  0x009478: b        0x95e4
+  0x00947c: lw       $v0, 0xcd8($s0)
+  0x009480: lw       $v0, 0xcac($s0)
+  0x009484: lhu      $s4, 0x1a($v0)
+  0x009488: lhu      $s3, 0x1c($v0)
+  0x00948c: lhu      $s2, 0x1e($v0)
+  0x009490: lhu      $s0, 0x20($v0)
+  0x009494: lui      $v0, 1    ; RELOC -> 
+  0x009498: addiu    $v0, $v0, -0x74e8    ; RELOC -> 
+  0x00949c: jalr     $v0
+  0x0094a0: nop      
+  0x0094a4: lui      $v0, 0    ; RELOC -> msleep
+  0x0094a8: addiu    $v0, $v0, 0    ; RELOC -> msleep
+  0x0094ac: jalr     $v0
+  0x0094b0: addiu    $a0, $zero, 0x14
+  0x0094b4: andi     $a0, $s4, 0xff
+  0x0094b8: beql     $a0, $zero, 0x94d4
+  0x0094bc: andi     $a0, $s3, 0xff
+  0x0094c0: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x0094c4: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x0094c8: jalr     $v0
+  0x0094cc: move     $a1, $zero
+  0x0094d0: andi     $a0, $s3, 0xff
+  0x0094d4: beql     $a0, $zero, 0x94f0
+  0x0094d8: andi     $a0, $s2, 0xff
+  0x0094dc: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x0094e0: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x0094e4: jalr     $v0
+  0x0094e8: move     $a1, $zero
+  0x0094ec: andi     $a0, $s2, 0xff
+  0x0094f0: beql     $a0, $zero, 0x950c
+  0x0094f4: andi     $a0, $s0, 0xff
+  0x0094f8: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x0094fc: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x009500: jalr     $v0
+  0x009504: move     $a1, $zero
+  0x009508: andi     $a0, $s0, 0xff
+  0x00950c: beql     $a0, $zero, 0x9528
+  0x009510: addiu    $v0, $s1, 0    ; RELOC -> ingenic_board_ctx
+  0x009514: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x009518: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x00951c: jalr     $v0
+  0x009520: move     $a1, $zero
+  0x009524: addiu    $v0, $s1, 0    ; RELOC -> ingenic_board_ctx
+  0x009528: sw       $zero, 0xcc4($v0)
+  0x00952c: b        0x95e4
+  0x009530: lw       $v0, 0xcb8($v0)
+  0x009534: lw       $v0, 0xcac($s0)
+  0x009538: lhu      $s4, 0x22($v0)
+  0x00953c: lhu      $s3, 0x24($v0)
+  0x009540: lhu      $s2, 0x26($v0)
+  0x009544: lhu      $s0, 0x28($v0)
+  0x009548: lui      $v0, 1    ; RELOC -> 
+  0x00954c: addiu    $v0, $v0, -0x71a8    ; RELOC -> 
+  0x009550: jalr     $v0
+  0x009554: nop      
+  0x009558: lui      $v0, 0    ; RELOC -> msleep
+  0x00955c: addiu    $v0, $v0, 0    ; RELOC -> msleep
+  0x009560: jalr     $v0
+  0x009564: addiu    $a0, $zero, 0x14
+  0x009568: andi     $a0, $s4, 0xff
+  0x00956c: beql     $a0, $zero, 0x9588
+  0x009570: andi     $a0, $s3, 0xff
+  0x009574: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x009578: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x00957c: jalr     $v0
+  0x009580: move     $a1, $zero
+  0x009584: andi     $a0, $s3, 0xff
+  0x009588: beql     $a0, $zero, 0x95a4
+  0x00958c: andi     $a0, $s2, 0xff
+  0x009590: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x009594: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x009598: jalr     $v0
+  0x00959c: move     $a1, $zero
+  0x0095a0: andi     $a0, $s2, 0xff
+  0x0095a4: beql     $a0, $zero, 0x95c0
+  0x0095a8: andi     $a0, $s0, 0xff
+  0x0095ac: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x0095b0: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x0095b4: jalr     $v0
+  0x0095b8: move     $a1, $zero
+  0x0095bc: andi     $a0, $s0, 0xff
+  0x0095c0: beql     $a0, $zero, 0x95dc
+  0x0095c4: addiu    $v0, $s1, 0    ; RELOC -> ingenic_board_ctx
+  0x0095c8: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x0095cc: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x0095d0: jalr     $v0
+  0x0095d4: move     $a1, $zero
+  0x0095d8: addiu    $v0, $s1, 0    ; RELOC -> ingenic_board_ctx
+  0x0095dc: sw       $zero, 0xcc8($v0)
+  0x0095e0: lw       $v0, 0xcd8($v0)
+  0x0095e4: lw       $ra, 0x24($sp)
+  0x0095e8: lw       $s4, 0x20($sp)
+  0x0095ec: lw       $s3, 0x1c($sp)
+  0x0095f0: lw       $s2, 0x18($sp)
+  0x0095f4: lw       $s1, 0x14($sp)
+  0x0095f8: lw       $s0, 0x10($sp)
+  0x0095fc: jr       $ra
+  0x009600: addiu    $sp, $sp, 0x28
+
+=== ingenic_dc_motor_init @ 0x9e5c-0xa098 (size 572) ===
+  0x009e5c: lui      $v0, 0    ; RELOC -> kmalloc_caches
+  0x009e60: addiu    $sp, $sp, -0x30
+  0x009e64: lw       $a0, 0x1c($v0)    ; RELOC -> kmalloc_caches
+  0x009e68: lui      $v0, 0    ; RELOC -> kmem_cache_alloc
+  0x009e6c: addiu    $a1, $zero, 0xd0
+  0x009e70: sw       $s0, 0x1c($sp)
+  0x009e74: sw       $ra, 0x2c($sp)
+  0x009e78: sw       $s3, 0x28($sp)
+  0x009e7c: sw       $s2, 0x24($sp)
+  0x009e80: addiu    $v0, $v0, 0    ; RELOC -> kmem_cache_alloc
+  0x009e84: jalr     $v0
+  0x009e88: sw       $s1, 0x20($sp)
+  0x009e8c: lui      $s0, 0    ; RELOC -> 
+  0x009e90: bnez     $v0, 0x9eb4
+  0x009e94: sw       $v0, 0x1e20($s0)    ; RELOC -> 
+  0x009e98: lui      $a0, 0    ; RELOC -> $LC10
+  0x009e9c: lui      $v0, 0    ; RELOC -> printk
+  0x009ea0: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x009ea4: jalr     $v0
+  0x009ea8: addiu    $a0, $a0, 0    ; RELOC -> $LC10
+  0x009eac: b        0xa07c
+  0x009eb0: addiu    $v0, $zero, -1
+  0x009eb4: lui      $v1, 0    ; RELOC -> ingenic_board_ctx
+  0x009eb8: addiu    $v1, $v1, 0    ; RELOC -> ingenic_board_ctx
+  0x009ebc: lw       $a0, 0xcac($v1)
+  0x009ec0: lbu      $a0, 0x30($a0)
+  0x009ec4: sw       $a0, ($v0)
+  0x009ec8: lw       $a1, 0xcac($v1)
+  0x009ecc: lbu      $a1, 0x32($a1)
+  0x009ed0: sw       $a1, 4($v0)
+  0x009ed4: lw       $v1, 0xcac($v1)
+  0x009ed8: lbu      $v1, 0x34($v1)
+  0x009edc: beqz     $a0, 0x9ef4
+  0x009ee0: sw       $v1, 8($v0)
+  0x009ee4: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x009ee8: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x009eec: jalr     $v0
+  0x009ef0: addiu    $a1, $zero, 1
+  0x009ef4: lw       $v0, 0x1e20($s0)    ; RELOC -> 
+  0x009ef8: addiu    $v1, $zero, 3
+  0x009efc: sw       $v1, 0x30($v0)
+  0x009f00: addiu    $v1, $zero, -0x20
+  0x009f04: sw       $v1, 0x14($v0)
+  0x009f08: addiu    $v1, $v0, 0x18
+  0x009f0c: sw       $v1, 0x18($v0)
+  0x009f10: sw       $v1, 0x1c($v0)
+  0x009f14: lui      $v1, 1    ; RELOC -> 
+  0x009f18: addiu    $v1, $v1, -0x63b8    ; RELOC -> 
+  0x009f1c: lw       $a0, 4($v0)
+  0x009f20: lui      $s2, 0    ; RELOC -> gpio_direction_input
+  0x009f24: addiu    $s2, $s2, 0    ; RELOC -> gpio_direction_input
+  0x009f28: jalr     $s2
+  0x009f2c: sw       $v1, 0x20($v0)
+  0x009f30: lw       $v0, 0x1e20($s0)    ; RELOC -> 
+  0x009f34: lui      $s1, 0    ; RELOC -> 
+  0x009f38: jalr     $s2
+  0x009f3c: lw       $a0, 8($v0)
+  0x009f40: lw       $s3, 0x1e20($s0)    ; RELOC -> 
+  0x009f44: lui      $s2, 0    ; RELOC -> __gpio_to_irq
+  0x009f48: addiu    $s2, $s2, 0    ; RELOC -> __gpio_to_irq
+  0x009f4c: jalr     $s2
+  0x009f50: lw       $a0, 4($s3)
+  0x009f54: lw       $s0, 0x1e20($s0)    ; RELOC -> 
+  0x009f58: sw       $v0, 0xc($s3)
+  0x009f5c: lw       $v0, 0xc($s0)
+  0x009f60: bgez     $v0, 0x9f80
+  0x009f64: lui      $a0, 0    ; RELOC -> $LC11
+  0x009f68: lui      $v0, 0    ; RELOC -> printk
+  0x009f6c: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x009f70: jalr     $v0
+  0x009f74: addiu    $a0, $a0, 0    ; RELOC -> $LC11
+  0x009f78: b        0xa07c
+  0x009f7c: addiu    $v0, $zero, -2
+  0x009f80: jalr     $s2
+  0x009f84: lw       $a0, 8($s0)
+  0x009f88: sw       $v0, 0x10($s0)
+  0x009f8c: lw       $v0, 0x1e20($s1)    ; RELOC -> 
+  0x009f90: lw       $v1, 0x10($v0)
+  0x009f94: bgez     $v1, 0x9fb8
+  0x009f98: lui      $v1, 0    ; RELOC -> $LC13
+  0x009f9c: lui      $a0, 0    ; RELOC -> $LC12
+  0x009fa0: lui      $v0, 0    ; RELOC -> printk
+  0x009fa4: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x009fa8: jalr     $v0
+  0x009fac: addiu    $a0, $a0, 0    ; RELOC -> $LC12
+  0x009fb0: b        0xa07c
+  0x009fb4: addiu    $v0, $zero, -3
+  0x009fb8: lw       $a0, 0xc($v0)
+  0x009fbc: addiu    $v1, $v1, 0    ; RELOC -> $LC13
+  0x009fc0: lui      $a1, 1    ; RELOC -> 
+  0x009fc4: lui      $s0, 0    ; RELOC -> request_threaded_irq
+  0x009fc8: sw       $v1, 0x10($sp)
+  0x009fcc: sw       $v0, 0x14($sp)
+  0x009fd0: addiu    $a1, $a1, -0x64ac    ; RELOC -> 
+  0x009fd4: move     $a2, $zero
+  0x009fd8: addiu    $s0, $s0, 0    ; RELOC -> request_threaded_irq
+  0x009fdc: jalr     $s0
+  0x009fe0: addiu    $a3, $zero, 2
+  0x009fe4: bgezl    $v0, 0xa008
+  0x009fe8: lw       $v0, 0x1e20($s1)    ; RELOC -> 
+  0x009fec: lui      $a0, 0    ; RELOC -> $LC14
+  0x009ff0: lui      $v0, 0    ; RELOC -> printk
+  0x009ff4: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x009ff8: jalr     $v0
+  0x009ffc: addiu    $a0, $a0, 0    ; RELOC -> $LC14
+  0x00a000: b        0xa07c
+  0x00a004: addiu    $v0, $zero, -4
+  0x00a008: lui      $v1, 0    ; RELOC -> $LC15
+  0x00a00c: lw       $a0, 0x10($v0)
+  0x00a010: addiu    $v1, $v1, 0    ; RELOC -> $LC15
+  0x00a014: lui      $a1, 1    ; RELOC -> 
+  0x00a018: sw       $v1, 0x10($sp)
+  0x00a01c: sw       $v0, 0x14($sp)
+  0x00a020: addiu    $a1, $a1, -0x6438    ; RELOC -> 
+  0x00a024: move     $a2, $zero
+  0x00a028: jalr     $s0
+  0x00a02c: addiu    $a3, $zero, 2
+  0x00a030: bgez     $v0, 0xa054
+  0x00a034: lw       $ra, 0x2c($sp)
+  0x00a038: lui      $a0, 0    ; RELOC -> $LC16
+  0x00a03c: lui      $v0, 0    ; RELOC -> printk
+  0x00a040: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x00a044: jalr     $v0
+  0x00a048: addiu    $a0, $a0, 0    ; RELOC -> $LC16
+  0x00a04c: b        0xa07c
+  0x00a050: addiu    $v0, $zero, -5
+  0x00a054: lw       $s3, 0x28($sp)
+  0x00a058: lw       $s2, 0x24($sp)
+  0x00a05c: lw       $s1, 0x20($sp)
+  0x00a060: lw       $s0, 0x1c($sp)
+  0x00a064: lui      $a0, 0    ; RELOC -> 
+  0x00a068: lui      $t9, 0    ; RELOC -> platform_driver_register
+  0x00a06c: addiu    $a0, $a0, 0x1300    ; RELOC -> 
+  0x00a070: addiu    $t9, $t9, 0    ; RELOC -> platform_driver_register
+  0x00a074: jr       $t9
+  0x00a078: addiu    $sp, $sp, 0x30
+  0x00a07c: lw       $ra, 0x2c($sp)
+  0x00a080: lw       $s3, 0x28($sp)
+  0x00a084: lw       $s2, 0x24($sp)
+  0x00a088: lw       $s1, 0x20($sp)
+  0x00a08c: lw       $s0, 0x1c($sp)
+  0x00a090: jr       $ra
+  0x00a094: addiu    $sp, $sp, 0x30
+
+=== ingenic_dc_motor_run @ 0x9cbc-0x9d94 (size 216) ===
+  0x009cbc: addiu    $sp, $sp, -0x18
+  0x009cc0: lui      $v0, 0    ; RELOC -> 
+  0x009cc4: sw       $s0, 0x10($sp)
+  0x009cc8: lw       $s0, 0x1e20($v0)    ; RELOC -> 
+  0x009ccc: sw       $ra, 0x14($sp)
+  0x009cd0: lw       $v1, 0x30($s0)
+  0x009cd4: addiu    $v0, $zero, 3
+  0x009cd8: beql     $v1, $v0, 0x9cfc
+  0x009cdc: lw       $v0, 4($a0)
+  0x009ce0: lui      $a0, 0    ; RELOC -> $LC8
+  0x009ce4: lui      $v0, 0    ; RELOC -> printk
+  0x009ce8: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x009cec: jalr     $v0
+  0x009cf0: addiu    $a0, $a0, 0    ; RELOC -> $LC8
+  0x009cf4: b        0x9d84
+  0x009cf8: move     $v0, $zero
+  0x009cfc: lui      $v1, 2
+  0x009d00: and      $v0, $v1, $v0
+  0x009d04: beql     $v0, $zero, 0x9d84
+  0x009d08: addiu    $v0, $zero, -1
+  0x009d0c: lw       $a0, ($s0)
+  0x009d10: beql     $a0, $zero, 0x9d2c
+  0x009d14: lui      $v0, 0    ; RELOC -> 
+  0x009d18: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x009d1c: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x009d20: jalr     $v0
+  0x009d24: addiu    $a1, $zero, 1
+  0x009d28: lui      $v0, 0    ; RELOC -> 
+  0x009d2c: lw       $v0, 0x1e24($v0)    ; RELOC -> 
+  0x009d30: sw       $zero, 0x24($s0)
+  0x009d34: sw       $zero, 0x28($s0)
+  0x009d38: sw       $zero, 0x2c($s0)
+  0x009d3c: addiu    $v1, $zero, 0x2710
+  0x009d40: sw       $v1, 0x10($v0)
+  0x009d44: lw       $v1, 0xc($v0)
+  0x009d48: lw       $a0, 0x3c($v1)
+  0x009d4c: lw       $v1, 4($v1)
+  0x009d50: lw       $a0, ($a0)
+  0x009d54: addu     $v1, $a0, $v1
+  0x009d58: addiu    $a0, $zero, 0x25
+  0x009d5c: sw       $a0, ($v1)
+  0x009d60: lw       $v0, 0xc($v0)
+  0x009d64: addiu    $a0, $zero, 1
+  0x009d68: lw       $v1, ($v0)
+  0x009d6c: lw       $v0, 0x3c($v0)
+  0x009d70: sllv     $v1, $a0, $v1
+  0x009d74: lw       $v0, ($v0)
+  0x009d78: sw       $v1, 0x14($v0)
+  0x009d7c: sw       $zero, 0x30($s0)
+  0x009d80: move     $v0, $zero
+  0x009d84: lw       $ra, 0x14($sp)
+  0x009d88: lw       $s0, 0x10($sp)
+  0x009d8c: jr       $ra
+  0x009d90: addiu    $sp, $sp, 0x18
+
+=== ingenic_dc_motor_stop @ 0x9d94-0x9e44 (size 176) ===
+  0x009d94: addiu    $sp, $sp, -0x18
+  0x009d98: lui      $v0, 0    ; RELOC -> 
+  0x009d9c: sw       $s0, 0x10($sp)
+  0x009da0: lw       $s0, 0x1e20($v0)    ; RELOC -> 
+  0x009da4: sw       $ra, 0x14($sp)
+  0x009da8: lw       $v1, 0x30($s0)
+  0x009dac: addiu    $v0, $zero, 3
+  0x009db0: bnel     $v1, $v0, 0x9dd4
+  0x009db4: lw       $v0, 4($a0)
+  0x009db8: lui      $a0, 0    ; RELOC -> $LC9
+  0x009dbc: lui      $v0, 0    ; RELOC -> printk
+  0x009dc0: addiu    $v0, $v0, 0    ; RELOC -> printk
+  0x009dc4: jalr     $v0
+  0x009dc8: addiu    $a0, $a0, 0    ; RELOC -> $LC9
+  0x009dcc: b        0x9e34
+  0x009dd0: move     $v0, $zero
+  0x009dd4: lui      $v1, 2
+  0x009dd8: and      $v0, $v1, $v0
+  0x009ddc: beqz     $v0, 0x9e30
+  0x009de0: lui      $v0, 1    ; RELOC -> 
+  0x009de4: addiu    $v0, $v0, -0x65a0    ; RELOC -> 
+  0x009de8: jalr     $v0
+  0x009dec: nop      
+  0x009df0: lui      $v0, 0    ; RELOC -> msleep
+  0x009df4: addiu    $v0, $v0, 0    ; RELOC -> msleep
+  0x009df8: jalr     $v0
+  0x009dfc: addiu    $a0, $zero, 0x14
+  0x009e00: lw       $a0, ($s0)
+  0x009e04: beql     $a0, $zero, 0x9e20
+  0x009e08: addiu    $v0, $zero, 3
+  0x009e0c: lui      $v0, 0    ; RELOC -> gpio_direction_output
+  0x009e10: addiu    $v0, $v0, 0    ; RELOC -> gpio_direction_output
+  0x009e14: jalr     $v0
+  0x009e18: addiu    $a1, $zero, 1
+  0x009e1c: addiu    $v0, $zero, 3
+  0x009e20: sw       $v0, 0x30($s0)
+  0x009e24: sw       $zero, 0x24($s0)
+  0x009e28: b        0x9e34
+  0x009e2c: move     $v0, $zero
+  0x009e30: addiu    $v0, $zero, -1
+  0x009e34: lw       $ra, 0x14($sp)
+  0x009e38: lw       $s0, 0x10($sp)
+  0x009e3c: jr       $ra
+  0x009e40: addiu    $sp, $sp, 0x18
+
+=== pps_board_led_ctrl @ 0x354-0x4e4 (size 400) ===
+  0x000354: lw       $v0, 0x74($a0)
+  0x000358: beqz     $v0, 0x4b4
+  0x00035c: nop      
+  0x000360: lw       $t9, 4($v0)
+  0x000364: beqz     $t9, 0x4b4
+  0x000368: nop      
+  0x00036c: addiu    $sp, $sp, -0x30
+  0x000370: sw       $s1, 0x18($sp)
+  0x000374: sw       $s0, 0x14($sp)
+  0x000378: sw       $ra, 0x2c($sp)
+  0x00037c: sw       $s5, 0x28($sp)
+  0x000380: sw       $s4, 0x24($sp)
+  0x000384: sw       $s3, 0x20($sp)
+  0x000388: sw       $s2, 0x1c($sp)
+  0x00038c: lw       $v0, 4($a0)
+  0x000390: move     $s0, $a0
+  0x000394: andi     $v0, $v0, 0x10
+  0x000398: beqz     $v0, 0x46c
+  0x00039c: move     $s1, $a2
+  0x0003a0: lhu      $s4, 0xc($a0)
+  0x0003a4: andi     $s3, $s4, 0xff
+  0x0003a8: beqz     $s3, 0x4bc
+  0x0003ac: lhu      $s5, 0xe($a0)
+  0x0003b0: andi     $s2, $s5, 0xff
+  0x0003b4: beql     $s2, $zero, 0x4c0
+  0x0003b8: move     $v0, $zero
+  0x0003bc: bnel     $a1, $zero, 0x3f8
+  0x0003c0: addiu    $v0, $zero, 1
+  0x0003c4: beql     $a2, $zero, 0x3e0
+  0x0003c8: lw       $v0, 0x74($s0)
+  0x0003cc: srl      $a2, $s4, 8
+  0x0003d0: move     $a1, $s3
+  0x0003d4: jalr     $t9
+  0x0003d8: andi     $a2, $a2, 1
+  0x0003dc: lw       $v0, 0x74($s0)
+  0x0003e0: srl      $s5, $s5, 8
+  0x0003e4: andi     $a2, $s5, 1
+  0x0003e8: lw       $t9, 4($v0)
+  0x0003ec: move     $a0, $s0
+  0x0003f0: b        0x48c
+  0x0003f4: move     $a1, $s2
+  0x0003f8: bnel     $a1, $v0, 0x434
+  0x0003fc: addiu    $v0, $zero, 9
+  0x000400: beql     $a2, $zero, 0x41c
+  0x000404: lw       $v0, 0x74($s0)
+  0x000408: srl      $a2, $s5, 8
+  0x00040c: move     $a1, $s2
+  0x000410: jalr     $t9
+  0x000414: andi     $a2, $a2, 1
+  0x000418: lw       $v0, 0x74($s0)
+  0x00041c: srl      $s4, $s4, 8
+  0x000420: andi     $a2, $s4, 1
+  0x000424: lw       $t9, 4($v0)
+  0x000428: move     $a0, $s0
+  0x00042c: b        0x48c
+  0x000430: move     $a1, $s3
+  0x000434: bne      $a1, $v0, 0x470
+  0x000438: addiu    $v1, $zero, 0xa
+  0x00043c: srl      $s4, $s4, 8
+  0x000440: andi     $s4, $s4, 1
+  0x000444: xor      $s1, $a2, $s4
+  0x000448: move     $a1, $s3
+  0x00044c: jalr     $t9
+  0x000450: move     $a2, $s1
+  0x000454: lw       $v0, 0x74($s0)
+  0x000458: move     $a0, $s0
+  0x00045c: lw       $t9, 4($v0)
+  0x000460: move     $a1, $s2
+  0x000464: b        0x490
+  0x000468: move     $a2, $s1
+  0x00046c: addiu    $v1, $zero, 0xa
+  0x000470: bne      $a1, $v1, 0x4c0
+  0x000474: move     $v0, $zero
+  0x000478: lhu      $a1, 0x18($s0)
+  0x00047c: move     $a0, $s0
+  0x000480: srl      $a2, $a1, 8
+  0x000484: andi     $a2, $a2, 1
+  0x000488: andi     $a1, $a1, 0xff
+  0x00048c: xor      $a2, $s1, $a2
+  0x000490: lw       $ra, 0x2c($sp)
+  0x000494: lw       $s5, 0x28($sp)
+  0x000498: lw       $s4, 0x24($sp)
+  0x00049c: lw       $s3, 0x20($sp)
+  0x0004a0: lw       $s2, 0x1c($sp)
+  0x0004a4: lw       $s1, 0x18($sp)
+  0x0004a8: lw       $s0, 0x14($sp)
+  0x0004ac: jr       $t9
+  0x0004b0: addiu    $sp, $sp, 0x30
+  0x0004b4: jr       $ra
+  0x0004b8: addiu    $v0, $zero, -1
+  0x0004bc: move     $v0, $zero
+  0x0004c0: lw       $ra, 0x2c($sp)
+  0x0004c4: lw       $s5, 0x28($sp)
+  0x0004c8: lw       $s4, 0x24($sp)
+  0x0004cc: lw       $s3, 0x20($sp)
+  0x0004d0: lw       $s2, 0x1c($sp)
+  0x0004d4: lw       $s1, 0x18($sp)
+  0x0004d8: lw       $s0, 0x14($sp)
+  0x0004dc: jr       $ra
+  0x0004e0: addiu    $sp, $sp, 0x30
+
+=== pps_board_infrared_led_ctrl @ 0x62c-0x66c (size 64) ===
+  0x00062c: lw       $v0, 0x74($a0)
+  0x000630: beql     $v0, $zero, 0x664
+  0x000634: addiu    $v0, $zero, -1
+  0x000638: lw       $t9, 4($v0)
+  0x00063c: beql     $t9, $zero, 0x664
+  0x000640: addiu    $v0, $zero, -1
+  0x000644: bnez     $a1, 0x664
+  0x000648: move     $v0, $zero
+  0x00064c: lhu      $a1, 0x10($a0)
+  0x000650: srl      $v0, $a1, 8
+  0x000654: andi     $v0, $v0, 1
+  0x000658: andi     $a1, $a1, 0xff
+  0x00065c: jr       $t9
+  0x000660: xor      $a2, $a2, $v0
+  0x000664: jr       $ra
+  0x000668: nop      
+
+=== ingenic_motor_timer_init @ 0x8674-0x8688 (size 20) ===
+  0x008674: lui      $a0, 0    ; RELOC -> 
+  0x008678: lui      $t9, 0    ; RELOC -> platform_driver_register
+  0x00867c: addiu    $t9, $t9, 0    ; RELOC -> platform_driver_register
+  0x008680: jr       $t9
+  0x008684: addiu    $a0, $a0, 0x11f0    ; RELOC -> 
+
+=== ingenic_db_step_motor_timer_init @ 0x9604-0x9644 (size 64) ===
+  0x009604: addiu    $sp, $sp, -0x18
+  0x009608: lui      $a0, 0    ; RELOC -> 
+  0x00960c: sw       $s0, 0x10($sp)
+  0x009610: lui      $s0, 0    ; RELOC -> platform_driver_register
+  0x009614: addiu    $s0, $s0, 0    ; RELOC -> platform_driver_register
+  0x009618: sw       $ra, 0x14($sp)
+  0x00961c: jalr     $s0
+  0x009620: addiu    $a0, $a0, 0x1250    ; RELOC -> 
+  0x009624: lui      $a0, 0    ; RELOC -> 
+  0x009628: jalr     $s0
+  0x00962c: addiu    $a0, $a0, 0x12a4    ; RELOC -> 
+  0x009630: lw       $ra, 0x14($sp)
+  0x009634: lw       $s0, 0x10($sp)
+  0x009638: move     $v0, $zero
+  0x00963c: jr       $ra
+  0x009640: addiu    $sp, $sp, 0x18
+

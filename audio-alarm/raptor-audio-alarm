@@ -1,0 +1,191 @@
+#!/bin/sh
+# raptor-audio-alarm — audio-alarm daemon -> send2 bridge, mirrors
+# package/thingino-raptor/files/raptor-motion. Unlike motion's fixed-length
+# clip, recording length here is decided by the daemon itself (it extends
+# g_recording_until_ms per additional trigger) - this script only reacts to
+# the start/stop edges it is called on, it never sleeps for a fixed time.
+
+THINGINO_JSON="${THINGINO_JSON:-/etc/thingino.json}"
+SEND2_JSON="${SEND2_JSON:-/etc/send2.json}"
+STATE_DIR="${STATE_DIR:-/run/audio-alarm}"
+CHAN="${AUDIO_ALARM_CHANNEL:-0}"
+
+SERVICES="email ftp gphotos gotify mqtt ntfy pushover storage telegram webhook xmpp"
+
+get_cfg() {
+	jct "$THINGINO_JSON" get "audio_alarm.$1" 2>/dev/null
+}
+
+raptor_storage_path() {
+	path=$(raptorctl config get recording storage_path 2>/dev/null | tr -d '\r\n"')
+	[ -n "$path" ] || path=/mnt/mmcblk0p1/raptor
+	printf '%s' "$path"
+}
+
+raptor_newest_clip() {
+	clips="$(raptor_storage_path)/clips"
+	[ -d "$clips" ] || return 1
+	newest=""
+	newest_mtime=0
+	for f in "$clips"/*/*.mp4 "$clips"/*.mp4; do
+		[ -f "$f" ] || continue
+		mtime=$(stat -c %Y "$f" 2>/dev/null || echo 0)
+		if [ "$mtime" -ge "$newest_mtime" ]; then
+			newest=$f
+			newest_mtime=$mtime
+		fi
+	done
+	[ -n "$newest" ] || return 1
+	printf '%s' "$newest"
+}
+
+wait_stable() {
+	path=$1
+	max=${2:-20}
+	i=0
+	while [ ! -f "$path" ] && [ "$i" -lt "$max" ]; do
+		sleep 1
+		i=$((i + 1))
+	done
+	[ -f "$path" ] || return 1
+	prev=0
+	curr=$(stat -c%s "$path" 2>/dev/null || echo 0)
+	stable=0
+	i=0
+	while [ "$stable" -lt 2 ] && [ "$i" -lt "$max" ]; do
+		sleep 1
+		prev=$curr
+		curr=$(stat -c%s "$path" 2>/dev/null || echo 0)
+		if [ "$curr" -eq "$prev" ] && [ "$curr" -gt 0 ]; then
+			stable=$((stable + 1))
+		else
+			stable=0
+		fi
+		i=$((i + 1))
+	done
+	[ -s "$path" ]
+}
+
+ensure_rmr() {
+	pidof rmr >/dev/null 2>&1 && return 0
+	raptorctl config set recording enabled true >/dev/null 2>&1 || true
+	if command -v start-stop-daemon >/dev/null 2>&1 && [ -x /usr/bin/rmr ]; then
+		start-stop-daemon -S -b -x /usr/bin/rmr -- -c /etc/raptor.conf >/dev/null 2>&1 || true
+	elif [ -x /usr/bin/rmr ]; then
+		/usr/bin/rmr -c /etc/raptor.conf >/dev/null 2>&1 &
+	else
+		return 1
+	fi
+	i=0
+	while [ "$i" -lt 20 ]; do
+		pidof rmr >/dev/null 2>&1 && return 0
+		usleep 100000 2>/dev/null || sleep 1
+		i=$((i + 1))
+	done
+	pidof rmr >/dev/null 2>&1
+}
+
+any_send2_enabled() {
+	for s in $SERVICES; do
+		[ "true" = "$(get_cfg "send2${s}")" ] && return 0
+	done
+	return 1
+}
+
+need_photo() {
+	for s in $SERVICES; do
+		[ "true" = "$(get_cfg "send2${s}")" ] || continue
+		[ "true" = "$(jct "$SEND2_JSON" get "${s}.send_photo" 2>/dev/null)" ] && return 0
+	done
+	return 1
+}
+
+need_video() {
+	for s in $SERVICES; do
+		[ "true" = "$(get_cfg "send2${s}")" ] || continue
+		[ "true" = "$(jct "$SEND2_JSON" get "${s}.send_video" 2>/dev/null)" ] && return 0
+	done
+	return 1
+}
+
+start() {
+	mkdir -p "$STATE_DIR"
+	any_send2_enabled || { touch "$STATE_DIR/no_send2"; exit 0; }
+	rm -f "$STATE_DIR/no_send2"
+
+	if need_photo; then
+		photo="$STATE_DIR/photo.jpg"
+		if raptorctl rvd save jpeg "$photo" "$CHAN" >/dev/null 2>&1 && [ -s "$photo" ]; then
+			: # kept for stop() to pick up
+		else
+			rm -f "$photo"
+		fi
+	fi
+
+	if need_video; then
+		touch "$STATE_DIR/want_video"
+		if ensure_rmr; then
+			before=$(raptor_newest_clip 2>/dev/null || true)
+			printf '%s' "$before" >"$STATE_DIR/clip_before"
+			status=$(raptorctl rmr status 2>/dev/null || true)
+			already=no
+			printf '%s' "$status" | grep -q '"recording"[[:space:]]*:[[:space:]]*true' && already=yes
+			printf '%s' "$status" | grep -q '"clip"[[:space:]]*:[[:space:]]*true' && already=yes
+			if [ "$already" != "yes" ]; then
+				raptorctl rmr start >/dev/null 2>&1 || true
+				echo yes >"$STATE_DIR/owned"
+			else
+				echo no >"$STATE_DIR/owned"
+			fi
+		fi
+	fi
+}
+
+stop() {
+	[ -f "$STATE_DIR/no_send2" ] && { rm -f "$STATE_DIR/no_send2"; exit 0; }
+
+	MOTION_PHOTO_FILE=""
+	MOTION_VIDEO_FILE=""
+
+	[ -s "$STATE_DIR/photo.jpg" ] && MOTION_PHOTO_FILE="$STATE_DIR/photo.jpg"
+
+	if [ -f "$STATE_DIR/want_video" ]; then
+		owned=$(cat "$STATE_DIR/owned" 2>/dev/null)
+		before=$(cat "$STATE_DIR/clip_before" 2>/dev/null)
+		if [ "$owned" = "yes" ]; then
+			raptorctl rmr stop >/dev/null 2>&1 || true
+			sleep 1
+		fi
+		clip=$(raptor_newest_clip 2>/dev/null || true)
+		if [ -n "$clip" ] && [ "$clip" != "$before" ] && wait_stable "$clip" 15; then
+			MOTION_VIDEO_FILE="$STATE_DIR/clip.mp4"
+			cp "$clip" "$MOTION_VIDEO_FILE" || MOTION_VIDEO_FILE=""
+		fi
+	fi
+
+	pids=""
+	for s in $SERVICES; do
+		[ "true" = "$(get_cfg "send2${s}")" ] || continue
+		command -v "send2${s}" >/dev/null 2>&1 || continue
+		MOTION_PHOTO_FILE="$MOTION_PHOTO_FILE" MOTION_VIDEO_FILE="$MOTION_VIDEO_FILE" \
+			"send2${s}" &
+		pids="$pids $!"
+	done
+
+	# shellcheck disable=SC2086
+	[ -n "$pids" ] && wait $pids 2>/dev/null
+
+	rm -f "$STATE_DIR/photo.jpg" "$STATE_DIR/clip.mp4" "$STATE_DIR/want_video" \
+		"$STATE_DIR/owned" "$STATE_DIR/clip_before"
+}
+
+case "${1:-}" in
+	start) start & ;;
+	stop) stop & ;;
+	*)
+		echo "Usage: $0 {start|stop}" >&2
+		exit 1
+		;;
+esac
+
+exit 0
