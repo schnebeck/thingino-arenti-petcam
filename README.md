@@ -67,6 +67,43 @@ On top of stock thingino, this camera profile (`arenti_petcam`) adds:
 - Unused feature packages (WireGuard, MQTT, Home Assistant integration)
   disabled at build time to keep the image lean.
 
+## Relationship to thingino master
+
+`firmware/` tracks
+[themactep/thingino-firmware](https://github.com/themactep/thingino-firmware)'s
+`master` directly (currently based on `fd9d04d`) with all of the above as
+local commits on the `arenti_petcam` branch — not a hard fork with
+diverging history. Concretely, that's:
+
+- **Two new packages**, following thingino's own package conventions:
+  [`petcam-tools`](package/petcam-tools/) (motors, treat dispenser,
+  sound buttons, off-site backup, geolocation, VPN-connect detection) and
+  [`petcam-audio-alarm`](package/petcam-audio-alarm/) (audio-triggered
+  recording).
+- **One new package override**,
+  [`thingino-openvpn`](package/thingino-openvpn/): an `openvpn-override.mk`
+  layering thingino-style web UI integration and config-from-JSON onto
+  the stock Buildroot `openvpn` package — the same pattern thingino
+  itself already uses for `thingino-wireguard-tools` over stock
+  `wireguard-tools`, applied here to a package upstream doesn't wrap yet.
+- **One new camera profile**,
+  [`configs/cameras/arenti_petcam/`](configs/cameras/arenti_petcam/) —
+  defconfig, kernel fragment, GPIO map, and default `thingino.json`
+  specific to this camera's sensor/gearbox/wiring.
+- **Three patches to `thingino-raptor`** (upstream's own streamer
+  package, vendored via a pinned commit rather than forked): an Opus
+  audio payload-type mismatch, a recording clip storage cap, and a
+  boot-time race where WebRTC could bind to the wrong local IP on a
+  device with more than one network interface up at boot.
+- **Small, targeted edits** to a handful of other existing packages
+  (`thingino-motors`, `thingino-sysupgrade`, `thingino-uhttpd`,
+  `thingino-webui`, a few others) — see `git log`/`git diff
+  master...arenti_petcam` in `firmware/` for the exact list; nothing
+  there rewrites an existing package's own logic wholesale, only adds or
+  adjusts what this build needed.
+- **Two lines** added to the top-level `Config.in` to register the two
+  new packages' menu entries.
+
 ## Building it yourself
 
 ```sh
