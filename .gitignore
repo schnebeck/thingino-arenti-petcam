@@ -27,3 +27,8 @@ stepper/mipsel-linux-muslsf-cross.tgz
 # wpa_supplicant.conf, uhttpd TLS private key, thingino-api.key) - never
 # commit these, not even to a private repo.
 overlay_backup/
+
+# Deployment-specific secrets/config for this project's own reference
+# server (see firmware/ADMIN.md) - real IPs, keys, authorized_keys
+# entries. Never commit, same reasoning as overlay_backup/ above.
+local-config/
