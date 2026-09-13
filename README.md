@@ -86,6 +86,11 @@ diverging history. Concretely, that's:
   the stock Buildroot `openvpn` package — the same pattern thingino
   itself already uses for `thingino-wireguard-tools` over stock
   `wireguard-tools`, applied here to a package upstream doesn't wrap yet.
+  Registered as a proper fifth member of `thingino-vpn`'s existing "VPN
+  Selection" choice (`BR2_PACKAGE_THINGINO_VPN_OPENVPN`, alongside
+  None/WireGuard/ZeroTier-One/Tailscale) so it's mutually exclusive with
+  the others at the Kconfig level, not just a bolted-on option that
+  happened to coexist with them.
 - **One new camera profile**,
   [`configs/cameras/arenti_petcam/`](configs/cameras/arenti_petcam/) —
   defconfig, kernel fragment, GPIO map, and default `thingino.json`
@@ -112,20 +117,22 @@ cd thingino-arenti-petcam/firmware
 CAMERA=arenti_petcam make defconfig
 ```
 
-**Known gotcha**: the shared `configs/fragments/core.fragment` force-enables
-WireGuard regardless of the camera profile's own settings, so `make
-defconfig` re-enables it every time it runs. If you don't want it (this
-profile doesn't), fix it up once after `defconfig` and use
-`olddefconfig` (not `defconfig`) afterward:
-
-```sh
-sed -i \
-  -e 's/^BR2_PACKAGE_THINGINO_VPN_WIREGUARD=y/# BR2_PACKAGE_THINGINO_VPN_WIREGUARD is not set/' \
-  -e 's/^BR2_PACKAGE_WIREGUARD_TOOLS=y/# BR2_PACKAGE_WIREGUARD_TOOLS is not set/' \
-  -e 's/^BR2_PACKAGE_WIREGUARD_LINUX_COMPAT=y/# BR2_PACKAGE_WIREGUARD_LINUX_COMPAT is not set/' \
-  .config
-CAMERA=arenti_petcam make olddefconfig
-```
+That's it — no manual `.config` patching needed. (Earlier revisions of
+this profile worked around a WireGuard-stays-enabled gotcha here with a
+post-`defconfig` `sed`; the actual fix was simpler: the shared
+`configs/fragments/core.fragment` force-sets
+`BR2_PACKAGE_THINGINO_VPN_WIREGUARD=y`, but that symbol is one member of
+a Kconfig `choice` ("VPN Selection") — a plain `# ... is not set` for
+just that member doesn't reliably win against an earlier fragment's
+explicit `=y`. Selecting the choice's actual desired value does, and
+Kconfig then cleanly cascades the rest — no leftover
+`WIREGUARD_TOOLS`/`WIREGUARD_LINUX_COMPAT` to clear by hand either.
+This also exposed that OpenVPN had been wired up entirely outside that
+choice, so nothing stopped it from being enabled alongside WireGuard at
+the same time — fixed by adding
+`BR2_PACKAGE_THINGINO_VPN_OPENVPN` as a proper fifth choice member in
+`package/thingino-vpn/Config.in`, which this profile now selects and
+which Kconfig now enforces as mutually exclusive with the other four.)
 
 Then build:
 
