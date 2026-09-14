@@ -24,9 +24,6 @@ This repo covers the whole project, not just the firmware:
 - **`stepper/`**, **`audio-alarm/`** — standalone prototyping work for
   the pan motor control and audio-alarm detection that later became the
   `petcam-tools` / `petcam-audio-alarm` packages in `firmware/`.
-- **`avanti_cam_manager.py`**, **`onvif_test.py`** — small Python tools
-  for talking to the camera directly (ONVIF PTZ control, RTSP streaming)
-  independent of the firmware itself.
 
 ## What was built
 
