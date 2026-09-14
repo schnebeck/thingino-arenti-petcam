@@ -15,8 +15,8 @@ Pin-Notation: Ingenic GPIO-Banken PA=0-31, PB=32-63, PC=64-95 (keine PD-Bank vor
 | Rührwerk-Stepper C | 10 | PA10 | live verifiziert |
 | Rührwerk-Stepper D | 11 | PA11 | live verifiziert |
 | DC-Auswurf Enable (active-low) | 57 | PB25 | live verifiziert |
-| DC-Auswurf Sensor | 54 | PB22 | live verifiziert |
-| DC-Auswurf Sensor 2 (ungenutzt) | 51 | PB19 | Vendor-Table: DCMOTOR-STOP-IRQ. Kein Puls während Rührwerk-Drehung beobachtet. |
+| DC-Auswurf SLOW-IRQ (Vendor-Name) | 54 | PB22 | live verifiziert. Laut Original-Firmware-Disassembly (`strnio.ko`) latcht der Handler nur einen Timestamp, steuert den Motor nicht an. `dispense-treat-cycle` nutzt den Pin nur zum initialen "Nocke freifahren" (Pegel-Polling), nicht als Stop-Signal. |
+| DC-Auswurf STOP-IRQ (Vendor-Name) | 51 | PB19 | live verifiziert. Vendor-Table: DCMOTOR-STOP-IRQ, bestätigt per Disassembly (`request_threaded_irq` in `strnio.ko`) und live per `gpio-wait` (fallende Flanke) als tatsächliches Stop-Signal genutzt. Reproduzierbares Fehlsignal ~80–100ms nach Motorstart, daher Mindestlaufzeit-Filter (300ms) in `dispense-treat-cycle`. |
 | Pan-Stepper A | 45 | PB13 | bestätigt (laut User) |
 | Pan-Stepper B | 41 | PB9 | bestätigt |
 | Pan-Stepper C | 42 | PB10 | bestätigt |
@@ -27,10 +27,10 @@ beim Boot explizit auf low gehalten (kein Hardware-Pull, floatender Pin wird
 von der Motortreiberschaltung sonst in einen aktiven Zustand gezogen).
 
 Ansteuerung: `/usr/sbin/stepper` (Halbschritt, 8-Phasen A→AB→B→BC→C→CD→D→DA),
-`/usr/sbin/dispense-treat-cycle` (kompletter Auswurf-Zyklus).
-Quellcode: `~/Documents/Projects/petcam/stepper/`. Seit dem Custom-Firmware-Build
-fest im Rootfs (`package/petcam-tools/` im Buildroot-Tree), nicht mehr im
-fragilen Overlay.
+`/usr/sbin/dispense-treat-cycle` (kompletter Auswurf-Zyklus), `/usr/sbin/gpio-wait`
+(edge-getriggertes Warten auf die STOP-IRQ per `poll()`, statt Busy-Polling).
+Quellcode: `package/petcam-tools/files/` im Buildroot-Tree, fest im Rootfs, nicht
+mehr im fragilen Overlay.
 
 **Pan (Thingino-native `motors`/`motors-daemon`, GUI-Joystick):** funktionsfähig
 und bootfest. Kernelmodul
