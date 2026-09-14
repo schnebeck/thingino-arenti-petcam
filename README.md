@@ -106,6 +106,46 @@ diverging history. Concretely, that's:
 - **Two lines** added to the top-level `Config.in` to register the two
   new packages' menu entries.
 
+## Installing it
+
+### First flash, from stock firmware
+
+Grab the `.bin` from [Releases](https://github.com/schnebeck/thingino-arenti-petcam/releases)
+(or build your own, see below). As long as the camera is still running the
+vendor's stock firmware, the first flash has to happen in-circuit with an SPI
+flash programmer — there's no SD-card-based recovery path yet (that only
+works once thingino's own bootloader is already on the flash) and no usable
+USB data lines on this board's USB-C jack (only power runs through it) for an
+Ingenic Cloner-based flash.
+
+Prerequisites:
+- CH341A programmer
+- SOIC8 test clip
+- [`snander`](https://github.com/themactep/snander)
+
+Procedure:
+1. Clip the SOIC8 test clip onto the SPI flash chip in-circuit (no desoldering).
+2. Bridge the Ingenic T31 SoC's RESET pin to GND for the duration of the
+   flash — otherwise the SoC's own boot ROM drives the same SPI bus at
+   power-on and contends with the programmer.
+3. Flash the image: `snander -w thingino-arenti_petcam.bin`
+4. Release the RESET bridge and power-cycle the camera.
+
+### Updates, once thingino is running
+
+From here on, updates go through thingino's own `sysupgrade` — no clip
+needed anymore:
+
+```sh
+sysupgrade -x thingino-arenti_petcam.bin
+```
+
+(`-x` skips `sysupgrade`'s self-update step, which otherwise always pulls
+the latest version from upstream `themactep/thingino-firmware` at
+invocation time regardless of what's in the image. Flags have to come
+*before* the file argument — `sysupgrade`'s `getopts` silently drops
+anything placed after it.)
+
 ## Building it yourself
 
 ```sh
@@ -138,12 +178,8 @@ CAMERA=arenti_petcam make fast
 ```
 
 The resulting image is at
-`output/master/arenti_petcam-*/images/thingino-arenti_petcam.bin` — flash
-it with thingino's own `sysupgrade` (pass `-x` to skip its self-update
-step if you specifically want the exact script version that shipped in
-this build, since it otherwise always pulls the latest version from
-upstream `themactep/thingino-firmware` at invocation time regardless of
-what's in the image).
+`output/<branch>/arenti_petcam-*/images/thingino-arenti_petcam.bin` — see
+"Installing it" above for how to flash it.
 
 ## Licensing
 
